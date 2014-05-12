@@ -1,0 +1,876 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass scrreprt
+\begin_preamble
+%<-------------------------------společná nastavení------------------------------>
+\usepackage[czech]{babel}%počeštění názvů (Obsah, Kapitola, Literatura atp.)
+\usepackage[]{hyperref} %odkazy v  pdf jsou klikací s barevnými rámečky
+\usepackage[numbers,sort&compress]{natbib} %balíček pro citace literatury  
+\usepackage{hypernat}%interakce mezi hyperref a natbib
+\usepackage{color}%kvůli barvám ČVUT
+\newcommand{\BibTeX}{{\sc Bib}\TeX}%BibTeX logo
+\hypersetup{   % Nastavení polí PDF dokumentu 
+pdftitle={Diplomová práce},%   
+pdfauthor={Pavel Štross},%  
+pdfsubject={},%   
+pdfkeywords={\v{s}ablona,LaTeX,LyX}%                             
+}
+\usepackage{multicol}
+
+
+
+
+%<-----------------------------volání stylů----------------------------------------->
+% (znak % je označení komentáře: co je za ním, není aktivní)
+%<------------------------------------písmo----------------------------------------->
+%\usepackage{packages/bc-latinmodern}
+\usepackage{packages/bc-times}
+%\usepackage{packages/bc-palatino}
+%\usepackage{packages/bc-iwona}
+%\usepackage{packages/bc-helvetika}
+
+
+%<------------------------------záhlaví stránek------------------------------------>
+%\usepackage{packages/bc-headings}
+\usepackage{packages/bc-fancyhdr}
+
+%<------------------------------hlavičky kapitol------------------------------------>
+\usepackage{packages/bc-neueskapitel}
+%\usepackage{packages/bc-fancychap}
+
+% declaration
+\newcommand{\declaration}[1]{
+\cleardoublepage
+% \normalfont
+\thispagestyle{plain}
+\vspace*{\fill}
+% \noindent
+{\chaptertitle{
+{Prohlášení}
+}}
+% \vspace{3ex}\par
+\noindent
+Prohlašuji, že jsem práci vypracovala samostatně a použila jsem pouze podklady uvedené v~přiloženém seznamu.\\
+Nemám závažný důvod proti užití tohoto školního díla ve smyslu \S 60 Zákona č.~121/2000 Sb., o právu autorském, o právech souvisejících s právem autorským a o změně některých zákonů (autorský zákon).%
+\\[15mm]
+#1 \hfill \hbox to 70mm{\tiny\dotfill}
+}
+
+% acknowledgements
+\newcommand{\acknowledgements}{
+\cleardoublepage
+\thispagestyle{plain}
+% \normalfont
+\vspace*{\fill}
+% \noindent
+{\chaptertitle{%
+{Poděkování}%
+}}
+% \vspace{3ex}\par
+}
+
+% center contents of all float environments
+\makeatletter
+\def\@floatboxreset{
+\reset@font
+\normalsize
+\@setminipage
+\centering}
+\makeatother
+
+% manual function for chapter titles
+
+\newcommand{\chaptertitle}[1] {
+ \begingroup
+   \chapterheadstartvskip
+   {
+    \normalfont
+    \sectfont
+    \color{chapter}
+    \nobreak
+    \setlength{\parfillskip}{\fill}
+    \raggedsection 
+    \huge{#1}
+    \par
+   }
+   \nobreak
+   \chapterheadendvskip
+ \endgroup
+}
+\end_preamble
+\options czech,openright,cleardoubleempty,BCOR10mm,DIV11
+\use_default_options false
+\maintain_unincluded_children false
+\language czech
+\language_package default
+\inputencoding utf8
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize a4paper
+\use_geometry false
+\use_amsmath 1
+\use_esint 0
+\use_mhchem 0
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 2
+\tocdepth 2
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language german
+\papercolumns 1
+\papersides 2
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+thispagestyle{empty}
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{center}
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pagenumbering{roman}
+\end_layout
+
+\end_inset
+
+
+\begin_inset VSpace 10mm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\family sans
+\shape smallcaps
+\size largest
+\noun on
+Vysoká škola ekonomická v Praze
+\family default
+\shape default
+\size default
+\noun default
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset VSpace 0.5em
+\end_inset
+
+
+\family sans
+\shape smallcaps
+\size largest
+\noun on
+Fakulta informatiky a statistiky
+\family default
+\shape default
+\size default
+\noun default
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset VSpace 1em*
+\end_inset
+
+
+\family sans
+\shape smallcaps
+\size larger
+\noun on
+katedra informačních technologií
+\family default
+\shape default
+\size default
+\noun default
+
+\begin_inset VSpace 15mm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size normal
+\begin_inset Graphics
+	filename obrazky/vse_logo.png
+	lyxscale 50
+	width 30text%
+
+\end_inset
+
+
+\size default
+
+\begin_inset VSpace 15mm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\family sans
+\size huge
+DIPLOMOVÁ PRÁCE
+\end_layout
+
+\begin_layout Standard
+
+\size normal
+\begin_inset VSpace 15mm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\family sans
+\size largest
+Název práce
+\end_layout
+
+\begin_layout Standard
+
+\size normal
+\begin_inset VSpace 10mm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{center} 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace vfill*
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size normal
+\begin_inset VSpace 10mm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+\noindent
+\align block
+
+\family sans
+\size large
+Autor: Pavel Štross
+\end_layout
+
+\begin_layout Description
+\noindent
+\align block
+
+\family sans
+\size large
+Vedoucí
+\begin_inset space ~
+\end_inset
+
+práce: 
+\family default
+Ing.
+ Tomáš Bruckner, Ph.D.
+\begin_inset space \hfill{}
+\end_inset
+
+
+\family sans
+Praha, 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+the
+\backslash
+year
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage cleardoublepage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+declaration{V Praze dne 
+\backslash
+today}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage cleardoublepage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+acknowledgements
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+indent 
+\end_layout
+
+\end_inset
+
+Na tomto místě bych chtěl poděkovat XY
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage cleardoublepage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size small
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+thispagestyle{empty}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+
+\size small
+\begin_inset VSpace vfill
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+chaptertitle{Abstrakt}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Práce charakterizuje BLABLABAL.
+\size small
+
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+\noindent
+
+\size small
+Klíčová
+\begin_inset space ~
+\end_inset
+
+slova: klíčová slova (3 až 5)
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+chaptertitle{Abstract}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The thesis characterizes BLABLABAL.
+\size small
+
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+\noindent
+
+\size small
+Keywords: klíčová slova (3 až 5) v angličtině
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+
+\size small
+\begin_inset VSpace vfill
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage cleardoublepage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+thispagestyle{empty}
+\end_layout
+
+\end_inset
+
+
+\size small
+
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+% vkládá automaticky generovaný obsah dokumentu
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newpage cleardoublepage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pagenumbering{arabic}%start arabic pagination from 1
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Chapter
+kap 1
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "Thesis-templates"
+
+\end_inset
+
+
+\emph on
+LyX and LaTeX Thesis Themplates
+\emph default
+ [online].
+ [cit.
+ 2008-09-28].
+ Dostupný z WWW: 
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+http://www.thesis-template.com/
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "Diplomka-v-LaTeXu"
+
+\end_inset
+
+Pele,
+\emph on
+ Diplomka v LaTeXu
+\emph default
+ [online].
+ [cit.
+ 2008-09-28].
+ Dostupný z WWW: 
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+pele.gzk.cz/node/37
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "Jirkovy-stranky"
+
+\end_inset
+
+Roubal, Jiří
+\emph on
+.
+ Jirkovy stránky
+\emph default
+
+\begin_inset space ~
+\end_inset
+
+[online].
+ [cit.
+ 2008-09-28].
+ Dostupný z WWW: 
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+dce.felk.cvut.cz/roubal/
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "Polach"
+
+\end_inset
+
+Polách, Eduard.
+ 
+\emph on
+Pravidla sazby diplomových prací
+\emph default
+
+\begin_inset space ~
+\end_inset
+
+[online].
+ [cit.
+ 2008-09-28].
+ Dostupný z WWW: 
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+home.pf.jcu.cz/~edpo/pravidla/pravidla.html
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+addcontentsline{toc}{chapter}{
+\end_layout
+
+\end_inset
+
+Literatura
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Tento příkaz přidá Literaturu do obsahu
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage cleardoublepage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\start_of_appendix
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Prostředí Příloha vložíme Dokument -> Začít dodatky zde
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pagenumbering{Roman}
+\backslash
+addcontentsline{toc}{part}{Přílohy}
+\backslash
+thispagestyle{empty}  
+\backslash
+renewcommand{
+\backslash
+appendixname}{P
+\backslash
+v{r}iloha}%%přílohy, číslování římskými
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part*
+Přílohy
+\end_layout
+
+\begin_layout Chapter
+\noindent
+\align block
+Test
+\end_layout
+
+\end_body
+\end_document
