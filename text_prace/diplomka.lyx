@@ -1,5 +1,5 @@
-#LyX 2.0 created this file. For more info see http://www.lyx.org/
-\lyxformat 413
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
 \begin_document
 \begin_header
 \textclass scrreprt
@@ -110,13 +110,13 @@ Nemám závažný důvod proti užití tohoto školního díla ve smyslu \S 60 Z
 \font_roman default
 \font_sans default
 \font_typewriter default
+\font_math auto
 \font_default_family default
 \use_non_tex_fonts false
 \font_sc false
 \font_osf false
 \font_sf_scale 100
 \font_tt_scale 100
-
 \graphics default
 \default_output_format default
 \output_sync 0
@@ -127,15 +127,24 @@ Nemám závažný důvod proti užití tohoto školního díla ve smyslu \S 60 Z
 \use_hyperref false
 \papersize a4paper
 \use_geometry false
-\use_amsmath 1
-\use_esint 0
-\use_mhchem 0
-\use_mathdots 1
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 0
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 0
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
 \cite_engine basic
+\cite_engine_type default
+\biblio_style plain
 \use_bibtopic false
 \use_indices false
 \paperorientation portrait
 \suppress_date false
+\justification true
 \use_refstyle 0
 \index Index
 \shortcut idx
@@ -301,7 +310,7 @@ DIPLOMOVÁ PRÁCE
 
 \family sans
 \size largest
-Název práce
+Elektronické volby a jejich implementace ve Straně svobodných občanů
 \end_layout
 
 \begin_layout Standard
@@ -587,7 +596,7 @@ Keywords: klíčová slova (3 až 5) v angličtině
 
 \begin_layout Standard
 \begin_inset ERT
-status collapsed
+status open
 
 \begin_layout Plain Layout
 
@@ -608,7 +617,7 @@ LatexCommand tableofcontents
 
 
 \begin_inset ERT
-status collapsed
+status open
 
 \begin_layout Plain Layout
 
@@ -645,7 +654,180 @@ pagenumbering{arabic}%start arabic pagination from 1
 \end_layout
 
 \begin_layout Chapter
-kap 1
+Úvod
+\end_layout
+
+\begin_layout Standard
+Život ve 21.
+ století se vyznačuje duchem vylepšování technologií.
+ Největší technologický přírůstek je připisován rapidnímu vývoji informačních
+ a komunikačních technologií, při kterém dochází ke zrychlování způsobu
+ každodenního života.
+ Dnešní informační a komunikační technologie šetří čas při řešení našich
+ každodenních situací.
+ Nemusíme řešit naše potřeby osobně, ale stačí použít nějaké ICT
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Information and Communication Technologies (Informační a komunikační technologie
+)
+\end_layout
+
+\end_inset
+
+ zařízení kdekoliv na světě, přičemž nezáleží jestli se nacházíme v pohodlí
+ našeho domova nebo jsme na cestách v jiné části planety.
+ Náš život se skládá z interakcí učiněných jak v klasickém pojetí prostoru
+ tak i v kyberprostoru
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Myšleno Gibsonovo pojetí kyberprostoru 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "kyberprostor"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+.
+ Zbývá velice málo oblastí, které nebyli z větší části ovlivněny informačními
+ technologiemi.
+ Musíme si tedy položit otázku, proč by nebylo možné volit za pomocí informačníc
+h technologií ?
+\end_layout
+
+\begin_layout Standard
+Na tuto otázku se dá na první pohled odpovědět velice snadno.
+ Navrhneme a implementujeme informační systém, který nám umožní elektronicky
+ volit.
+ Takovýto informační systém by nám mohl zefektivnit volby ve všech možných
+ aspektech, jakými jsou rychlejší sčítání hlasů, nižší náklady na uspořádání
+ voleb a zvýšení volební účasti.
+\end_layout
+
+\begin_layout Standard
+Nicméně k přihlédnutí k faktu, že volby patří mezi základní nástroje liberální
+ demokracie, tedy řízení společnosti v civilizovaném světě a zároveň se
+ jejich průběh zdokonaluje již od dob antického Řecka.
+ Je možné takovýto informační systém jednoduše navrhnout a implementovat
+ ?
+\end_layout
+
+\begin_layout Section
+Důvod výběru tématu
+\end_layout
+
+\begin_layout Standard
+Hlavním důvodem výběru tohoto tématu je osobní zájem autora na problematice
+ voleb, volebních systému a elektronických volebních systémů.
+ K tomuto tématu má autor i praktický vztah neboť byl v roce 2012 členem
+ volební komise Strany svobodných občanů.
+ Výkon této funkce přinesl autorovi mnoho poznatků.
+ Převážně to, že elektronické volby jsou velice komplexní problém, při kterém
+ je potřeba propojit znalosti z politologické vědy a informačních technologií.
+ Což jsou vědní obory sobě velice vzdálené a při řešení tohoto tématu je
+ nutné zachovat interdisciplinární přístup mezi nimi.
+\end_layout
+
+\begin_layout Section
+Vymezení tématu práce
+\end_layout
+
+\begin_layout Standard
+Tématem této diplomové práce je dle jejího názvu zavedením elektronických
+ voleb ve Straně svobodných občanů.
+ 
+\end_layout
+
+\begin_layout Standard
+Téma práce se skládá ze dvou navazujících celků.
+ Prvním je teoretická část, ve které jsou čtenáři představeny teoretické
+ znalosti a přehled o již realizovaných implementací elektronických voleb
+ ve světě.
+ Z těchto znalostí je odvozena i část druhá praktická, jež se zabývá implementac
+í elektronických voleb ve Straně svobodných občanů.
+ Tato část se nezabývá pouze implementací elektronických voleb, nýbrž i
+ prozkoumání voleb ve straně Svobodných občanů z hlediska procesního pohledu.
+\end_layout
+
+\begin_layout Standard
+Závěr praktické části této práce je soustředěn na možnost využití představené
+ implementace na úroveň užití při volbách konaných v České Republice.
+\end_layout
+
+\begin_layout Section
+Cíle práce
+\end_layout
+
+\begin_layout Standard
+Cíle této práce plynou z výše popsaného vymezení tématu práce.
+ Prvním cílem je poskytnout čtenáři znalosti, které je možné použít pro
+ praktickou část práce, tedy implementaci elektronických voleb ve Straně
+ svobodných občanů.
+ A to průzkumem této problematiky a zároveň průzkumem již realizovaných
+ řešení elektronických voleb ve světě.
+\end_layout
+
+\begin_layout Standard
+Druhým cílem práce je připravit funkční implementaci elektronických voleb
+ ve Straně svobodných občanů.
+ Pro splnění tohoto cíle je nutné provést analýzu a návrh řešení implementace.
+ Po splnění tohoto cíle je následujícím cílem posoudit vhodnost této implementac
+e pro eventuální použití ve volbách konaných v České republice.
+\end_layout
+
+\begin_layout Section
+Očekávané výstupy
+\end_layout
+
+\begin_layout Standard
+Očekávané výstupy práce vycházejí z jejich cílů a její logické struktury.
+\end_layout
+
+\begin_layout Standard
+V teoretické části práce jsou očekávány následující výstupy:
+\end_layout
+
+\begin_layout Itemize
+Přehled problematiky elektronických voleb
+\end_layout
+
+\begin_layout Itemize
+Srovnání a přehled realizovaných elektronických voleb ve světě
+\end_layout
+
+\begin_layout Itemize
+Komparace elektronických voleb a voleb klasických (volby realizované za
+ pomoci papírových volebních lístků)
+\end_layout
+
+\begin_layout Standard
+V praktické části této práce se autor zaměřuje na svoji vlastní řešení a
+ následující očekávané výstupy jsou:
+\end_layout
+
+\begin_layout Itemize
+Zmapování procesů voleb ve Straně svobodných občanů
+\end_layout
+
+\begin_layout Itemize
+Návrh řešení elektronických voleb ve Straně svobodných občanů
+\end_layout
+
+\begin_layout Itemize
+Implementace řešení elektronických voleb ve Straně svobodných občanů
+\end_layout
+
+\begin_layout Itemize
+Zhodnocení vhodnosti užití implementace pro Stranu svobodných občanů pro
+ konání voleb v České republice
 \end_layout
 
 \begin_layout Bibliography
@@ -768,6 +950,61 @@ home.pf.jcu.cz/~edpo/pravidla/pravidla.html
 \end_inset
 
 
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "kyberprostor"
+
+\end_inset
+
+ 
+\emph on
+An interview with William Gibson (by Dan Josefsson)
+\emph default
+ [online] [cit.
+ 2015-04-06].
+ Dostupné z: 
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+http://www.josefsson.net/gibson/index.html
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "demokracie"
+
+\end_inset
+
+
+\emph on
+Liberální demokracie - možný politický systém pro všechny státy světa?
+\emph default
+ [online] [cit.
+ 2015-04-06].
+ Dostupné z: 
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+http://www.e-polis.cz/clanek/liberalni-demokracie-mozny-politicky-system-pro-vsech
+ny-staty-sveta.html
+\end_layout
+
+\end_inset
+
+ 
 \end_layout
 
 \begin_layout Standard
