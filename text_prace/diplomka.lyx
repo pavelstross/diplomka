@@ -830,126 +830,254 @@ Zhodnocení vhodnosti užití implementace pro Stranu svobodných občanů pro
  konání voleb v České republice
 \end_layout
 
-\begin_layout Bibliography
-\begin_inset CommandInset bibitem
-LatexCommand bibitem
-key "Thesis-templates"
-
-\end_inset
-
-
-\emph on
-LyX and LaTeX Thesis Themplates
-\emph default
- [online].
- [cit.
- 2008-09-28].
- Dostupný z WWW: 
-\begin_inset Flex URL
-status collapsed
-
-\begin_layout Plain Layout
-
-http://www.thesis-template.com/
+\begin_layout Chapter
+Volby a volební systémy
 \end_layout
 
-\end_inset
-
-
-\end_layout
-
-\begin_layout Bibliography
-\begin_inset CommandInset bibitem
-LatexCommand bibitem
-key "Diplomka-v-LaTeXu"
-
-\end_inset
-
-Pele,
-\emph on
- Diplomka v LaTeXu
-\emph default
- [online].
- [cit.
- 2008-09-28].
- Dostupný z WWW: 
-\begin_inset Flex URL
-status collapsed
-
-\begin_layout Plain Layout
-
-pele.gzk.cz/node/37
-\end_layout
+\begin_layout Standard
+Volby reprezentují způsob vybrání jedince případně skupiny jedinců, jež
+ na jejich základě získá mandát.
+ Takovýto mandát slouží k vykonávání moci, která rozhoduje o dalším vývoji
+ oblasti v které se hlasování konalo.
+\begin_inset CommandInset citation
+LatexCommand cite
+after "str. 13"
+key "volebni_systemy"
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Bibliography
-\begin_inset CommandInset bibitem
-LatexCommand bibitem
-key "Jirkovy-stranky"
-
-\end_inset
-
-Roubal, Jiří
-\emph on
-.
- Jirkovy stránky
-\emph default
-
-\begin_inset space ~
-\end_inset
-
-[online].
- [cit.
- 2008-09-28].
- Dostupný z WWW: 
-\begin_inset Flex URL
-status collapsed
-
-\begin_layout Plain Layout
-
-dce.felk.cvut.cz/roubal/
-\end_layout
+ Zároveň jsou základním předpokladem demokracie.
+ V této práci se autor bude zabývat především svobodnými volbami.
+ To jsou takové volby, ve kterých jsou respektována lidská práva a svobody,
+ především respektování práva účastnit se voleb aktivně i pasivně.
+ Takovéto volby musejí být zároveň poctivé, tedy jejich proces musí probíhat
+ tak, aby aktéři v tomto procesu nemohli manipulovat s výsledky volby.
+\begin_inset CommandInset citation
+LatexCommand cite
+after "str. 269"
+key "uvod_do_politike_vedy"
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Bibliography
-\begin_inset CommandInset bibitem
-LatexCommand bibitem
-key "Polach"
-
-\end_inset
-
-Polách, Eduard.
  
-\emph on
-Pravidla sazby diplomových prací
-\emph default
+\end_layout
 
-\begin_inset space ~
+\begin_layout Standard
+Svobodné a poctivé volby musí splňovat tři základní principy, těmi jsou:
+\end_layout
+
+\begin_layout Itemize
+princip soutěživosti -- Tento princip znamená, že volič musí mít možnost
+ výběru, a zároveň není omezováno právo účastnit se probíhajících voleb.
+\end_layout
+
+\begin_layout Itemize
+princip pravidelnosti -- Princip periodického opakování voleb v předem stanovený
+ch termínech.
+\end_layout
+
+\begin_layout Itemize
+princip definitivnosti -- Pro splnění tohoto principu, je nutný předpoklad,
+ že všichni účastníci voleb akceptují jejich výsledek.
+ Týká se to především pasivních účastníků volby, kteří musí akceptovat,
+ že vítězství ve volbě možné pouze prostřednictvím další volby.
+\end_layout
+
+\begin_layout Standard
+Hlavními cíli voleb je vznik reprezentace moci a dosažení shody mezi takovouto
+ reprezentací a preferencemi aktivních účastníků volby.
+\end_layout
+
+\begin_layout Section
+Volební systém
+\end_layout
+
+\begin_layout Standard
+Volby probíhají dle předem stanovených stanovených pravidel, takováto pravidla
+ vytvářejí volební systém.
+ Tyto pravidla můžeme rozdělit do tří skupin.
+\begin_inset CommandInset citation
+LatexCommand cite
+after "str. 271"
+key "uvod_do_politike_vedy"
+
 \end_inset
 
-[online].
- [cit.
- 2008-09-28].
- Dostupný z WWW: 
-\begin_inset Flex URL
+
+\end_layout
+
+\begin_layout Itemize
+volební proces
+\end_layout
+
+\begin_layout Itemize
+volební právo
+\end_layout
+
+\begin_layout Itemize
+volební procedura
+\end_layout
+
+\begin_layout Subsection
+Volební proces
+\end_layout
+
+\begin_layout Standard
+Volebním procesem se dle doc.
+ Kubáta rozumí fáze voleb proběhnuvších dle čtyř etap.
+ Tyto etapy jsou charakterizovány pohledem na volby ze stran aktérů.
+ Mezi tyto aktéry považujeme:
+\end_layout
+
+\begin_layout Itemize
+pasivní účastníky volby
+\end_layout
+
+\begin_layout Itemize
+aktivní účastníky volby
+\end_layout
+
+\begin_layout Itemize
+organizátory volby
+\end_layout
+
+\begin_layout Itemize
+interprety výsledku volby
+\end_layout
+
+\begin_layout Standard
+Etapa z pohledu pasivního účastníka volby je procesem týkající se určení
+ účastníka, registrace účastníka do volby a stanovení časového intervalu,
+ kdy je možné pasivního účastníka volby registrovat.
+ Další etapou je organizace voleb, tj.
+ pohled organizátorů volby.
+ Tato etapa je charakterizována vytvářením seznamu aktivních účastníků volby,
+ stanovení časového harmonogramu voleb a vybrání interpretů volby.
+\end_layout
+
+\begin_layout Standard
+Z pohledu aktivního účastníka volby je etapa volebního procesu stanovena
+ samotným průběhem volby.
+ Z hlediska interpretace voleb se jedná o etapu zjištění hlasů aktivních
+ účastníků a převedení na mandáty pro účastníky pasivní
+\begin_inset CommandInset citation
+LatexCommand cite
+after "str. 272"
+key "uvod_do_politike_vedy"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+Volební právo
+\end_layout
+
+\begin_layout Standard
+Volební právo je stanoveno formou právních předpisů.
+ Jedná se o soubor norem regulujících volební proces.
+ Zdrojem volebního práva jsou právní normy nejvyššího charakteru.
+\begin_inset CommandInset citation
+LatexCommand cite
+after "str. 274"
+key "uvod_do_politike_vedy"
+
+\end_inset
+
+ V případě státu je to tedy jeho ústava a ústavní zákony.
+ U institucí, jakými jsou politické strany, politická hnutí, neziskové organizac
+e či spolky jsou takovýmto zdrojem volebního práva stanovy dané instituce.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "obcansky_zakonik"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Volební právo lze rozdělit na subjektivní a objektivní složku.
+ Objektivní složkou volebního práva se rozumí souhrn organizačních pravidel,
+ které zajišťují průběh volebního procesu, zde toto právo dělíme na aktivní
+ a pasivní.
+ Tedy aktivní volební právo umožňuje člověku se stát aktivním účastníkem
+ volby tedy jeho právo volit, zatímco pasivní umožňuje pasivnímu účastníkovy
+ volby být volen.
+\end_layout
+
+\begin_layout Standard
+Subjektivní složka reprezentuje obecný a politický princip konání svobodných
+ voleb.
+ Skládá se ze tří principů, kterými jsou: všeobecné, rovné a přímé volební
+ právo.
+ Tyto univerzální zásady volebního práva jsou vždy zakotveny v nejvyšších
+ právních normách.
+\end_layout
+
+\begin_layout Standard
+Principem všeobecného volebního práva je myšlenka, že všichni občané jsou
+ si rovni a nemohou být zbaveni práva na veřejný popř.
+ politický život.
+ Ve všeobecnosti to tedy znamená, že není možné vyloučit účastníka volby
+ na základě kritérií, jakými jsou národnost, pohlaví, rasa, povolání a úroveň
+ vzdělání.
+ Tento princip je však porušen v rámci volebních censů.
+ V dnešní době zbyly censy dva a to census teritoriální příslušnosti
+\begin_inset Foot
 status collapsed
 
 \begin_layout Plain Layout
-
-home.pf.jcu.cz/~edpo/pravidla/pravidla.html
+V České republice se teritoriální příslušností rozumí trvalý pobyt občana,
+ čímž mu tento census umožňuje výkon volebního práva v předem určené oblasti
 \end_layout
 
 \end_inset
 
+ a věku
+\begin_inset Foot
+status collapsed
 
+\begin_layout Plain Layout
+Pod censem věku se rozumí nabytí volebního práva při dosažení plnoletosti
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Dalším principem je rovnost volebního práva.
+ Lze ji chápat dvojím způsobem materiálně a formálně.
+ Pro materiální způsob význam rovnosti představuje stanovení proporcí mezi
+ mandátem a počtem hlasů, tedy kolik hlasů je potřeba k získání jednoho
+ mandátu.
+ Formální způsob je princip rovnosti hlasů z pohledu aktivních účastníků.
+ Znamená to tedy, že každý aktivní účastník má k dispozici stejný počet
+ hlasů.
+\end_layout
+
+\begin_layout Standard
+Poslední princip je přímost volebního práva.
+ Přímost znamená, že aktivní účastník o svých hlasech rozhoduje vždy přímo,
+ tedy bez jakýchkoliv prostředníků.
+ Zároveň je v tomto principu obsažena i tajnost hlasování.
+ Ta umožňuje aktivnímu účastníkovi zajištění bezpečnosti volby před, v průběhu
+ i po ukončení hlasování, aby nemohl být nikým či ničím ovlivňován ve svém
+ rozhodnutí.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "uvod_do_politike_vedy"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Volební procedura
 \end_layout
 
 \begin_layout Bibliography
@@ -1005,6 +1133,73 @@ ny-staty-sveta.html
 \end_inset
 
  
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "volebni_systemy"
+
+\end_inset
+
+CHYTILEK, Roman.
+ 
+\emph on
+Volební systémy.
+
+\emph default
+ Vyd.
+ 4., V Portálu 1.
+ Praha: Portál, 2009, 375 s.
+ ISBN 978-807-3675-486.
+ 
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "uvod_do_politike_vedy"
+
+\end_inset
+
+CABADA, Ladislav a Michal KUBÁT.
+ 
+\emph on
+Úvod do studia politické vědy.
+
+\emph default
+ Praha: Eurolex Bohemia, 2002, 445 s.
+ Politologie.
+ ISBN 80-864-3241-6.
+ 
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "obcansky_zakonik"
+
+\end_inset
+
+ 
+\emph on
+Zákon 89/2012 Sb.
+ Občanský zákoník
+\emph default
+ [online] [cit.
+ 2015-04-07].
+ Dostupné z: 
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+http://portal.gov.cz/app/zakony/download?idBiblio=74907&nr=89~2F2012~20Sb.&ft=txt
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
