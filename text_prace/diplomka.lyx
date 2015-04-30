@@ -516,7 +516,7 @@ chaptertitle{Abstrakt}
 \end_layout
 
 \begin_layout Standard
-Práce charakterizuje BLABLABAL.
+Práce charakterizuje.
 \size small
 
 \begin_inset Newline newline
@@ -557,7 +557,7 @@ chaptertitle{Abstract}
 \end_layout
 
 \begin_layout Standard
-The thesis characterizes BLABLABAL.
+The thesis characterizes.
 \size small
 
 \begin_inset Newline newline
@@ -796,7 +796,7 @@ V teoretické části práce jsou očekávány následující výstupy:
 \end_layout
 
 \begin_layout Itemize
-Přehled problematiky elektronických voleb
+Přehled problematiky voleb a elektronických voleb
 \end_layout
 
 \begin_layout Itemize
@@ -959,7 +959,7 @@ Etapa z pohledu pasivního účastníka volby je procesem týkající se určen�
 Z pohledu aktivního účastníka volby je etapa volebního procesu stanovena
  samotným průběhem volby.
  Z hlediska interpretace voleb se jedná o etapu zjištění hlasů aktivních
- účastníků a převedení na mandáty pro účastníky pasivní
+ účastníků a převedení na mandáty pro účastníky pasivní.
 \begin_inset CommandInset citation
 LatexCommand cite
 after "str. 272"
@@ -967,7 +967,7 @@ key "uvod_do_politike_vedy"
 
 \end_inset
 
-.
+
 \end_layout
 
 \begin_layout Subsection
@@ -1030,7 +1030,9 @@ status collapsed
 
 \begin_layout Plain Layout
 V České republice se teritoriální příslušností rozumí trvalý pobyt občana,
- čímž mu tento census umožňuje výkon volebního práva v předem určené oblasti
+ čímž mu tento census umožňuje výkon volebního práva pouze v předem určené
+ oblasti.
+ Příkladem použití teritoriálního censu je omezení v rámci komunálních voleb.
 \end_layout
 
 \end_inset
@@ -1057,6 +1059,13 @@ Dalším principem je rovnost volebního práva.
  Formální způsob je princip rovnosti hlasů z pohledu aktivních účastníků.
  Znamená to tedy, že každý aktivní účastník má k dispozici stejný počet
  hlasů.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "uvod_do_politike_vedy"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -1069,7 +1078,8 @@ Poslední princip je přímost volebního práva.
  rozhodnutí.
 \begin_inset CommandInset citation
 LatexCommand cite
-key "uvod_do_politike_vedy"
+after "str. 18"
+key "volebni_systemy"
 
 \end_inset
 
@@ -1078,6 +1088,253 @@ key "uvod_do_politike_vedy"
 
 \begin_layout Subsection
 Volební procedura
+\end_layout
+
+\begin_layout Standard
+Volební proceduru lze považovat jako souhrn tvrdých vlastností a principů
+ volebního systému.
+ Určuje nám, jakým fyzickým způsobem je prováděna volba a jaké jsou matematické
+ postupy pro zjištění výsledků volby.
+ Z hlediska politologické vědy je volební procedura považována za volební
+ systém.
+\begin_inset CommandInset citation
+LatexCommand cite
+after "str. 276"
+key "uvod_do_politike_vedy"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Volební systém z pohledu technologie je téma, jímž se chce autor zabývat
+ v následujících kapitolách.
+ Je ovšem nutné pro praktickou část práce provést stručný přehled volebních
+ procedur či systémů z pohledu matematických postupů při přepočtu hlasů
+ na mandáty.
+ Z tohoto hlediska se dělí volební systémy na: většinové, proporční, semiproporč
+ní a smíšené.
+\end_layout
+
+\begin_layout Subsubsection
+Většinové volební systémy
+\end_layout
+
+\begin_layout Standard
+Způsob přepočtu hlasů ve většinovém volební systému na mandáty vychází z
+ pravidla vítěz bere vše.
+\begin_inset CommandInset citation
+LatexCommand cite
+after "str. 26"
+key "volebni_systemy"
+
+\end_inset
+
+ Jestliže se jedná o prostý většinový systém pak stačí k vítězství kandidáta
+ popř.
+ politické strany získat největší počet hlasů.
+ Další možností k přepočtu hlasů na mandáty je princip absolutní většiny,
+ kdy vítěz musí dosáhnout hodnoty minimálně jedné poloviny odevzdaných hlasů
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Takový princip je používán například v druhém kole voleb do horní komory
+ parlamentu České republiky.
+ 
+\end_layout
+
+\end_inset
+
+.
+ Nejméně používaným většinovým volebním systémem je však systém alternativního
+ hlasování, při kterém voliči mají k dispozici počet hlasů shodný s počtem
+ kandidátů a udělují jím preference, vítězí kandidát s nejvyššími přidělenými
+ preferencemi.
+\end_layout
+
+\begin_layout Subsubsection
+Proporční volební systémy
+\end_layout
+
+\begin_layout Standard
+Cílem proporčních volebních systémů je zachování rovnováhy mezi počtem obdrženýc
+h mandátů a získaných hlasů.
+ To tedy znamená, že v ideálním případě relativní počet získaných hlasů
+ by měl být shodný s relativním počtem obdržených mandátů.
+ Takové systémy se používají převážně ve vícemandátových volebních obvodech
+ za použití kandidátních listin.
+ Za autory proporčního volebního systému jsou považování matematikové Jaen
+ Antoine Condorcet a Joseph Diez Cergonne.
+\begin_inset CommandInset citation
+LatexCommand cite
+after "str. 34"
+key "volebni_systemy"
+
+\end_inset
+
+ Kandidátní listiny ve volebních systémech mohou býti uzavřené a otevřené.
+ Jako otevřená kandidátní listina je považována taková, u které má volič
+ možnost měnit svými preferencemi pořadí kandidátů na ní uvedených.
+ Aby bylo možné zjistit obdržení mandátu kandidátem, jsou v proporčních
+ volebních systémech zavedeny různé matematické přepočty.
+ Nejčastěji se používá kombinace metod volebního dělitele a volebních kvót.
+ 
+\end_layout
+
+\begin_layout Standard
+Metoda volebního dělitele je založena na řadách dělitelů.
+ Kdy kandidátní listiny jsou v daném obvodě postupně děleny děliteli z určité
+ řady až do okamkžiku, kdy je možné ze získaných podílů uspořádat počet
+ hodnot, který je roven hodnotě počtu mandátů.
+ Proběhnutí iterace dělení se nazývá skrutiniem.
+\begin_inset CommandInset citation
+LatexCommand cite
+after "str. 290"
+key "uvod_do_politike_vedy"
+
+\end_inset
+
+ Mezi metody volebního dělitele patří: D'Hondtova metoda, Saint-Lagueova
+ metoda, Imperialiho metoda a Huntigtnovo--Hilova metoda.
+ Výpočet výsledku mezi těmito metodami se liší pouze použitím různých číselných
+ řad tvořící dělitele.
+\begin_inset CommandInset citation
+LatexCommand cite
+after "str. 288"
+key "uvod_do_politike_vedy"
+
+\end_inset
+
+ Číselné řady pro metody volebních dělitelů jsou tedy:
+\end_layout
+
+\begin_layout Itemize
+D'Hondtova metoda
+\begin_inset Formula 
+\[
+\mathrm{\sum_{n=0}^{\infty}n+1}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Saint-Lagueova metoda
+\begin_inset Formula 
+\[
+\mathrm{\sum_{n=0}^{\infty}2n+1}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Imperialiho metoda
+\begin_inset Formula 
+\[
+\mathrm{\sum_{n=2}^{\infty}n+1}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Huntigtnovo--Hilova metoda
+\begin_inset Formula 
+\[
+\mathrm{\sum_{n=0}^{\infty}\sqrt{n\left(n+1\right)}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+V proporčních systémech jsou také definované volební kvóty.
+ Tyto kvóty souží ke stanovení volebního čísla.
+ Volební číslo je taková hodnota, která odpovídá hodnotě minimálního počtu
+ hlasů k získání mandátu v prvním skrutiniu.
+\begin_inset CommandInset citation
+LatexCommand cite
+after "str. 291"
+key "uvod_do_politike_vedy"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+Haareova kvóta
+\begin_inset Formula 
+\[
+\frac{V}{S}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Imperialiho kvóta
+\begin_inset Formula 
+\[
+\frac{V}{S+2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Droopova kvóta
+\begin_inset Formula 
+\[
+\mathrm{\frac{V}{S+1}+1}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Haagen-Bischoffova kvóta
+\begin_inset Formula 
+\[
+\mathrm{\frac{V}{S+1}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Kdy 
+\begin_inset Formula $V$
+\end_inset
+
+ je počet platných odevzdaných hlasů a 
+\begin_inset Formula $S$
+\end_inset
+
+ je počtem mandátů připadajících na volební obvod 
+\end_layout
+
+\begin_layout Subsubsection
+Semiproporční volební systémy
 \end_layout
 
 \begin_layout Bibliography
