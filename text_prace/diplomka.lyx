@@ -1337,6 +1337,168 @@ Kdy
 Semiproporční volební systémy
 \end_layout
 
+\begin_layout Standard
+Semiproporční volební systémy jsou takové volební systémy, které přidělují
+ mandáty kandidátům s nejvyšším počtem hlasů, ale narozdíl od většinových
+ volebních systémů nezachovávají pravidlo vítěz bere vše.
+\begin_inset CommandInset citation
+LatexCommand cite
+after "str. 167"
+key "volebni_systemy"
+
+\end_inset
+
+ Nejvýznamnějšími semiproporčnímy systémy jsou:
+\end_layout
+
+\begin_layout Itemize
+Bordovo hlasování
+\end_layout
+
+\begin_layout Itemize
+Schvalování/Odmítání
+\end_layout
+
+\begin_layout Itemize
+Neomezené hlasování
+\end_layout
+
+\begin_layout Itemize
+Kumulované hlasování
+\end_layout
+
+\begin_layout Standard
+Bordovo hlasování někdy též označované jako bodové hlasování je takový systém,
+ při kterém je každým voličem vytvořen seřazaný seznam kandidátů dle jejich
+ preferencí.
+ Poté jsou dle předem daných pravidel přiřazeny kandidátům body.
+ Vítězí kandidáti s nejvyšším součtem přiřazených bodů.
+ Dle původního Bordova návrhu je jsou bodové intervaly mezi kandidáty konstatní.
+ Tento typ volebního systému je používán například ve volbách vedení American
+ Mathematical Society.
+\begin_inset CommandInset citation
+LatexCommand cite
+after "str. 167"
+key "volebni_systemy"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Schvalování/Odmítání je volební procedurou, při které je počet hlasů shodný
+ s počtem kandidátů.
+ Volič hlasuje pro kandidáta nebo proti kandidátovi.
+ V tomto systému se objevuje takzvaný negativní hlas.
+ Negativní hlas se započítává při odmítnutí kandidáta.
+ Mandát získávájí kandidáti s nejvyšším počtem hlasů.
+ Tento typ volebního systému je v mnoha demokratických státech protiústavní,
+ protože nezachovává přímost a rovnost volby.
+ Ve světě se používá nejčastěji ve volbách do představenstev profesních
+ asociací.
+\begin_inset CommandInset citation
+LatexCommand cite
+after "str. 171"
+key "volebni_systemy"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Procedura neomezeného hlasování se podobá schvalování, avšak s rozdílem,
+ že počet hlasů voliče je shodný s počtem mandátů.
+ Při tomto typu volební procedury může volič přidělit kandidátovi maximálně
+ jeden hlas.
+ 
+\end_layout
+
+\begin_layout Standard
+Z neomezeného hlasování vychází hlasování kumulované.
+ Při kumulovaném hlasování má možnost volič své hlasy kumulovat.
+ To znamená, že volič má k dispozici stejný počet hlasů, kolik se rozděluje
+ mandátů, ale může udělit více hlasů jednomu kandidátovi.
+\begin_inset CommandInset citation
+LatexCommand cite
+after "str. 180"
+key "volebni_systemy"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Volby z pohledu mezinárodního práva
+\end_layout
+
+\begin_layout Standard
+Konání voleb je závazkem každého demokratického státu.
+ Jejich vlastnosti vycházejí z úmluvy o ochraně lidských práv a základních
+ svobod sjednané v rámci Rady Evropy roku 1950.
+ Tato úmluva říká, že volby se musjí konat v rozumných intervalech s tajným
+ hlasováním za podmínek, které zajistí svobodné vyjádření názorů lidu při
+ volbě zákonodárného sboru.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "umluva_zakladnich_prav_a_svobod"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+V rámci Rady Evropy byla založena Komise pro demokracie prostřednictvím
+ práva, nazývaná též Benátská komise.
+ Tato komise se zabývá základními demokratickými principy, tedy i volbami.
+ Benátská komise vydala kodex osvědčených postupů v oblasti volebních záležitost
+í.
+ Tento kodex, výchází z úmluvy o ochraně lidských práv a základních svobod
+ a definuje šest základních principů volebního práva:
+\begin_inset CommandInset citation
+LatexCommand cite
+key "code_of_good_practice_in_electoral_matters"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Všeobecnost -- Tento princip zachovává možnost zúčastnit se voleb aktivně
+ i pasivně.
+\end_layout
+
+\begin_layout Itemize
+Rovnost -- Pro zachování principu rovnosti je nutné, aby každý volič měl
+ možnost odevzdat stejný počet hlasů.
+\end_layout
+
+\begin_layout Itemize
+Svobodu -- Svobodné volby musejí zachovat názory voličů a možnost prověření
+ volebních podvodů.
+\end_layout
+
+\begin_layout Itemize
+Tajnost -- Zachování principu tajnosti spočívá v individualistickém rozhodnutí
+ voliče, přičemž jeho udělené hlasy a informace o jeho zůčastnění se voleb
+ musejí zůstat tajné.
+\end_layout
+
+\begin_layout Itemize
+Přímost -- Princip přimostí říká, že legislativní složka moci státu a komunální
+ zastoupení moci se volí vždy přímo.
+\end_layout
+
+\begin_layout Itemize
+Četnost -- Tento princip zahrnuje, že volby musejí být opakovány v pravidelných
+ intervalech a funkční období legislativní složky moci státu nesmí překročit
+ dobu pěti let.
+\end_layout
+
 \begin_layout Bibliography
 \begin_inset CommandInset bibitem
 LatexCommand bibitem
@@ -1452,6 +1614,60 @@ status collapsed
 \begin_layout Plain Layout
 
 http://portal.gov.cz/app/zakony/download?idBiblio=74907&nr=89~2F2012~20Sb.&ft=txt
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "umluva_zakladnich_prav_a_svobod"
+
+\end_inset
+
+ 
+\emph on
+Úmluva o ochraně lidských práv a základních svobod
+\emph default
+ [online] [cit.
+ 2015-04-16].
+ Dostupné z: 
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+http://www.echr.coe.int/Documents/Convention_CES.pdf
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "code_of_good_practice_in_electoral_matters"
+
+\end_inset
+
+ 
+\emph on
+code of good practice in electoral matters
+\emph default
+ [online] [cit.
+ 2015-04-16].
+ Dostupné z: 
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+http://www.venice.coe.int/webforms/documents/default.aspx?pdffile=CDL-AD(2002)023-e
 \end_layout
 
 \end_inset
