@@ -52,7 +52,7 @@ pdfkeywords={\v{s}ablona,LaTeX,LyX}%
 }}
 % \vspace{3ex}\par
 \noindent
-Prohlašuji, že jsem práci vypracovala samostatně a použila jsem pouze podklady uvedené v~přiloženém seznamu.\\
+Prohlašuji, že jsem práci vypracoval samostatně a použil jsem pouze podklady uvedené v~přiloženém seznamu.\\
 Nemám závažný důvod proti užití tohoto školního díla ve smyslu \S 60 Zákona č.~121/2000 Sb., o právu autorském, o právech souvisejících s právem autorským a o změně některých zákonů (autorský zákon).%
 \\[15mm]
 #1 \hfill \hbox to 70mm{\tiny\dotfill}
@@ -461,7 +461,7 @@ indent
 
 \end_inset
 
-Na tomto místě bych chtěl poděkovat XY
+Na tomto místě bych chtěl poděkovat
 \end_layout
 
 \begin_layout Standard
@@ -533,7 +533,7 @@ Klíčová
 \begin_inset space ~
 \end_inset
 
-slova: klíčová slova (3 až 5)
+slova: klíčová slova
 \begin_inset Newline newline
 \end_inset
 
@@ -570,7 +570,7 @@ The thesis characterizes.
 \noindent
 
 \size small
-Keywords: klíčová slova (3 až 5) v angličtině
+Keywords: klíčová slova
 \begin_inset Newline newline
 \end_inset
 
@@ -667,7 +667,7 @@ pagenumbering{arabic}%start arabic pagination from 1
  každodenních situací.
  Nemusíme řešit naše potřeby osobně, ale stačí použít nějaké ICT
 \begin_inset Foot
-status open
+status collapsed
 
 \begin_layout Plain Layout
 Information and Communication Technologies (Informační a komunikační technologie
@@ -676,12 +676,12 @@ Information and Communication Technologies (Informační a komunikační technol
 
 \end_inset
 
- zařízení kdekoliv na světě, přičemž nezáleží jestli se nacházíme v pohodlí
+ zařízení kdekoliv na světě, přičemž nezáleží, zda se nacházíme v pohodlí
  našeho domova nebo jsme na cestách v jiné části planety.
- Náš život se skládá z interakcí učiněných jak v klasickém pojetí prostoru
+ Náš život se skládá z interakcí učiněných jak v klasickém pojetí prostoru,
  tak i v kyberprostoru
 \begin_inset Foot
-status open
+status collapsed
 
 \begin_layout Plain Layout
 Myšleno Gibsonovo pojetí kyberprostoru 
@@ -697,10 +697,10 @@ key "kyberprostor"
 \end_inset
 
 .
- Zbývá velice málo oblastí, které nebyli z větší části ovlivněny informačními
+ Zbývá velice málo oblastí, které nebyly z větší části ovlivněny informačními
  technologiemi.
- Musíme si tedy položit otázku, proč by nebylo možné volit za pomocí informačníc
-h technologií ?
+ Musíme si tedy položit otázku, proč by nebylo možné informační technologie
+ využít i při volbách a zjednodušit tak celý volební proces ?
 \end_layout
 
 \begin_layout Standard
@@ -713,11 +713,11 @@ Na tuto otázku se dá na první pohled odpovědět velice snadno.
 \end_layout
 
 \begin_layout Standard
-Nicméně k přihlédnutí k faktu, že volby patří mezi základní nástroje liberální
+Je však možné takovýto informační systém jednoduše navrhnout a implementovat,
+ přihlédneme-li k faktu, že volby patří mezi základní nástroje liberální
  demokracie, tedy řízení společnosti v civilizovaném světě a zároveň se
  jejich průběh zdokonaluje již od dob antického Řecka.
- Je možné takovýto informační systém jednoduše navrhnout a implementovat
- ?
+ Pokusím se na tuto otázku podívat podrobněji.
 \end_layout
 
 \begin_layout Section
@@ -727,12 +727,12 @@ Důvod výběru tématu
 \begin_layout Standard
 Hlavním důvodem výběru tohoto tématu je osobní zájem autora na problematice
  voleb, volebních systému a elektronických volebních systémů.
- K tomuto tématu má autor i praktický vztah neboť byl v roce 2012 členem
+ K tomuto tématu má autor i praktický vztah, neboť byl v roce 2012 členem
  volební komise Strany svobodných občanů.
  Výkon této funkce přinesl autorovi mnoho poznatků.
  Převážně to, že elektronické volby jsou velice komplexní problém, při kterém
- je potřeba propojit znalosti z politologické vědy a informačních technologií.
- Což jsou vědní obory sobě velice vzdálené a při řešení tohoto tématu je
+ je potřeba propojit znalosti z politologické vědy a informačních technologií,
+ což jsou vědní obory sobě velice vzdálené a při řešení tohoto tématu je
  nutné zachovat interdisciplinární přístup mezi nimi.
 \end_layout
 
@@ -754,7 +754,7 @@ Téma práce se skládá ze dvou navazujících celků.
  Z těchto znalostí je odvozena i část druhá praktická, jež se zabývá implementac
 í elektronických voleb ve Straně svobodných občanů.
  Tato část se nezabývá pouze implementací elektronických voleb, nýbrž i
- prozkoumání voleb ve straně Svobodných občanů z hlediska procesního pohledu.
+ prozkoumání voleb ve Straně svobodných občanů z hlediska procesního pohledu.
 \end_layout
 
 \begin_layout Standard
@@ -809,7 +809,7 @@ Komparace elektronických voleb a voleb klasických (volby realizované za
 \end_layout
 
 \begin_layout Standard
-V praktické části této práce se autor zaměřuje na svoji vlastní řešení a
+V praktické části této práce se autor zaměřuje na svoje vlastní řešení a
  následující očekávané výstupy jsou:
 \end_layout
 
@@ -831,14 +831,20 @@ Zhodnocení vhodnosti užití implementace pro Stranu svobodných občanů pro
 \end_layout
 
 \begin_layout Chapter
+\begin_inset CommandInset label
+LatexCommand label
+name "chap:Volby-a-volební"
+
+\end_inset
+
 Volby a volební systémy
 \end_layout
 
 \begin_layout Standard
-Volby reprezentují způsob vybrání jedince případně skupiny jedinců, jež
- na jejich základě získá mandát.
+Volby reprezentují způsob vybrání jedince případně skupiny jedinců, na jejichž
+ základě získá mandát.
  Takovýto mandát slouží k vykonávání moci, která rozhoduje o dalším vývoji
- oblasti v které se hlasování konalo.
+ oblasti, ve které se hlasování konalo.
 \begin_inset CommandInset citation
 LatexCommand cite
 after "str. 13"
@@ -846,7 +852,7 @@ key "volebni_systemy"
 
 \end_inset
 
- Zároveň jsou základním předpokladem demokracie.
+ Zároveň je základním předpokladem demokracie.
  V této práci se autor bude zabývat především svobodnými volbami.
  To jsou takové volby, ve kterých jsou respektována lidská práva a svobody,
  především respektování práva účastnit se voleb aktivně i pasivně.
@@ -863,7 +869,7 @@ key "uvod_do_politike_vedy"
 \end_layout
 
 \begin_layout Standard
-Svobodné a poctivé volby musí splňovat tři základní principy, těmi jsou:
+Svobodné a poctivé volby musejí splňovat tři základní principy, těmi jsou:
 \end_layout
 
 \begin_layout Itemize
@@ -872,15 +878,15 @@ princip soutěživosti -- Tento princip znamená, že volič musí mít možnost
 \end_layout
 
 \begin_layout Itemize
-princip pravidelnosti -- Princip periodického opakování voleb v předem stanovený
-ch termínech.
+princip pravidelnosti -- Princip periodického opakování voleb předem stanovených
+ termínech.
 \end_layout
 
 \begin_layout Itemize
 princip definitivnosti -- Pro splnění tohoto principu, je nutný předpoklad,
  že všichni účastníci voleb akceptují jejich výsledek.
  Týká se to především pasivních účastníků volby, kteří musí akceptovat,
- že vítězství ve volbě možné pouze prostřednictvím další volby.
+ že vítězství ve volbě je možné pouze prostřednictvím další volby.
 \end_layout
 
 \begin_layout Standard
@@ -889,13 +895,19 @@ Hlavními cíli voleb je vznik reprezentace moci a dosažení shody mezi takovou
 \end_layout
 
 \begin_layout Section
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Volební-systém"
+
+\end_inset
+
 Volební systém
 \end_layout
 
 \begin_layout Standard
-Volby probíhají dle předem stanovených stanovených pravidel, takováto pravidla
- vytvářejí volební systém.
- Tyto pravidla můžeme rozdělit do tří skupin.
+Volby probíhají dle předem stanovených pravidel.
+ Takováto pravidla vytvářejí volební systém.
+ Tato pravidla můžeme rozdělit do tří skupin.
 \begin_inset CommandInset citation
 LatexCommand cite
 after "str. 271"
@@ -919,6 +931,12 @@ volební procedura
 \end_layout
 
 \begin_layout Subsection
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:Volební-proces"
+
+\end_inset
+
 Volební proces
 \end_layout
 
@@ -946,7 +964,7 @@ interprety výsledku volby
 \end_layout
 
 \begin_layout Standard
-Etapa z pohledu pasivního účastníka volby je procesem týkající se určení
+Etapa z pohledu pasivního účastníka volby je procesem týkajícím se určení
  účastníka, registrace účastníka do volby a stanovení časového intervalu,
  kdy je možné pasivního účastníka volby registrovat.
  Další etapou je organizace voleb, tj.
@@ -971,6 +989,12 @@ key "uvod_do_politike_vedy"
 \end_layout
 
 \begin_layout Subsection
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:Volební-právo"
+
+\end_inset
+
 Volební právo
 \end_layout
 
@@ -1002,9 +1026,9 @@ Volební právo lze rozdělit na subjektivní a objektivní složku.
  Objektivní složkou volebního práva se rozumí souhrn organizačních pravidel,
  které zajišťují průběh volebního procesu, zde toto právo dělíme na aktivní
  a pasivní.
- Tedy aktivní volební právo umožňuje člověku se stát aktivním účastníkem
- volby tedy jeho právo volit, zatímco pasivní umožňuje pasivnímu účastníkovy
- volby být volen.
+ Aktivní volební právo umožňuje člověku stát se aktivním účastníkem volby
+ tedy jeho právo volit, zatímco pasivní umožňuje pasivnímu účastníkovy volby
+ kandidovat a být volen.
 \end_layout
 
 \begin_layout Standard
@@ -1018,7 +1042,7 @@ Subjektivní složka reprezentuje obecný a politický princip konání svobodn�
 
 \begin_layout Standard
 Principem všeobecného volebního práva je myšlenka, že všichni občané jsou
- si rovni a nemohou být zbaveni práva na veřejný popř.
+ si rovni a nemohou být zbaveni práva na veřejný, popř.
  politický život.
  Ve všeobecnosti to tedy znamená, že není možné vyloučit účastníka volby
  na základě kritérií, jakými jsou národnost, pohlaví, rasa, povolání a úroveň
@@ -1087,6 +1111,12 @@ key "volebni_systemy"
 \end_layout
 
 \begin_layout Subsection
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:Volební-procedura"
+
+\end_inset
+
 Volební procedura
 \end_layout
 
@@ -1118,12 +1148,18 @@ ní a smíšené.
 \end_layout
 
 \begin_layout Subsubsection
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:Většinové-volební-systémy"
+
+\end_inset
+
 Většinové volební systémy
 \end_layout
 
 \begin_layout Standard
-Způsob přepočtu hlasů ve většinovém volební systému na mandáty vychází z
- pravidla vítěz bere vše.
+Způsob přepočtu hlasů ve většinovém volebním systému na mandáty vychází
+ z pravidla vítěz bere vše.
 \begin_inset CommandInset citation
 LatexCommand cite
 after "str. 26"
@@ -1131,9 +1167,9 @@ key "volebni_systemy"
 
 \end_inset
 
- Jestliže se jedná o prostý většinový systém pak stačí k vítězství kandidáta
+ Jestliže se jedná o prostý většinový systém, pak stačí k vítězství kandidáta,
  popř.
- politické strany získat největší počet hlasů.
+ politické strany, získat největší počet hlasů.
  Další možností k přepočtu hlasů na mandáty je princip absolutní většiny,
  kdy vítěz musí dosáhnout hodnoty minimálně jedné poloviny odevzdaných hlasů
 \begin_inset Foot
@@ -1155,6 +1191,12 @@ Takový princip je používán například v druhém kole voleb do horní komory
 \end_layout
 
 \begin_layout Subsubsection
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:Proporční-volební-systémy"
+
+\end_inset
+
 Proporční volební systémy
 \end_layout
 
@@ -1165,7 +1207,7 @@ h mandátů a získaných hlasů.
  by měl být shodný s relativním počtem obdržených mandátů.
  Takové systémy se používají převážně ve vícemandátových volebních obvodech
  za použití kandidátních listin.
- Za autory proporčního volebního systému jsou považování matematikové Jaen
+ Za autory proporčního volebního systému jsou považováni matematikové Jaen
  Antoine Condorcet a Joseph Diez Cergonne.
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -1185,9 +1227,9 @@ key "volebni_systemy"
 
 \begin_layout Standard
 Metoda volebního dělitele je založena na řadách dělitelů.
- Kdy kandidátní listiny jsou v daném obvodě postupně děleny děliteli z určité
- řady až do okamkžiku, kdy je možné ze získaných podílů uspořádat počet
- hodnot, který je roven hodnotě počtu mandátů.
+ Kandidátní listiny jsou v daném obvodě postupně děleny děliteli z určité
+ řady až do okamžiku, kdy je možné ze získaných podílů uspořádat počet hodnot,
+ který je roven hodnotě počtu mandátů.
  Proběhnutí iterace dělení se nazývá skrutiniem.
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -1270,7 +1312,7 @@ key "uvod_do_politike_vedy"
 
 \end_inset
 
-.
+ Jedná se o kvóty:
 \end_layout
 
 \begin_layout Itemize
@@ -1330,16 +1372,23 @@ Kdy
 \begin_inset Formula $S$
 \end_inset
 
- je počtem mandátů připadajících na volební obvod 
+ je počtem mandátů připadajících na volební obvod.
+ 
 \end_layout
 
 \begin_layout Subsubsection
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:Semiproporční-volební-systémy"
+
+\end_inset
+
 Semiproporční volební systémy
 \end_layout
 
 \begin_layout Standard
 Semiproporční volební systémy jsou takové volební systémy, které přidělují
- mandáty kandidátům s nejvyšším počtem hlasů, ale narozdíl od většinových
+ mandáty kandidátům s nejvyšším počtem hlasů, ale na rozdíl od většinových
  volebních systémů nezachovávají pravidlo vítěz bere vše.
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -1369,11 +1418,11 @@ Kumulované hlasování
 
 \begin_layout Standard
 Bordovo hlasování někdy též označované jako bodové hlasování je takový systém,
- při kterém je každým voličem vytvořen seřazaný seznam kandidátů dle jejich
+ při kterém je každým voličem vytvořen seřazený seznam kandidátů dle jejich
  preferencí.
  Poté jsou dle předem daných pravidel přiřazeny kandidátům body.
  Vítězí kandidáti s nejvyšším součtem přiřazených bodů.
- Dle původního Bordova návrhu je jsou bodové intervaly mezi kandidáty konstatní.
+ Dle původního Bordova návrhu jsou bodové intervaly mezi kandidáty konstantní.
  Tento typ volebního systému je používán například ve volbách vedení American
  Mathematical Society.
 \begin_inset CommandInset citation
@@ -1392,7 +1441,7 @@ Schvalování/Odmítání je volební procedurou, při které je počet hlasů s
  Volič hlasuje pro kandidáta nebo proti kandidátovi.
  V tomto systému se objevuje takzvaný negativní hlas.
  Negativní hlas se započítává při odmítnutí kandidáta.
- Mandát získávájí kandidáti s nejvyšším počtem hlasů.
+ Mandát získávají kandidáti s nejvyšším počtem hlasů.
  Tento typ volebního systému je v mnoha demokratických státech protiústavní,
  protože nezachovává přímost a rovnost volby.
  Ve světě se používá nejčastěji ve volbách do představenstev profesních
@@ -1431,14 +1480,20 @@ key "volebni_systemy"
 \end_layout
 
 \begin_layout Section
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Volby-z-pohledu"
+
+\end_inset
+
 Volby z pohledu mezinárodního práva
 \end_layout
 
 \begin_layout Standard
 Konání voleb je závazkem každého demokratického státu.
- Jejich vlastnosti vycházejí z úmluvy o ochraně lidských práv a základních
+ Jejich vlastnosti vycházejí z Úmluvy o ochraně lidských práv a základních
  svobod sjednané v rámci Rady Evropy roku 1950.
- Tato úmluva říká, že volby se musjí konat v rozumných intervalech s tajným
+ Tato Úmluva říká, že volby se musí konat v rozumných intervalech s tajným
  hlasováním za podmínek, které zajistí svobodné vyjádření názorů lidu při
  volbě zákonodárného sboru.
 \begin_inset CommandInset citation
@@ -1456,7 +1511,7 @@ V rámci Rady Evropy byla založena Komise pro demokracie prostřednictvím
  Tato komise se zabývá základními demokratickými principy, tedy i volbami.
  Benátská komise vydala kodex osvědčených postupů v oblasti volebních záležitost
 í.
- Tento kodex, výchází z úmluvy o ochraně lidských práv a základních svobod
+ Tento kodex, vychází z Úmluvy o ochraně lidských práv a základních svobod
  a definuje šest základních principů volebního práva:
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -1484,12 +1539,12 @@ Svobodu -- Svobodné volby musejí zachovat názory voličů a možnost prověř
 
 \begin_layout Itemize
 Tajnost -- Zachování principu tajnosti spočívá v individualistickém rozhodnutí
- voliče, přičemž jeho udělené hlasy a informace o jeho zůčastnění se voleb
+ voliče, přičemž jeho udělené hlasy a informace o jeho zúčastnění se voleb
  musejí zůstat tajné.
 \end_layout
 
 \begin_layout Itemize
-Přímost -- Princip přimostí říká, že legislativní složka moci státu a komunální
+Přímost -- Princip přímosti říká, že legislativní složka moci státu a komunální
  zastoupení moci se volí vždy přímo.
 \end_layout
 
@@ -1497,6 +1552,10 @@ Přímost -- Princip přimostí říká, že legislativní složka moci státu a
 Četnost -- Tento princip zahrnuje, že volby musejí být opakovány v pravidelných
  intervalech a funkční období legislativní složky moci státu nesmí překročit
  dobu pěti let.
+\end_layout
+
+\begin_layout Chapter
+Elektronické volby
 \end_layout
 
 \begin_layout Bibliography
