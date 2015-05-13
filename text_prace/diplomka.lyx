@@ -14,7 +14,7 @@
 \hypersetup{   % Nastavení polí PDF dokumentu 
 pdftitle={Diplomová práce},%   
 pdfauthor={Pavel Štross},%  
-pdfsubject={},%   
+pdfsubject={Elektronické volby a jejich implementace ve Straně svobodných občanů},%   
 pdfkeywords={\v{s}ablona,LaTeX,LyX}%                             
 }
 \usepackage{multicol}
@@ -1016,7 +1016,7 @@ reference "sub:Volební-procedura"
  století, kdy byl tento způsob zaveden katolickou církví při volbě papeže.
  Jednalo se o hlasovací lístky, které nebyly ještě předtištěné, ale tehdejší
  volič jméno svého kandidáta napsal na lístek a vhodil jej do volební urny.
- Obdobný způsob hlasování jaký známe nyní byl zaveden až v roce 1858, kdy
+ Obdobný způsob hlasování jaký známe nyní byl, zaveden až v roce 1858, kdy
  byly použity předtištěné jednotné hlasovací lístky.
  Na těchto lístcích voliči označili voleného kandidáta, vložili lístky do
  obálky, kterou pak vhodili do volební urny.
@@ -1045,8 +1045,8 @@ Příprava voleb je započata vyhlášením voleb, kdy jsou stanoveny i lhůty
  seznam a celkový počet oprávněných voličů.
  Dále je nutné zajistit obálky s hlasovacími lístky a jejich distribuci
  jednotlivým voličům, příp.
- zajistit možnost volby voličům jenž nemohou se nemohou dostavit v den voleb
- dostavit do místa volby.
+ zajistit možnost volby voličům, kteří se nemohou v den voleb dostavit do
+ místa volby.
  To lze zajistit vydáním voličského průkazu pro voliče nebo použitím metody
  korespondencního hlasování viz část 
 \begin_inset CommandInset ref
@@ -1118,7 +1118,7 @@ Volební právo lze rozdělit na subjektivní a objektivní složku.
  Objektivní složkou volebního práva se rozumí souhrn organizačních pravidel,
  které zajišťují průběh volebního procesu, zde toto právo dělíme na aktivní
  a pasivní.
- Aktivní volební právo umožňuje člověku stát se aktivním účastníkem volby
+ Aktivní volební právo umožňuje člověku stát se aktivním účastníkem volby,
  tedy jeho právo volit, zatímco pasivní umožňuje pasivnímu účastníkovi volby
  kandidovat a být volen.
 \end_layout
@@ -1136,9 +1136,8 @@ Subjektivní složka reprezentuje obecný a politický princip konání svobodn�
 Principem všeobecného volebního práva je myšlenka, že všichni občané jsou
  si rovni a nemohou být zbaveni práva na veřejný, popř.
  politický život.
- Ve všeobecnosti to tedy znamená, že není možné vyloučit účastníka volby
- na základě kritérií, jakými jsou národnost, pohlaví, rasa, povolání a úroveň
- vzdělání.
+ Ve všeobecnosti to znamená, že není možné vyloučit účastníka volby na základě
+ kritérií, jakými jsou národnost, pohlaví, rasa, povolání a úroveň vzdělání.
  Tento princip je však porušen v rámci volebních censů.
  V dnešní době zbyly censy dva a to census teritoriální příslušnosti
 \begin_inset Foot
@@ -1173,8 +1172,7 @@ Dalším principem je rovnost volebního práva.
  mandátem a počtem hlasů, tedy kolik hlasů je potřeba k získání jednoho
  mandátu.
  Formální způsob je princip rovnosti hlasů z pohledu aktivních účastníků.
- Znamená to tedy, že každý aktivní účastník má k dispozici stejný počet
- hlasů.
+ Znamená to, že každý aktivní účastník má k dispozici stejný počet hlasů.
 \begin_inset CommandInset citation
 LatexCommand cite
 key "uvod_do_politike_vedy"
@@ -1290,8 +1288,8 @@ Takový princip je používán například v druhém kole voleb do horní komory
 .
  Nejméně používaným většinovým volebním systémem je však systém alternativního
  hlasování, při kterém voliči mají k dispozici počet hlasů shodný s počtem
- kandidátů a udělují jím preference, vítězí kandidát s nejvyššími přidělenými
- preferencemi.
+ kandidátů a udělují jím preference.
+ Vítězí kandidát s nejvyššími přidělenými preferencemi.
 \end_layout
 
 \begin_layout Subsubsection
@@ -2006,9 +2004,9 @@ ie.
 
 \begin_layout Standard
 Vzhledem k tomu, že se tento typ voleb liší velice málo proti klasickým
- volbám považuji za jeho nevýhodu podobné náklady, které mohou být i vyšší
- v případě varianty s centrálním úložistěm, neboť je nutné zajistit i datový
- komunikační kanál pro přenos hlasů.
+ volbám, autor považuje za jeho nevýhodu podobné náklady, které mohou být
+ i vyšší v případě varianty s centrálním úložistěm, neboť je nutné zajistit
+ i datový komunikační kanál pro přenos hlasů.
  Další možným rizikem je možnost kompromitace hlasovacího zařízení škodlivým
  kódem.
 \end_layout
@@ -2035,7 +2033,7 @@ key "sindelar_elektronicke_volby"
 \begin_layout Standard
 Takovýto typ elektronických voleb není závislý na fyzickém místě při provedení
  samotného aktu volby.
- Z toho vypl7vá největší výhoda tohoto typu, protože zvyšuje komfort pro
+ Z toho vyplívá největší výhoda tohoto typu, protože zvyšuje komfort pro
  voliče, a to zejména z časových důvodů.
  Volič může volit v jakýkoliv čas a z jakéhokoliv místa.
  V dloudobém časovém horizontu je při tomto typu elektronických voleb snížení
@@ -2095,7 +2093,7 @@ Porovnání různých typů elekronických voleb
 V této části autor porovnává výhody a nevýhody výše zmíněných řešení elektronick
 ých voleb.
  K tomuto porovnání je využita vicekriteriální analýza, ve které jsou jednotlivý
-m faktorům přiřazené diskrétní čísla v oboru hodnot od jedné do deseti.
+m faktorům přiřazená diskrétní čísla v oboru hodnot od jedné do deseti.
  Hodnota deset zde znázorňuje nejvyšší možný užitek daného řešení.
  Tato analýza je zobrazena v tabulce 
 \begin_inset CommandInset ref
@@ -2146,14 +2144,14 @@ Transparentnost volby -- Složitost a potřeba odbornosti pro pochopení vnitřn
 
 \begin_layout Itemize
 Přístupnost pro handicapované -- Možnost zúčastnit se voleb pro handicapované
- jedince bez nutnosti asistence a tím i možná zvýšení účasti handicapovaných
+ jedince bez nutnosti asistence, a tím i možná zvýšení účasti handicapovaných
  voličů v jednotlivých volbách.
 \end_layout
 
 \begin_layout Itemize
 Pochopení volebního mechanismu laickou veřejností -- Potřeba porozumění
- voliče postupu ve volebního mechanismu při udělení hlasu a ochota voliče
- naučit se a využít jiný posstup při hlasování.
+ voliče postupu volebního mechanismu při udělení hlasu a ochota voliče naučit
+ se a využít jiný posstup při hlasování.
  
 \end_layout
 
@@ -2553,6 +2551,274 @@ Porovnání různých typů elektronických voleb
 \end_layout
 
 \begin_layout Section
+Technologie používaná v elektronických volbách
+\end_layout
+
+\begin_layout Standard
+V této části kapitoly se autor zabývá informačními technologiemi a principy
+ informačních technologií používaných v implementacích elektronických voleb.
+\end_layout
+
+\begin_layout Subsection
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:Asymetrická-kryptografie"
+
+\end_inset
+
+Asymetrická kryptografie
+\end_layout
+
+\begin_layout Standard
+Asymetrická kryptografie (označovaná někdy jako asymetrické šifrování) je
+ založena na principu vlastností matematických funkcí, které lze vypočítat
+ pouze v jednom směru.
+ To znamená, že máme-li definovanou funkci 
+\begin_inset Formula $y=f(x)$
+\end_inset
+
+, kdy při jejím použití lze jednoduchým výpočtem získat ze vstupní hodnoty
+ 
+\begin_inset Formula $x$
+\end_inset
+
+ výstupní hodnotu 
+\begin_inset Formula $y$
+\end_inset
+
+, což znamená že takováto funkce je řešitelná v reálném čase.
+ Aby mohla být tato funkce využita pro asymetrickou kryptografii je nutné
+ zvolit takovou funkci, jejíž inverzní funkce 
+\begin_inset Formula $f^{-1}$
+\end_inset
+
+ je v reálném čase neřešitelná.
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+after "str. 51"
+key "aplikovana_kryptografie"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+V asymetrické kryptografii je pro šifrování použit princip dvou klíčů, kdy
+ jeden je určen vždy pro zašifrování zprávy a druhým klíčem je možné zprávu
+ pouze dešifrovat.
+ Jedná se o tyto klíče:
+\end_layout
+
+\begin_layout Itemize
+Veřejný klíč -- Jehož hodnota je veřejně známa.
+\end_layout
+
+\begin_layout Itemize
+Privátní klíč -- Hodnota privátního klíče je známa pouze majiteli klíče
+ či vydávající entitě.
+\end_layout
+
+\begin_layout Standard
+Veřejný klíč se používá pro zašifrování zprávy a privátní pro dešifrování
+ zprávy.
+ Pokud chce uživatel komunikovat pomocí šifrovaného přenosu, musí vygenerovat
+ privátní a veřejný klíč.
+ Veřejný klíč poskytne ostatním uživatelům, kteří na jeho základě šifrují
+ zprávu.
+ Takovouto zprávu mohou poslat nezabezpečeným kanálem, neboť její dešifrování
+ je možné pouze pomocí privátního klíče, který vlastní pouze uživatel, jenž
+ je příjemcem zprávy.
+\begin_inset CommandInset citation
+LatexCommand cite
+after "str. 52"
+key "aplikovana_kryptografie"
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Existuje mnoho způsobů a metod asymetrického šifrování, jejich společná
+ charakteristika je, že jsou založeny na jednocestných funkcích.
+ Mezi takové funkce řadíme například funkce řešící problém faktorizace čísla
+ nebo výpočet diskrétního logaritmu.
+ (Používá Deffie-Hellman systém).
+ Existují i další funkce používané v asymetrické kryptografii, nicméně v
+ praxi jsou nejpoužívanější tyto zmíněné.
+\begin_inset CommandInset citation
+LatexCommand cite
+after "str. 110"
+key "aplikovana_kryptografie"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Nejčastěji je v asymetrické kryptografii užíván systém RSA.
+ Jeho název pochází z prvních písmen jmen tvůrců systému (Rivest, Shamir,
+ Adelman).
+ RSA používá v jednosměrné funkci 
+\begin_inset Formula $f$
+\end_inset
+
+ součin dvou velkých po sobě následujících prvočísel (úloha typu P).
+ Abychom v inverzní funkci nalezli tento součin je nutné nalézt výstupní
+ hodnotu inverzní funkce 
+\begin_inset Formula $f$
+\end_inset
+
+
+\begin_inset Formula $^{-1}$
+\end_inset
+
+, což je v tomto případě faktorizace výstupní hodnoty funkce 
+\begin_inset Formula $f$
+\end_inset
+
+ (úloha typu NP).
+\end_layout
+
+\begin_layout Subsection
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:Digitální-podpis"
+
+\end_inset
+
+Digitální podpis
+\end_layout
+
+\begin_layout Standard
+Digitální podpis (Digital Signature) je systém autentizace pro ověřování
+ pravosti dat.
+ Využívá principů asymetrické kryptografie, ale v inverzním smyslu.
+ Při digitálním podepisování uživatel podepisuje data svým soukromým klíčem
+ a za pomocí veřejného klíče se ověřuje autentičnost těchto dat.
+\begin_inset CommandInset citation
+LatexCommand cite
+after "str. 52"
+key "aplikovana_kryptografie"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Autentičnost je ověřena takovým způsobem, že odesílatel dat k nim přiloží
+ a zašifruje zprávu (svůj podpis) svým soukromým klíčem.
+ Tuto přiloženou zprávu zveřejní a příjemce jí pomocí veřejného klíče dešifruje.
+ Pokud je zveřejněná zpráva totožná s dešifrovanou, pak je možné potvrdit
+ autentičnost odeslaných dat.
+\end_layout
+
+\begin_layout Subsection
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:Hash"
+
+\end_inset
+
+Hash
+\end_layout
+
+\begin_layout Standard
+Hash, označován také jako otisk nebo kontrolní součet, je výstupní hodnota
+ 
+\begin_inset Formula $y$
+\end_inset
+
+ z použití jednosměrné funkce 
+\begin_inset Formula $y=f(x)$
+\end_inset
+
+.
+ Tato funkce je charakterizována následujícími vlastnostmi
+\begin_inset CommandInset citation
+LatexCommand cite
+after "str. 54"
+key "aplikovana_kryptografie"
+
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Itemize
+Různé vstupy 
+\begin_inset Formula $x$
+\end_inset
+
+ funkce 
+\begin_inset Formula $f(x)$
+\end_inset
+
+ mohou mít libovolnou délku, zároveň výstupní hodnota 
+\begin_inset Formula $y$
+\end_inset
+
+ funkce 
+\begin_inset Formula $f(x)$
+\end_inset
+
+ musí nabývat konstantní délky.
+\end_layout
+
+\begin_layout Itemize
+Výstupní hodnota 
+\begin_inset Formula $y$
+\end_inset
+
+ funkce 
+\begin_inset Formula $f(x)$
+\end_inset
+
+ musí být vždy unikátní, nesmí tedy nastat kolize.
+ To znamená, že pro různé vstupní hodnoty 
+\begin_inset Formula $x$
+\end_inset
+
+ nemůže nastat shodnost výstupních hodnot 
+\begin_inset Formula $y$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Nejčastější případ použití hashů je při porovnávání dat a ověřování jejich
+ autentičnosti, kdy je nežádoucí, aby byla známa znalost těchto dat při
+ jejich porovnání.
+ Při ověřování autentičnosti jsou vždy porovnávány hodnoty hashů, tedy máme-li
+ data 
+\begin_inset Formula $x$
+\end_inset
+
+ a 
+\begin_inset Formula $x'$
+\end_inset
+
+ a jejich hashe 
+\begin_inset Formula $h=f(x)$
+\end_inset
+
+ a 
+\begin_inset Formula $h^{'}=f(x^{'})$
+\end_inset
+
+, pak pro autentičnost těchto dat musí platit vztah 
+\begin_inset Formula $h=h^{'}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
 Realizované elektronické volby
 \end_layout
 
@@ -2575,7 +2841,7 @@ Estonsko
 Estonská republika byla prvním státem jež realizovala elektronické volby
  nekontrolovaném prostoru v celostátním rozsahu.
  V Estonsku probíhají elektronické volby zároveň s klasickými, a to z důvodů
- obav Estonských vlád, že by mohli být elektronické volby kompromitovány.
+ obav estonských vlád, že by mohli být elektronické volby kompromitovány.
  Proto elektronické volby z časového hlediska probíhají před klasickými
  volbami.
  Zároveň volič může v klasických volbách změnit své rozhodnutí, při kterém
@@ -2620,7 +2886,7 @@ Volič se identifikuje na základě digitálního certifikátu, který je vlože
 
 \begin_layout Itemize
 Po identifikaci voliče, je zobrazen ve webové stránce konsolidovaný seznam
- kandidátu v jeho volebním okrsku, dle trvalého pobytu voliče.
+ kandidátů v jeho volebním okrsku, dle trvalého pobytu voliče.
 \end_layout
 
 \begin_layout Itemize
@@ -2646,7 +2912,7 @@ Volič může změnit své rozhodnutí ve volbě do čtvrtého dne před sečten
 
 \begin_layout Standard
 Estonské elektronické volby jsou z konceptuálního hlediska velice podobné
- korespodenčnímu hlasování
+ korespondenčnímu hlasování
 \begin_inset Foot
 status collapsed
 
@@ -2674,7 +2940,7 @@ key "zakon_o_obchodnich_korporacich"
 
 , které je využito v případě, pokud volič volí v jiné volební místnosti,
  než ve volební místnosti mu určené na základě jeho trvalého pobytu.
- Část volebního procesu je pomocí korespodenční metody je definována takto
+ Část volebního procesu je pomocí korespondenční metody definována takto
  
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -2686,12 +2952,12 @@ key "e_voting_estonsko"
 \end_layout
 
 \begin_layout Enumerate
-Volič se identifikuje volební komisi
+Volič se identifikuje volební komisi.
 \end_layout
 
 \begin_layout Enumerate
 Volič zvolí preferovaného kandidáta na volebním lístku a ten následně vloží
- do obálky
+ do obálky.
 \end_layout
 
 \begin_layout Enumerate
@@ -2751,8 +3017,16 @@ key "e_voting_estonsko"
 \end_layout
 
 \begin_layout Standard
-Narozdíl od použití papírových obálek v korespondenčním hlasování používá
- systém elektronických voleb vlasností asymetrické kryptografie.
+Na rozdíl od použití papírových obálek v korespondenčním hlasování používá
+ systém elektronických voleb vlastností asymetrické kryptografie.
+ Viz 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sub:Asymetrická-kryptografie"
+
+\end_inset
+
+.
  Volič podepíše svůj hlas veřejným klíčem elektronického volebního systému
  a výsledná data opět podepíše, ale svým privátním klíčem.
  Podobnost s korespondenčním hlasováním ilustruje obrázek 
@@ -2763,14 +3037,14 @@ reference "fig:Znázornění-elektronických-voleb-pomocí-korespondenčního-hl
 \end_inset
 
 .
- Hlasy jsou v systému elektronických voleb setříděny, poodebrány neplatné
+ Hlasy jsou v systému elektronických voleb setříděny, odebrány neplatné
  hlasy, kdy za platný hlas je voličovo rozhodnutí, které je na časové ose
  nejblíže k času ukončení voleb a zahájení sčítání hlasů.
  Z vnějších obálek je sestaven seznam voličů, jež hlasovali pomocí systému
- elektronických voleb a poté jsou otevřeny.
- Obsah otevřených vnějsích obálek tedy vnitřní obálka je přeposlána části
- systému, určené pro sčítání hlasů, která obsahuje privátní klíč elektronického
- volebního systému.
+ elektronických voleb, a poté jsou otevřeny.
+ Obsah otevřených vnějších obálek, tedy vnitřní obálka, je přeposlána části
+ systému, určenému pro sčítání hlasů, která obsahuje privátní klíč elektronickéh
+o volebního systému.
  Tato část dešifruje obsah obálek a sečte hlasy kandidátů udělené pomocí
  elektronických voleb.
 \begin_inset CommandInset citation
@@ -2801,8 +3075,8 @@ Architektura systému
 \end_layout
 
 \begin_layout Standard
-Architektura systému elektronických voleb v Estonsku se skládá čtyř vzájemně
- propojených částí jejich vazby jsou znázorněny na obrázku 
+Architektura systému elektronických voleb v Estonsku se skládá ze čtyř vzájemně
+ propojených částí, jejich vazby jsou znázorněny na obrázku 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:Architektura-elektronických-voleb-estonsko"
@@ -2859,15 +3133,15 @@ key "e_voting_estonsko"
 \end_layout
 
 \begin_layout Itemize
-Rozhrání pro voliče -- Toto rozhraní je implementováno pomocí webové aplikace.
+Rozhraní pro voliče -- Toto rozhraní je implementováno pomocí webové aplikace.
  Z technologického hlediska se jedná o ActiveX applet podepsaný Národní
  Volební Komisí, který je nahrán do WWW prohlížeče voliče a umožňuje voliči
- zašifrovar a podepsat svůj hlas.
+ zašifrovat a podepsat svůj hlas.
 \end_layout
 
 \begin_layout Itemize
-Centrální systém -- Příjmá data z výše zmíněné volební aplikace, které následně
- zpracovává.
+Centrální systém -- Přijímá data z výše zmíněné volební aplikace, která
+ následně zpracovává.
  Výstupem této části jsou spočítané hlasy kandidátů.
  Tento systém se skládá ze tří částí.
 \end_layout
@@ -2877,23 +3151,23 @@ Centrální systém -- Příjmá data z výše zmíněné volební aplikace, kte
 Vote Forwarding Server (VFS) -- Z technologického principu se jedná a autentizač
 ní proxy server, který ověří identitu voliče a podepsanou obálku s daty
  přepošle na Vote Storage Server.
- Při ověřování identity se VFS dotazuje dotazuje do databází voličů a kandidátů.
+ Při ověřování identity se VFS dotazuje do databází voličů a kandidátů.
  
 \end_layout
 
 \begin_layout Itemize
-Vote Storage Server (VSS) -- Příjmá data z Vote Forwarding Serveru a ukládá
+Vote Storage Server (VSS) -- Přijímá data z Vote Forwarding Serveru a ukládá
  je.
- Po ukončení hlasování jsou v této databázi zpracovány data dávkově.
+ Po ukončení hlasování jsou v této databázi zpracována data dávkově.
  Nejprve jsou data očištěna.
  Pod očištěním dat autor práce rozumí odstranění neplatných hlasů voličů,
- kteří opakovali volbu jak elektronicky tak klasickým způsobem.
- Následně jsou dávkovou procedurou otevřeny vnější obálky a připraveny data
+ kteří opakovali volbu jak elektronicky, tak klasickým způsobem.
+ Následně jsou dávkovou procedurou otevřeny vnější obálky a připravena data
  pro přenesení do Vote Counting Application.
 \end_layout
 
 \begin_layout Itemize
-Vote Counting Application (VCA) -- Tato část jako svůj vstup příjmá očištěná
+Vote Counting Application (VCA) -- Tato část jako svůj vstup přijímá očištěná
  data z Vote Storage Serveru a privátní klíč systému.
  Na základě tohoto vstupu dešifruje hlasy voličů, sečte je a vygeneruje
  sestavu dat pro interpretaci volebního výsledku.
@@ -2902,7 +3176,7 @@ Vote Counting Application (VCA) -- Tato část jako svůj vstup příjmá očiš
 
 \end_deeper
 \begin_layout Itemize
-Správa klíčů -- Jedná se o způsob zacházení s šifrovacími klíči v elektronickém
+Správa klíčů -- Jedná se o způsob zacházení se šifrovacími klíči v elektronickém
  volebním systému.
 \end_layout
 
@@ -2944,7 +3218,7 @@ Pod pojmem fyzický datový nosič si můžeme představit taková média jakým
 \end_layout
 
 \begin_layout Subsubsection
-Průběh volebního procesu při použítí elektronického volebního systému
+Průběh volebního procesu při použití elektronického volebního systému
 \end_layout
 
 \begin_layout Standard
@@ -2969,7 +3243,7 @@ Personal identification Code (Osobní identifikační kód občana) je v Estonsk
 
  je vyhledán v příslušném seznamu voličů a VFS předá klientské části aplikace
  seznam kandidátů ve voličově obvodu.
- V případě, že volič již jednou volil je v tomto kroku o jeho předchozí
+ V případě, že volič již jednou volil, je v tomto kroku o jeho předchozí
  volbě informován.
 \end_layout
 
@@ -3029,7 +3303,7 @@ Zkompromitování či zveřejnění privátního klíče systému -- Kompromitac
 
 \begin_layout Itemize
 Ztráta nebo porušení integrity privátního klíče systému -- Nemožnost dešifrovat
- výsledky voleb Národní Volební Komisí a tím je celé zneplatnit.
+ výsledky voleb Národní Volební Komisí, a tím je celé zneplatnit.
 \end_layout
 
 \begin_layout Standard
@@ -3039,8 +3313,8 @@ y HSM (Hardware Security Module) zařízením
 status collapsed
 
 \begin_layout Plain Layout
-HSM zařízení je zařízení pro generování a správu klíčů, generování klíče
- v těchto zařízeních je již implementováno v hardwaru zařízení.
+HSM je zařízení pro generování a správu klíčů, generování klíče v těchto
+ zařízeních je již implementováno v hardwaru zařízení.
  HSM zařízení se vyskytují ve formě přídavných karet do počítačů nebo čistě
  externí s možností přímého propojení s počítačem.
 \end_layout
@@ -3057,8 +3331,8 @@ key "e_voting_estonsko"
 
 \end_inset
 
- Po zákoné lhůtě pro podání žaloby pro neregulérnost voleb a v případě,
- že takováta žaloba nebyla podána je privátní klíč vždy zničen.
+ Po zákonné lhůtě pro podání žaloby pro neregulérnost voleb a v případě,
+ že takováta žaloba nebyla podána, je privátní klíč vždy zničen.
 \end_layout
 
 \begin_layout Subsubsection
@@ -3068,7 +3342,15 @@ Audit elektronických voleb
 \begin_layout Standard
 Audit elektronických voleb spočívá v kontrole integrity dat, z různých částí
  systému, aby byl zachován princip tajnosti voleb je u dat týkající se hlasů
- voliče používán hash(otisk) těchto dat.
+ voliče používán hash (viz.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sub:Hash"
+
+\end_inset
+
+) těchto dat.
  Pro umožnění auditu voleb systém generuje několik logů, z každé jeho části.
  Obsah logů a jejich význam ilustruje tabulka 
 \begin_inset CommandInset ref
@@ -3376,6 +3658,45 @@ key "e_voting_estonsko"
 
 \end_layout
 
+\begin_layout Subsubsection
+Zhodnocení realizace elektronických voleb v Estonsku
+\end_layout
+
+\begin_layout Standard
+Vzhledem k tomu, že estonský systém elektronických voleb vychází z korespondenčn
+ího hlasování, které je ověřené desetiletími praktického užívání v mnoha
+ evropských státech, považuje jej autor jako velice zdařilý způsob realizace
+ elektronických voleb.
+ Jako mimořádnou výhodu vidí autor v možnosti opakování volby voliče, která
+ v této realizaci řeší zachování principu svobodné volby.
+ Za hlavní nevýhodu považuji způsob implementace tohoto elektronického volebního
+ systému, neboť byla vyvíjena soukromým sektorem jako individuální aplikační
+ software
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Individuální aplikační Software (IASW) je takový software, který je vytvořen
+ přímo na míru řešeného problému, zároveň je navržen tak, aby optimálně
+ podporoval proces při řešení problému.
+\begin_inset CommandInset citation
+LatexCommand cite
+after "str. 59"
+key "Vorisek_rizeni_podnikove_informatiky"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ pro potřeby realizování elektronických voleb do parlamentu Estonské republiky.
+ U voleb na národní úrovni, ze kterých vzejde reprezentace legislativní
+ složky moci státu, by implementace jejich elektronické varianty měla být
+ určitě licencována s podmínkou otevřenosti zdrojového kódu.
+\end_layout
+
 \begin_layout Subsection
 Španělsko
 \end_layout
@@ -3411,7 +3732,7 @@ name "chap:Možnost-použítí-implementace"
 
 \end_inset
 
-Možnost použítí implementace ve volbách v České republice
+Možnost použití implementace ve volbách v České republice
 \end_layout
 
 \begin_layout Bibliography
@@ -3727,6 +4048,22 @@ http://www.egovernment.cz/archiv/PDF%204-06/4.pdf
 \begin_layout Bibliography
 \begin_inset CommandInset bibitem
 LatexCommand bibitem
+key "aplikovana_kryptografie"
+
+\end_inset
+
+Burda, Karel.
+ Aplikovaná kryptografie.
+ 1.
+ vyd.
+ Brno: VUTIUM, 2013.
+ 255 s.
+ ISBN 978-80-214-4612-0.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
 key "e_voting_estonsko"
 
 \end_inset
@@ -3804,6 +4141,23 @@ http://www.id.ee/public/The_Estonian_ID_Card_and_Digital_Signature_Concept.pdf
 \end_inset
 
 
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "Vorisek_rizeni_podnikove_informatiky"
+
+\end_inset
+
+VOŘÍŠEK, Jiří.
+ 
+\emph on
+Principy a modely řízení podnikové informatiky.
+
+\emph default
+ Praha: Oeconomica, 2008.
+ ISBN 978-80-245-1440-6.
 \end_layout
 
 \begin_layout Standard
