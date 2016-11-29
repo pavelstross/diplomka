@@ -1,0 +1,4266 @@
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass scrreprt
+\begin_preamble
+%<-------------------------------společná nastavení------------------------------>
+\usepackage[czech]{babel}%počeštění názvů (Obsah, Kapitola, Literatura atp.)
+\usepackage[]{hyperref} %odkazy v  pdf jsou klikací s barevnými rámečky
+\usepackage[numbers,sort&compress]{natbib} %balíček pro citace literatury  
+\usepackage{hypernat}%interakce mezi hyperref a natbib
+\usepackage{color}%kvůli barvám ČVUT
+\newcommand{\BibTeX}{{\sc Bib}\TeX}%BibTeX logo
+\hypersetup{   % Nastavení polí PDF dokumentu 
+pdftitle={Diplomová práce},%   
+pdfauthor={Pavel Štross},%  
+pdfsubject={Elektronické volby a jejich implementace ve Straně svobodných občanů},%   
+pdfkeywords={\v{s}ablona,LaTeX,LyX}%                             
+}
+\usepackage{multicol}
+
+
+
+
+%<-----------------------------volání stylů----------------------------------------->
+% (znak % je označení komentáře: co je za ním, není aktivní)
+%<------------------------------------písmo----------------------------------------->
+%\usepackage{packages/bc-latinmodern}
+\usepackage{packages/bc-times}
+%\usepackage{packages/bc-palatino}
+%\usepackage{packages/bc-iwona}
+%\usepackage{packages/bc-helvetika}
+
+
+%<------------------------------záhlaví stránek------------------------------------>
+%\usepackage{packages/bc-headings}
+\usepackage{packages/bc-fancyhdr}
+
+%<------------------------------hlavičky kapitol------------------------------------>
+\usepackage{packages/bc-neueskapitel}
+%\usepackage{packages/bc-fancychap}
+
+% declaration
+\newcommand{\declaration}[1]{
+\cleardoublepage
+% \normalfont
+\thispagestyle{plain}
+\vspace*{\fill}
+% \noindent
+{\chaptertitle{
+{Prohlášení}
+}}
+% \vspace{3ex}\par
+\noindent
+Prohlašuji, že jsem práci vypracoval samostatně a použil jsem pouze podklady uvedené v~přiloženém seznamu.\\
+Nemám závažný důvod proti užití tohoto školního díla ve smyslu \S 60 Zákona č.~121/2000 Sb., o právu autorském, o právech souvisejících s právem autorským a o změně některých zákonů (autorský zákon).%
+\\[15mm]
+#1 \hfill \hbox to 70mm{\tiny\dotfill}
+}
+
+% acknowledgements
+\newcommand{\acknowledgements}{
+\cleardoublepage
+\thispagestyle{plain}
+% \normalfont
+\vspace*{\fill}
+% \noindent
+{\chaptertitle{%
+{Poděkování}%
+}}
+% \vspace{3ex}\par
+}
+
+% center contents of all float environments
+\makeatletter
+\def\@floatboxreset{
+\reset@font
+\normalsize
+\@setminipage
+\centering}
+\makeatother
+
+% manual function for chapter titles
+
+\newcommand{\chaptertitle}[1] {
+ \begingroup
+   \chapterheadstartvskip
+   {
+    \normalfont
+    \sectfont
+    \color{chapter}
+    \nobreak
+    \setlength{\parfillskip}{\fill}
+    \raggedsection 
+    \huge{#1}
+    \par
+   }
+   \nobreak
+   \chapterheadendvskip
+ \endgroup
+}
+\end_preamble
+\options czech,openright,cleardoubleempty,BCOR10mm,DIV11
+\use_default_options false
+\maintain_unincluded_children false
+\language czech
+\language_package default
+\inputencoding utf8
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_math auto
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize a4paper
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 0
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 0
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 2
+\tocdepth 2
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language german
+\papercolumns 1
+\papersides 2
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+thispagestyle{empty}
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{center}
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pagenumbering{roman}
+\end_layout
+
+\end_inset
+
+
+\begin_inset VSpace 10mm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\family sans
+\shape smallcaps
+\size largest
+\noun on
+Vysoká škola ekonomická v Praze
+\family default
+\shape default
+\size default
+\noun default
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset VSpace 0.5em
+\end_inset
+
+
+\family sans
+\shape smallcaps
+\size largest
+\noun on
+Fakulta informatiky a statistiky
+\family default
+\shape default
+\size default
+\noun default
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset VSpace 1em*
+\end_inset
+
+
+\family sans
+\shape smallcaps
+\size larger
+\noun on
+katedra informačních technologií
+\family default
+\shape default
+\size default
+\noun default
+
+\begin_inset VSpace 15mm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size normal
+\begin_inset Graphics
+	filename obrazky/vse_logo.png
+	lyxscale 50
+	width 30text%
+
+\end_inset
+
+
+\size default
+
+\begin_inset VSpace 15mm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\family sans
+\size huge
+DIPLOMOVÁ PRÁCE
+\end_layout
+
+\begin_layout Standard
+
+\size normal
+\begin_inset VSpace 15mm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\family sans
+\size largest
+Elektronické volby a jejich implementace ve Straně svobodných občanů
+\end_layout
+
+\begin_layout Standard
+
+\size normal
+\begin_inset VSpace 10mm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{center} 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace vfill*
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size normal
+\begin_inset VSpace 10mm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+\noindent
+\align block
+
+\family sans
+\size large
+Autor: Pavel Štross
+\end_layout
+
+\begin_layout Description
+\noindent
+\align block
+
+\family sans
+\size large
+Vedoucí
+\begin_inset space ~
+\end_inset
+
+práce: 
+\family default
+Ing.
+ Tomáš Bruckner, Ph.D.
+\begin_inset space \hfill{}
+\end_inset
+
+
+\family sans
+Praha, 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+the
+\backslash
+year
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage cleardoublepage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+declaration{V Praze dne 
+\backslash
+today}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage cleardoublepage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+acknowledgements
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+indent 
+\end_layout
+
+\end_inset
+
+Na tomto místě bych chtěl poděkovat
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage cleardoublepage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size small
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+thispagestyle{empty}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+
+\size small
+\begin_inset VSpace vfill
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+chaptertitle{Abstrakt}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Práce charakterizuje.
+\size small
+
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+\noindent
+
+\size small
+Klíčová
+\begin_inset space ~
+\end_inset
+
+slova: elektronické volby
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+chaptertitle{Abstract}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The thesis characterizes.
+\size small
+
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+\noindent
+
+\size small
+Keywords: electronic elections
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+
+\size small
+\begin_inset VSpace vfill
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage cleardoublepage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+thispagestyle{empty}
+\end_layout
+
+\end_inset
+
+
+\size small
+
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+% vkládá automaticky generovaný obsah dokumentu
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newpage cleardoublepage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pagenumbering{arabic}%start arabic pagination from 1
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Chapter
+Úvod
+\end_layout
+
+\begin_layout Standard
+Život ve 21.
+ století se vyznačuje duchem vylepšování technologií.
+ Největší technologický přírůstek je připisován rapidnímu vývoji informačních
+ a komunikačních technologií, při kterém dochází ke zrychlování způsobu
+ každodenního života.
+ Dnešní informační a komunikační technologie šetří čas při řešení našich
+ každodenních situací.
+ Nemusíme řešit naše potřeby osobně, ale stačí použít nějaké ICT
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Information and Communication Technologies (Informační a komunikační technologie
+)
+\end_layout
+
+\end_inset
+
+ zařízení kdekoliv na světě, přičemž nezáleží, zda se nacházíme v pohodlí
+ našeho domova nebo jsme na cestách v jiné části planety.
+ Náš život se skládá z interakcí učiněných jak v klasickém pojetí prostoru,
+ tak i v kyberprostoru
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Myšleno Gibsonovo pojetí kyberprostoru.
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "kyberprostor"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+.
+ Zbývá velice málo oblastí, které nebyly z větší části ovlivněny informačními
+ technologiemi.
+ Musíme si tedy položit otázku, proč by nebylo možné informační technologie
+ využít i při volbách a zjednodušit tak celý volební proces ?
+\end_layout
+
+\begin_layout Standard
+Na tuto otázku se dá na první pohled odpovědět velice snadno.
+ Navrhneme a implementujeme informační systém, který nám umožní elektronicky
+ volit.
+ Takovýto informační systém by nám mohl zefektivnit volby ve všech možných
+ aspektech, jakými jsou rychlejší sčítání hlasů, nižší náklady na uspořádání
+ voleb a zvýšení volební účasti.
+\end_layout
+
+\begin_layout Standard
+Je však možné takovýto informační systém jednoduše navrhnout a implementovat,
+ přihlédneme-li k faktu, že volby patří mezi základní nástroje liberální
+ demokracie, tedy řízení společnosti v civilizovaném světě a zároveň se
+ jejich průběh zdokonaluje již od dob antického Řecka.
+ Pokusím se na tuto otázku podívat podrobněji.
+\end_layout
+
+\begin_layout Section
+Důvod výběru tématu
+\end_layout
+
+\begin_layout Standard
+Hlavním důvodem výběru tohoto tématu je osobní zájem autora na problematice
+ voleb, volebních systému a elektronických volebních systémů.
+ K tomuto tématu má autor i praktický vztah, neboť byl v roce 2012 členem
+ volební komise Strany svobodných občanů.
+ Výkon této funkce přinesl autorovi mnoho poznatků.
+ Převážně to, že elektronické volby jsou velice komplexní problém, při kterém
+ je potřeba propojit znalosti z politologické vědy a informačních technologií,
+ což jsou vědní obory sobě velice vzdálené a při řešení tohoto tématu je
+ nutné zachovat interdisciplinární přístup mezi nimi.
+\end_layout
+
+\begin_layout Section
+Vymezení tématu práce
+\end_layout
+
+\begin_layout Standard
+Hlavním tématem této diplomové práce je dle jejího názvu implementace elektronic
+kých voleb ve Straně svobodných občanů.
+ 
+\end_layout
+
+\begin_layout Standard
+Téma práce se skládá ze dvou navazujících celků.
+ Prvním je teoretická část, ve které jsou čtenáři představeny teoretické
+ znalosti a přehled o již realizovaných implementací elektronických voleb
+ ve světě.
+ Z těchto znalostí je odvozena i část druhá praktická, jež se zabývá implementac
+í elektronických voleb ve Straně svobodných občanů.
+ Tato část se nezabývá pouze implementací elektronických voleb, nýbrž i
+ prozkoumání voleb ve Straně svobodných občanů z hlediska procesního pohledu.
+\end_layout
+
+\begin_layout Standard
+Závěr praktické části této práce je soustředěn na možnost využití představené
+ implementace na úroveň užití při volbách konaných v České Republice.
+\end_layout
+
+\begin_layout Section
+Cíle práce
+\end_layout
+
+\begin_layout Standard
+Cíle této práce plynou z výše popsaného vymezení tématu práce.
+ Prvním cílem je poskytnout čtenáři znalosti, které je možné použít pro
+ praktickou část práce, tedy implementaci elektronických voleb ve Straně
+ svobodných občanů.
+ A to průzkumem této problematiky a zároveň průzkumem již realizovaných
+ řešení elektronických voleb ve světě.
+\end_layout
+
+\begin_layout Standard
+Druhým cílem práce je připravit funkční implementaci elektronických voleb
+ ve Straně svobodných občanů.
+ Pro splnění tohoto cíle je nutné provést analýzu a návrh řešení implementace.
+ Po splnění tohoto cíle je následujícím cílem posoudit vhodnost této implementac
+e pro eventuální použití ve volbách konaných v České republice.
+\end_layout
+
+\begin_layout Section
+Očekávané výstupy
+\end_layout
+
+\begin_layout Standard
+Očekávané výstupy práce vycházejí z jejich cílů a její logické struktury.
+\end_layout
+
+\begin_layout Standard
+V teoretické části práce jsou očekávány následující výstupy:
+\end_layout
+
+\begin_layout Itemize
+Přehled problematiky voleb a elektronických voleb
+\end_layout
+
+\begin_layout Itemize
+Srovnání a přehled realizovaných elektronických voleb ve světě
+\end_layout
+
+\begin_layout Itemize
+Komparace elektronických voleb a voleb klasických (volby realizované za
+ pomoci papírových volebních lístků)
+\end_layout
+
+\begin_layout Standard
+V praktické části této práce se autor zaměřuje na svoje vlastní řešení a
+ následující očekávané výstupy jsou:
+\end_layout
+
+\begin_layout Itemize
+Zmapování procesů voleb ve Straně svobodných občanů
+\end_layout
+
+\begin_layout Itemize
+Návrh řešení elektronických voleb ve Straně svobodných občanů
+\end_layout
+
+\begin_layout Itemize
+Implementace řešení elektronických voleb ve Straně svobodných občanů
+\end_layout
+
+\begin_layout Itemize
+Zhodnocení vhodnosti užití implementace pro Stranu svobodných občanů pro
+ konání voleb v České republice
+\end_layout
+
+\begin_layout Chapter
+\begin_inset CommandInset label
+LatexCommand label
+name "chap:Volby-a-volební"
+
+\end_inset
+
+Volby a volební systémy
+\end_layout
+
+\begin_layout Standard
+Volby reprezentují způsob vybrání jedince případně skupiny jedinců, na jejichž
+ základě získá mandát.
+ Takovýto mandát slouží k vykonávání moci, která rozhoduje o dalším vývoji
+ oblasti, ve které se hlasování konalo.
+\begin_inset CommandInset citation
+LatexCommand cite
+after "str. 13"
+key "volebni_systemy"
+
+\end_inset
+
+ Zároveň je základním předpokladem demokracie.
+ V této práci se autor bude zabývat především svobodnými volbami.
+ To jsou takové volby, ve kterých jsou respektována lidská práva a svobody,
+ především respektování práva účastnit se voleb aktivně i pasivně.
+ Takovéto volby musejí být zároveň poctivé, tedy jejich proces musí probíhat
+ tak, aby aktéři v tomto procesu nemohli manipulovat s výsledky volby.
+\begin_inset CommandInset citation
+LatexCommand cite
+after "str. 269"
+key "uvod_do_politike_vedy"
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Svobodné a poctivé volby musejí splňovat tři základní principy, těmi jsou:
+\end_layout
+
+\begin_layout Itemize
+princip soutěživosti -- Tento princip znamená, že volič musí mít možnost
+ výběru, a zároveň není omezováno právo účastnit se probíhajících voleb.
+\end_layout
+
+\begin_layout Itemize
+princip pravidelnosti -- Princip periodického opakování voleb předem stanovených
+ termínech.
+\end_layout
+
+\begin_layout Itemize
+princip definitivnosti -- Pro splnění tohoto principu, je nutný předpoklad,
+ že všichni účastníci voleb akceptují jejich výsledek.
+ Týká se to především pasivních účastníků volby, kteří musí akceptovat,
+ že vítězství ve volbě je možné pouze prostřednictvím další volby.
+\end_layout
+
+\begin_layout Standard
+Hlavními cíli voleb je vznik reprezentace moci a dosažení shody mezi takovouto
+ reprezentací a preferencemi aktivních účastníků volby.
+\end_layout
+
+\begin_layout Section
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Volební-systém"
+
+\end_inset
+
+Volební systém
+\end_layout
+
+\begin_layout Standard
+Volby probíhají dle předem stanovených pravidel.
+ Takováto pravidla vytvářejí volební systém.
+ Tato pravidla můžeme rozdělit do tří skupin.
+\begin_inset CommandInset citation
+LatexCommand cite
+after "str. 271"
+key "uvod_do_politike_vedy"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+volební proces
+\end_layout
+
+\begin_layout Itemize
+volební právo
+\end_layout
+
+\begin_layout Itemize
+volební procedura
+\end_layout
+
+\begin_layout Subsection
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:Volební-proces"
+
+\end_inset
+
+Volební proces
+\end_layout
+
+\begin_layout Standard
+Volebním procesem se dle doc.
+ Kubáta rozumí fáze voleb proběhnuvších dle čtyř etap.
+ Tyto etapy jsou charakterizovány pohledem na volby ze stran aktérů.
+ Mezi tyto aktéry považujeme:
+\end_layout
+
+\begin_layout Itemize
+pasivní účastníky volby
+\end_layout
+
+\begin_layout Itemize
+aktivní účastníky volby
+\end_layout
+
+\begin_layout Itemize
+organizátory volby
+\end_layout
+
+\begin_layout Itemize
+interprety výsledku volby
+\end_layout
+
+\begin_layout Standard
+Etapa z pohledu pasivního účastníka volby je procesem týkajícím se určení
+ účastníka, registrace účastníka do volby a stanovení časového intervalu,
+ kdy je možné pasivního účastníka volby registrovat.
+ Další etapou je organizace voleb, tj.
+ pohled organizátorů volby.
+ Tato etapa je charakterizována vytvářením seznamu aktivních účastníků volby,
+ stanovení časového harmonogramu voleb a vybrání interpretů volby.
+\end_layout
+
+\begin_layout Standard
+Z pohledu aktivního účastníka volby je etapa volebního procesu stanovena
+ samotným průběhem volby.
+ Z hlediska interpretace voleb se jedná o etapu zjištění hlasů aktivních
+ účastníků a převedení na mandáty pro účastníky pasivní.
+\begin_inset CommandInset citation
+LatexCommand cite
+after "str. 272"
+key "uvod_do_politike_vedy"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:Průběh-voleb-při-klasickych-volbach"
+
+\end_inset
+
+Průběh voleb při klasických volbách
+\end_layout
+
+\begin_layout Standard
+Průběh voleb určuje fyzický způsob, jak volby probíhají volebním procesem.
+ V současné době se stále nejvíce používají tzv.
+ papírové volby, tj.
+ volby, při kterých se používají papírové hlasovací lístky, jakožto způsob
+ provedení fyzické části volební procedury, viz část 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sub:Volební-procedura"
+
+\end_inset
+
+.
+ Počátky papírových voleb spadají do 16.
+ století, kdy byl tento způsob zaveden katolickou církví při volbě papeže.
+ Jednalo se o hlasovací lístky, které nebyly ještě předtištěné, ale tehdejší
+ volič jméno svého kandidáta napsal na lístek a vhodil jej do volební urny.
+ Obdobný způsob hlasování jaký známe nyní byl, zaveden až v roce 1858, kdy
+ byly použity předtištěné jednotné hlasovací lístky.
+ Na těchto lístcích voliči označili voleného kandidáta, vložili lístky do
+ obálky, kterou pak vhodili do volební urny.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "cepsr_volebni_proces_klasicke_volby"
+
+\end_inset
+
+ Průběh voleb můžeme rozdělit do čtyř částí: přípravu voleb, samotnou volbu,
+ zjištění výsledků a ověření výsledků.
+ 
+\end_layout
+
+\begin_layout Subsubsection
+Příprava voleb 
+\end_layout
+
+\begin_layout Standard
+Příprava voleb je započata vyhlášením voleb, kdy jsou stanoveny i lhůty
+ pro úkony, které jsou součástí přípravné fáze voleb a jsou dány volebním
+ řádem.
+ Při přípravě voleb je nutné zajistit volební místnost včetně nutného zařízení,
+ zejména volebních uren, zajistit veškerou organizaci voleb, zejména ustanovit
+ a zveřejnit volební komisi, sestavit a zveřejnit seznam kandidátů a zveřejnit
+ seznam a celkový počet oprávněných voličů.
+ Dále je nutné zajistit obálky s hlasovacími lístky a jejich distribuci
+ jednotlivým voličům, příp.
+ zajistit možnost volby voličům, kteří se nemohou v den voleb dostavit do
+ místa volby.
+ To lze zajistit vydáním voličského průkazu pro voliče nebo použitím metody
+ korespondencního hlasování viz část 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sub:Estonsko"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsubsection
+Průběh voleb 
+\end_layout
+
+\begin_layout Standard
+Průběh voleb je dán především vlastní volbou voliče kandidátů uvedených
+ v kandidátní listině.
+ Volba začíná identifikací voliče, který následně za plentou vloží označený
+ hlasovací lístek do úřední obálky a tu vhodí do volební urny.
+ Na hladký průběh voleb a zabezpečení volebních uren dohlíží volební komise.
+\end_layout
+
+\begin_layout Subsubsection
+Zjištění výsledků voleb a ověření výsledků
+\end_layout
+
+\begin_layout Standard
+Výsledek voleb je dán závěrečným součtem všech hlasů voličů za přítomnosti
+ členů volební komise.
+ O volebním výsledku je vytvořen protokol s podpisy členů volební komise.
+\end_layout
+
+\begin_layout Subsection
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:Volební-právo"
+
+\end_inset
+
+Volební právo
+\end_layout
+
+\begin_layout Standard
+Volební právo je stanoveno formou právních předpisů.
+ Jedná se o soubor norem regulujících volební proces.
+ Zdrojem volebního práva jsou právní normy nejvyššího charakteru.
+\begin_inset CommandInset citation
+LatexCommand cite
+after "str. 274"
+key "uvod_do_politike_vedy"
+
+\end_inset
+
+ V případě státu je to tedy jeho ústava a ústavní zákony.
+ U institucí, jakými jsou politické strany, politická hnutí, neziskové organizac
+e či spolky jsou takovýmto zdrojem volebního práva stanovy dané instituce.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "obcansky_zakonik"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Volební právo lze rozdělit na subjektivní a objektivní složku.
+ Objektivní složkou volebního práva se rozumí souhrn organizačních pravidel,
+ které zajišťují průběh volebního procesu, zde toto právo dělíme na aktivní
+ a pasivní.
+ Aktivní volební právo umožňuje člověku stát se aktivním účastníkem volby,
+ tedy jeho právo volit, zatímco pasivní umožňuje pasivnímu účastníkovi volby
+ kandidovat a být volen.
+\end_layout
+
+\begin_layout Standard
+Subjektivní složka reprezentuje obecný a politický princip konání svobodných
+ voleb.
+ Skládá se ze tří principů, kterými jsou: všeobecné, rovné a přímé volební
+ právo.
+ Tyto univerzální zásady volebního práva jsou vždy zakotveny v nejvyšších
+ právních normách.
+\end_layout
+
+\begin_layout Standard
+Principem všeobecného volebního práva je myšlenka, že všichni občané jsou
+ si rovni a nemohou být zbaveni práva na veřejný, popř.
+ politický život.
+ Ve všeobecnosti to znamená, že není možné vyloučit účastníka volby na základě
+ kritérií, jakými jsou národnost, pohlaví, rasa, povolání a úroveň vzdělání.
+ Tento princip je však porušen v rámci volebních censů.
+ V dnešní době zbyly censy dva a to census teritoriální příslušnosti
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+V České republice se teritoriální příslušností rozumí trvalý pobyt občana,
+ čímž mu tento census umožňuje výkon volebního práva pouze v předem určené
+ oblasti.
+ Příkladem použití teritoriálního censu je omezení v rámci komunálních voleb.
+\end_layout
+
+\end_inset
+
+ a věku
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Pod censem věku se rozumí nabytí volebního práva při dosažení plnoletosti
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Dalším principem je rovnost volebního práva.
+ Lze ji chápat dvojím způsobem materiálně a formálně.
+ Pro materiální způsob význam rovnosti představuje stanovení proporcí mezi
+ mandátem a počtem hlasů, tedy kolik hlasů je potřeba k získání jednoho
+ mandátu.
+ Formální způsob je princip rovnosti hlasů z pohledu aktivních účastníků.
+ Znamená to, že každý aktivní účastník má k dispozici stejný počet hlasů.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "uvod_do_politike_vedy"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Poslední princip je přímost volebního práva.
+ Přímost znamená, že aktivní účastník o svých hlasech rozhoduje vždy přímo,
+ tedy bez jakýchkoliv prostředníků.
+ Zároveň je v tomto principu obsažena i tajnost hlasování.
+ Ta umožňuje aktivnímu účastníkovi zajištění bezpečnosti volby před, v průběhu
+ i po ukončení hlasování, aby nemohl být nikým či ničím ovlivňován ve svém
+ rozhodnutí.
+\begin_inset CommandInset citation
+LatexCommand cite
+after "str. 18"
+key "volebni_systemy"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:Volební-procedura"
+
+\end_inset
+
+Volební procedura
+\end_layout
+
+\begin_layout Standard
+Volební proceduru lze považovat jako souhrn tvrdých vlastností a principů
+ volebního systému.
+ Určuje nám, jakým fyzickým způsobem je prováděna volba a jaké jsou matematické
+ postupy pro zjištění výsledků volby.
+ Z hlediska politologické vědy je volební procedura považována za volební
+ systém.
+\begin_inset CommandInset citation
+LatexCommand cite
+after "str. 276"
+key "uvod_do_politike_vedy"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Volební systém z pohledu technologie je téma, jímž se chce autor zabývat
+ v následujících kapitolách.
+ Je ovšem nutné pro praktickou část práce provést stručný přehled volebních
+ procedur či systémů z pohledu matematických postupů při přepočtu hlasů
+ na mandáty.
+ Z tohoto hlediska se dělí volební systémy na: většinové, proporční, semiproporč
+ní a smíšené
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Smíšené volební systémy většinou nabývají kombinace vlastností většinových,
+ proporčních a semiproporčních volebních systémů.
+ Autor je nebude popisovat neboť jsou nad rámec této práce.
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsubsection
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:Většinové-volební-systémy"
+
+\end_inset
+
+Většinové volební systémy
+\end_layout
+
+\begin_layout Standard
+Způsob přepočtu hlasů ve většinovém volebním systému na mandáty vychází
+ z pravidla vítěz bere vše.
+\begin_inset CommandInset citation
+LatexCommand cite
+after "str. 26"
+key "volebni_systemy"
+
+\end_inset
+
+ Jestliže se jedná o prostý většinový systém, pak stačí k vítězství kandidáta,
+ popř.
+ politické strany, získat největší počet hlasů.
+ Další možností k přepočtu hlasů na mandáty je princip absolutní většiny,
+ kdy vítěz musí dosáhnout hodnoty minimálně jedné poloviny odevzdaných hlasů
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Takový princip je používán například v druhém kole voleb do horní komory
+ parlamentu České republiky.
+ 
+\end_layout
+
+\end_inset
+
+.
+ Nejméně používaným většinovým volebním systémem je však systém alternativního
+ hlasování, při kterém voliči mají k dispozici počet hlasů shodný s počtem
+ kandidátů a udělují jím preference.
+ Vítězí kandidát s nejvyššími přidělenými preferencemi.
+\end_layout
+
+\begin_layout Subsubsection
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:Proporční-volební-systémy"
+
+\end_inset
+
+Proporční volební systémy
+\end_layout
+
+\begin_layout Standard
+Cílem proporčních volebních systémů je zachování rovnováhy mezi počtem obdrženýc
+h mandátů a získaných hlasů.
+ To tedy znamená, že v ideálním případě relativní počet získaných hlasů
+ by měl být shodný s relativním počtem obdržených mandátů.
+ Takové systémy se používají převážně ve vícemandátových volebních obvodech
+ za použití kandidátních listin.
+ Za autory proporčního volebního systému jsou považováni matematikové Jaen
+ Antoine Condorcet a Joseph Diez Cergonne.
+\begin_inset CommandInset citation
+LatexCommand cite
+after "str. 34"
+key "volebni_systemy"
+
+\end_inset
+
+ Kandidátní listiny ve volebních systémech mohou býti uzavřené a otevřené.
+ Jako otevřená kandidátní listina je považována taková, u které má volič
+ možnost měnit svými preferencemi pořadí kandidátů na ní uvedených.
+ Aby bylo možné zjistit obdržení mandátu kandidátem, jsou v proporčních
+ volebních systémech zavedeny různé matematické přepočty.
+ Nejčastěji se používá kombinace metod volebního dělitele a volebních kvót.
+ 
+\end_layout
+
+\begin_layout Standard
+Metoda volebního dělitele je založena na řadách dělitelů.
+ Kandidátní listiny jsou v daném obvodě postupně děleny děliteli z určité
+ řady až do okamžiku, kdy je možné ze získaných podílů uspořádat počet hodnot,
+ který je roven hodnotě počtu mandátů.
+ Proběhnutí iterace dělení se nazývá skrutiniem.
+\begin_inset CommandInset citation
+LatexCommand cite
+after "str. 290"
+key "uvod_do_politike_vedy"
+
+\end_inset
+
+ Mezi metody volebního dělitele patří: D'Hondtova metoda, Saint-Lagueova
+ metoda, Imperialiho metoda a Huntigtnovo--Hilova metoda.
+ Výpočet výsledku mezi těmito metodami se liší pouze použitím různých číselných
+ řad tvořící dělitele.
+\begin_inset CommandInset citation
+LatexCommand cite
+after "str. 288"
+key "uvod_do_politike_vedy"
+
+\end_inset
+
+ Číselné řady pro metody volebních dělitelů jsou tedy:
+\end_layout
+
+\begin_layout Itemize
+D'Hondtova metoda
+\begin_inset Formula 
+\[
+\mathrm{\sum_{n=0}^{\infty}n+1}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Saint-Lagueova metoda
+\begin_inset Formula 
+\[
+\mathrm{\sum_{n=0}^{\infty}2n+1}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Imperialiho metoda
+\begin_inset Formula 
+\[
+\mathrm{\sum_{n=2}^{\infty}n+1}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Huntigtnovo--Hilova metoda
+\begin_inset Formula 
+\[
+\mathrm{\sum_{n=0}^{\infty}\sqrt{n\left(n+1\right)}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+V proporčních systémech jsou také definované volební kvóty.
+ Tyto kvóty souží ke stanovení volebního čísla.
+ Volební číslo je taková hodnota, která odpovídá hodnotě minimálního počtu
+ hlasů k získání mandátu v prvním skrutiniu.
+\begin_inset CommandInset citation
+LatexCommand cite
+after "str. 291"
+key "uvod_do_politike_vedy"
+
+\end_inset
+
+ Jedná se o kvóty:
+\end_layout
+
+\begin_layout Itemize
+Haareova kvóta
+\begin_inset Formula 
+\[
+\frac{V}{S}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Imperialiho kvóta
+\begin_inset Formula 
+\[
+\frac{V}{S+2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Droopova kvóta
+\begin_inset Formula 
+\[
+\mathrm{\frac{V}{S+1}+1}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Haagen-Bischoffova kvóta
+\begin_inset Formula 
+\[
+\mathrm{\frac{V}{S+1}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Kdy 
+\begin_inset Formula $V$
+\end_inset
+
+ je počet platných odevzdaných hlasů a 
+\begin_inset Formula $S$
+\end_inset
+
+ je počtem mandátů připadajících na volební obvod.
+ 
+\end_layout
+
+\begin_layout Subsubsection
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:Semiproporční-volební-systémy"
+
+\end_inset
+
+Semiproporční volební systémy
+\end_layout
+
+\begin_layout Standard
+Semiproporční volební systémy jsou takové volební systémy, které přidělují
+ mandáty kandidátům s nejvyšším počtem hlasů, ale na rozdíl od většinových
+ volebních systémů nezachovávají pravidlo vítěz bere vše.
+\begin_inset CommandInset citation
+LatexCommand cite
+after "str. 167"
+key "volebni_systemy"
+
+\end_inset
+
+ Nejvýznamnějšími semiproporčnímy systémy jsou:
+\end_layout
+
+\begin_layout Itemize
+Bordovo hlasování
+\end_layout
+
+\begin_layout Itemize
+Schvalování/Odmítání
+\end_layout
+
+\begin_layout Itemize
+Neomezené hlasování
+\end_layout
+
+\begin_layout Itemize
+Kumulované hlasování
+\end_layout
+
+\begin_layout Standard
+Bordovo hlasování někdy též označované jako bodové hlasování je takový systém,
+ při kterém je každým voličem vytvořen seřazený seznam kandidátů dle jejich
+ preferencí.
+ Poté jsou dle předem daných pravidel přiřazeny kandidátům body.
+ Vítězí kandidáti s nejvyšším součtem přiřazených bodů.
+ Dle původního Bordova návrhu jsou bodové intervaly mezi kandidáty konstantní.
+ Tento typ volebního systému je používán například ve volbách vedení American
+ Mathematical Society.
+\begin_inset CommandInset citation
+LatexCommand cite
+after "str. 167"
+key "volebni_systemy"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Schvalování/Odmítání je volební procedurou, při které je počet hlasů shodný
+ s počtem kandidátů.
+ Volič hlasuje pro kandidáta nebo proti kandidátovi.
+ V tomto systému se objevuje takzvaný negativní hlas.
+ Negativní hlas se započítává při odmítnutí kandidáta.
+ Mandát získávají kandidáti s nejvyšším počtem hlasů.
+ Tento typ volebního systému je v mnoha demokratických státech protiústavní,
+ protože nezachovává přímost a rovnost volby.
+ Ve světě se používá nejčastěji ve volbách do představenstev profesních
+ asociací.
+\begin_inset CommandInset citation
+LatexCommand cite
+after "str. 171"
+key "volebni_systemy"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Procedura neomezeného hlasování se podobá schvalování, avšak s rozdílem,
+ že počet hlasů voliče je shodný s počtem mandátů.
+ Při tomto typu volební procedury může volič přidělit kandidátovi maximálně
+ jeden hlas.
+ 
+\end_layout
+
+\begin_layout Standard
+Z neomezeného hlasování vychází hlasování kumulované.
+ Při kumulovaném hlasování má možnost volič své hlasy kumulovat.
+ To znamená, že volič má k dispozici stejný počet hlasů, kolik se rozděluje
+ mandátů, ale může udělit více hlasů jednomu kandidátovi.
+\begin_inset CommandInset citation
+LatexCommand cite
+after "str. 180"
+key "volebni_systemy"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Volby-z-pohledu"
+
+\end_inset
+
+Volby z pohledu mezinárodního práva
+\end_layout
+
+\begin_layout Standard
+Konání voleb je závazkem každého demokratického státu.
+ Jejich vlastnosti vycházejí z Úmluvy o ochraně lidských práv a základních
+ svobod sjednané v rámci Rady Evropy roku 1950.
+ Tato Úmluva říká, že volby se musí konat v rozumných intervalech s tajným
+ hlasováním za podmínek, které zajistí svobodné vyjádření názorů lidu při
+ volbě zákonodárného sboru.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "umluva_zakladnich_prav_a_svobod"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+V rámci Rady Evropy byla založena Komise pro demokracie prostřednictvím
+ práva, nazývaná též Benátská komise.
+ Tato komise se zabývá základními demokratickými principy, tedy i volbami.
+ Benátská komise vydala kodex osvědčených postupů v oblasti volebních záležitost
+í.
+ Tento kodex, vychází z Úmluvy o ochraně lidských práv a základních svobod
+ a definuje šest základních principů volebního práva:
+\begin_inset CommandInset citation
+LatexCommand cite
+key "code_of_good_practice_in_electoral_matters"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Všeobecnost -- Tento princip zachovává možnost zúčastnit se voleb aktivně
+ i pasivně.
+\end_layout
+
+\begin_layout Itemize
+Rovnost -- Pro zachování principu rovnosti je nutné, aby každý volič měl
+ možnost odevzdat stejný počet hlasů.
+\end_layout
+
+\begin_layout Itemize
+Svobodu -- Svobodné volby musejí zachovat názory voličů a možnost prověření
+ volebních podvodů.
+\end_layout
+
+\begin_layout Itemize
+Tajnost -- Zachování principu tajnosti spočívá v individualistickém rozhodnutí
+ voliče, přičemž jeho udělené hlasy a informace o jeho zúčastnění se voleb
+ musejí zůstat tajné.
+\end_layout
+
+\begin_layout Itemize
+Přímost -- Princip přímosti říká, že legislativní složka moci státu a komunální
+ zastoupení moci se volí vždy přímo.
+\end_layout
+
+\begin_layout Itemize
+Četnost -- Tento princip zahrnuje, že volby musejí být opakovány v pravidelných
+ intervalech a funkční období legislativní složky moci státu nesmí překročit
+ dobu pěti let.
+\end_layout
+
+\begin_layout Chapter
+Elektronické volby
+\end_layout
+
+\begin_layout Standard
+Pojem elektronické volby je velice komplexní.
+ Podle encyklopedie Britannica se jedná o formu voleb, kdy je pro vložení
+ hlasu voliče použito počítačové vybavení.
+ Za takovéto vybavení je považován dotykový display, který je doplněn zvukovým
+ rozhraním pro nevidomé voliče.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "britannica_electronic_voting"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Avšak domnívám se, že tato definice není správná.
+ Jako autor se pokusím o vlastní definici elektronických voleb.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+Za elektronické volby můžeme považovat takové volby, které jsou podpořeny
+ elektronickým informačním systémem, kdy tento informační systém zajišťuje
+ podporu volebního procesu a zároveň zajišťuje provedení fyzické volební
+ procedury skrze něj.
+\end_layout
+
+\begin_layout Standard
+Tato definice neomezuje použití jakéhokoliv elektronického zařízení během
+ volebního procesu, pouze sděluje, že je použit elektronický informační
+ systém.
+ Pro jeho obsluhu je tedy možné použít počítače, tablety, chytré telefony,
+ SMS zprávy a DRE
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Direct Recording Eletronic machines (Elektronická zaznamenávací zařízení)
+ jsou specializovaná elektronická zařízení pro zaznamenání hlasu voliče.
+ viz 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:Druhy-elektronických-voleb"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ zařízení.
+ Zároveň definice neomezuje fyzický prostor, ve kterém je takovéto zařízení
+ používáno.
+\end_layout
+
+\begin_layout Section
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Části-elektronických-voleb"
+
+\end_inset
+
+Části elektronických voleb
+\end_layout
+
+\begin_layout Standard
+Elektronické volby můžeme považovat za úplné a neúplné.
+ Úplnost elektronických voleb bychom mohli definovat tak, jak pokrývají
+ volební proces.
+ Zde autor vychází z obecného konceptuálního modelu vydaného organizací
+ OASIS
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Organization for the Advanced of Structured Information Standards (Organizace
+ pro pokročilé a strukturované informatické standardy).
+ Nezisková organizace dávající doporučení pro otevřené standardy.
+ Členem této organizace je přes 600 subjektů z veřejného i soukromého sektoru
+ a z více než 65 států.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "oasis"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+.
+ OASIS specifikuje standard EML
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Election Markup Language 
+\end_layout
+
+\end_inset
+
+, tento standard definuje formát dat předávaných v informačním systému během
+ volebního procesu.
+ EML je standard založen na technologii XML pro snadnou interoperabilitu
+ mezi elektronickými volebními systémy.
+ Ačkoliv se EML zabývá převážně technickým popisem výměny dat ve volebním
+ informačním systému zahrnuje i nejvyšší konceptuální model pro úplný elektronic
+ký volební systém.
+ Z tohoto pohledu můžeme rozdělit elektronické volební systémy na tři dílčí
+ části, které jsou:
+\end_layout
+
+\begin_layout Itemize
+předvolební část
+\end_layout
+
+\begin_layout Itemize
+volební část
+\end_layout
+
+\begin_layout Itemize
+povolební část
+\end_layout
+
+\begin_layout Standard
+Za předvolební část považujeme takovou část volebního procesu, jenž zahrnuje
+ nominace kandidátů a registraci voličů.
+ Z diagramu 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Konceptuální-pohled-EML"
+
+\end_inset
+
+ je patrné, že výstupem této části elektronických voleb jsou seznamy kandidátů
+ a seznamy oprávněných voličů.
+\end_layout
+
+\begin_layout Standard
+Na základě výstupů z předvolební části volební část umožní voliči volit
+ v případě, že se nalézá v seznamu oprávněných voličů.
+ Podle této části rozlišujeme různé typy elektronických voleb, a to na základě
+ fyzického přístupu k volebním zařízením.
+ viz 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:Druhy-elektronických-voleb"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Povolební část elektronických voleb zahrnuje samotné sčítání hlasů a generování
+ protokolů o proběhlých volbách.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename obrazky/eml_konceptualni_pohled.pdf
+	scale 85
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Konceptuální-pohled-EML"
+
+\end_inset
+
+Konceptuální pohled na elektronické volby definovaný v EML
+\begin_inset CommandInset citation
+LatexCommand cite
+key "EML"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Druhy-elektronických-voleb"
+
+\end_inset
+
+Typy elektronických voleb
+\end_layout
+
+\begin_layout Standard
+Rozlišujeme různé typy elektronických voleb, a to podle fyzického přístupu
+ k zařízením.
+ Zahraniční zdroje uvádějí rozdělení na i-voting (internet voting) a e-voting
+ (electronic voting).
+\begin_inset CommandInset citation
+LatexCommand cite
+key "britannica_electronic_voting"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Mezi základní charakteristiku i-votingu patří to, že voliči odevzdávají
+ své hlasy z libovolného zařízení prostřednictvím internetu.
+ V případě i-votingu není volič nucen dostavit se do volební místnosti.
+ Nevýhody tohoto řešení spočívají v kompromitování voličova zařízení nebo
+ znemožnění volby různými útoky na technologickou infrastrukturu jakými
+ jsou například Denial of Service.
+\end_layout
+
+\begin_layout Standard
+E-voting je takový typ elektronických voleb, při kterém se používají speciální
+ zařízení určená pouze pro průběh voleb.
+ Mezi takovéto zařízení patří DRE a skenovací stroje.
+\end_layout
+
+\begin_layout Standard
+Pro skenovací stroje je charakteristické, že voličovo rozhodnutí je skenováno
+ z předem vyplněného hlasovacího lístku a následně uloženo do paměti stroje.
+ Jedná se tedy o decentralizovaný systém ukládání dat.
+ Takovéto zařízení bychom mohli přirovnat k volební urně použité v klasických
+ volbách.
+\end_layout
+
+\begin_layout Standard
+DRE jsou zařízení umožňující voliči zaznamenat hlas prostřednictvím obrazovky,
+ kdy tento hlas je následně v zařízení zaznamenán.
+ Principem fungování se neliší od skenovacích strojů, mají však výhodu,
+ že volič může takovéto zařízení používat interaktivně.
+ 
+\end_layout
+
+\begin_layout Standard
+Je tedy patrno, že elektronické volby formou e-votingu se v principu neliší
+ od voleb klasických.
+ Jejich výhodou je usnadnění sčítání hlasů.
+\end_layout
+
+\begin_layout Standard
+Tuto typologii elektronických voleb nepovažuji za dobře zvolenou, dávám
+ přednost pojetí Petra Šindeláře, který rozděluje elektronické volby dle
+ jejich způsobu provedení, v závislosti na místu vykonání aktu samotné volby,
+ kdy místo vykonání volby je
+\begin_inset CommandInset citation
+LatexCommand cite
+key "sindelar_elektronicke_volby"
+
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Itemize
+kontrolovaný prostor
+\end_layout
+
+\begin_layout Itemize
+nekontrolovaný prostor
+\end_layout
+
+\begin_layout Section
+Elektronické volby v kontrolovaném prostoru
+\end_layout
+
+\begin_layout Standard
+Elektronické volby v kontrolovaném prostředí označované též 
+\begin_inset Quotes gld
+\end_inset
+
+poll-site electronic voting
+\begin_inset Quotes grd
+\end_inset
+
+ jsou takové volby, které jsou provedené v přesně definovaném čase prostřednictv
+ím elektronického zařízení, definovaného zákonem, které je umístěno v místě
+ stanoveném zákonem (volební místnosti).
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "sindelar_elektronicke_volby"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Tento typ elektronického hlasování se dá také nazvat elektronickým hlasováním
+ na místě.
+ Totožnost a oprávněnost voliče je ověřována fyzicky na místě ve volební
+ místnosti.
+ Pro volbu, tedy udělení hlasu, je používáno elektronické zařízení.
+ Z definice neplyne, je-li hlas zpracován a započten ihned transakčně nebo
+ dávkově až po ukončení voleb, zároveň není definováno, zda-li je hlas zaznamená
+n v lokálním úložišti hlasovacího zařízení, či je přenesen některým komunikačním
+ kanálem do centrálního úložiště.
+\end_layout
+
+\begin_layout Standard
+Mezi hlavní výhody tohoto typu voleb patří jeho důvěryhodnost v očích voličů,
+ vzhledem k jeho podobnosti ke klasickým volbám.
+ Odpadá zde nutnost elektronického ověření voliče a jeho ověření volební
+ komisí můžeme považovat za více než bezpečné.
+ Zároveň u tohoto systému není potřeba řešit anonymizaci hlasů pomocí kryptograf
+ie.
+ Největším přínosem je snížení náročnosti sčítání hlasů, z čehož plyne urychlení
+ oznámení výsledku voleb.
+\end_layout
+
+\begin_layout Standard
+Vzhledem k tomu, že se tento typ voleb liší velice málo proti klasickým
+ volbám, autor považuje za jeho nevýhodu podobné náklady, které mohou být
+ i vyšší v případě varianty s centrálním úložistěm, neboť je nutné zajistit
+ i datový komunikační kanál pro přenos hlasů.
+ Další možným rizikem je možnost kompromitace hlasovacího zařízení škodlivým
+ kódem.
+\end_layout
+
+\begin_layout Section
+Elektronické volby v nekontrolovaném prostoru
+\end_layout
+
+\begin_layout Standard
+Za elektronické volby v nekontrolovaném prostoru považujeme takové volby,
+ které jsou provedené v přesně definovaném čase prostřednictvím libovolného
+ elektronického zařízení, splňujícího pouze technické požadavky kompatibility
+ se zvoleným volebním systémem, umístěným v libovolném místě planety s nutnou
+ dostupností komunikačního prostředí.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "sindelar_elektronicke_volby"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Takovýto typ elektronických voleb není závislý na fyzickém místě při provedení
+ samotného aktu volby.
+ Z toho vyplívá největší výhoda tohoto typu, protože zvyšuje komfort pro
+ voliče, a to zejména z časových důvodů.
+ Volič může volit v jakýkoliv čas a z jakéhokoliv místa.
+ V dloudobém časovém horizontu je při tomto typu elektronických voleb snížení
+ nákladů, protože takový systém elektronických voleb je možné využít při
+ jejich dalším opakování.
+\end_layout
+
+\begin_layout Standard
+Mezi hlavní nevýhody můžeme zařadit procesní a technickou náročnost realizace
+ takovýchto elektronických voleb.
+ Z pohledu pořadatele voleb je nutné zajistit identifikaci voliče a jeho
+ oprávnění volit v jednotlivých volbách.
+ Dále je nutné zajistit anonymizaci hlasů.
+ Další nevýhodou pro realizaci elektronických voleb je také nízká přispůsobilost
+ voličů a tendence lpění na již zavedeném konceptu.
+\end_layout
+
+\begin_layout Standard
+U elektronických voleb se setkáváme také s rizikem, že budou porušeny principy
+ tajnosti, důvěryhodnosti, svobody a všeobecnosti.
+ Abychom předešli porušení principu tajnosti, je potřeba propracovat bezpečný
+ systém šifrování hlasů.
+ Autor práce se bude více této problematice věnovat v kapitole 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:Implementace-elektronických-vole"
+
+\end_inset
+
+.
+ Voliči mají bohužel většinou problém důvěřovat inovátorským postupům.
+ Právě toto spatřuje autor práce jako další riziko, kterému budou muset
+ implementátoři čelit.
+ 
+\end_layout
+
+\begin_layout Standard
+V neposlední řadě je potřeba zmínit také jako protiargument porušení svobodné
+ volby.
+ Při realizaci elektronických voleb bude opravdu obtížné zamezit porušení
+ právě principu svobody.
+ Avšak autor nalezl možné řešení i na tento problém, které rozebere níže.
+ Také bychom měli vzít v úvahu princip všeobecnosti, který umožňuje voliči
+ se zúčastnit voleb jak aktivně, tak pasivně.
+ Volič může namítat, že tento princip není dodržen, jelikož nedisponuje
+ dostatečným technickým zázemím a že stát ho nemůže nutit vynaložit ne zrovna
+ nízké náklady na jeho zabezpečení.
+ V tomto případě je však nasnadě jednoduché řešení, a to poskytnutí potřebného
+ zařízení například v místech státních úřadů.
+\end_layout
+
+\begin_layout Section
+Porovnání různých typů elekronických voleb
+\end_layout
+
+\begin_layout Standard
+V této části autor porovnává výhody a nevýhody výše zmíněných řešení elektronick
+ých voleb.
+ K tomuto porovnání je využita vicekriteriální analýza, ve které jsou jednotlivý
+m faktorům přiřazená diskrétní čísla v oboru hodnot od jedné do deseti.
+ Hodnota deset zde znázorňuje nejvyšší možný užitek daného řešení.
+ Tato analýza je zobrazena v tabulce 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:Porovnání-různých-typů"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Mezi zvolené způsoby voleb autor zahrnuje elektronické volby v kontrolovaném
+ prostoru při použití DRE zařízení, elektronické volby v kontrolovaném prostoru
+ při použití optických skenerů a elektronické volby v nekontrolovaném prostoru
+ při použití internetových technologií.
+ Mezi porovnávané faktory patří:
+\end_layout
+
+\begin_layout Itemize
+Zvýšení rychlosti sečtení hlasů -- Snížení doby sečtění hlasů díky využití
+ informačních technologií, při kterých odpadá namáhavé a časově náročné
+ ruční sčítání hlasů.
+\end_layout
+
+\begin_layout Itemize
+Zvýšení pohodlnosti volby -- Usnadňuje voličům provedení aktu volby, ve
+ smyslu snížení možnosti vložení neplatného hlasu, a zároveň umožňuje voličům
+ volit v jejich známém prostředí.
+\end_layout
+
+\begin_layout Itemize
+Snížení dlouhodobých nákladů -- Snižování nákladů spojených s realizací
+ voleb v důsledku nižších nároků na fyzické zdroje.
+ Snížení nákladů je o to větší, čím častěji jsou volby uskutečňovány.
+\end_layout
+
+\begin_layout Itemize
+Tajnost volby -- Nároky na zabezpečení utajení volby ve smyslu zaručení
+ anonymity volby voliče, jako jednoho z hlavních principů individuální volby
+ voliče.
+\end_layout
+
+\begin_layout Itemize
+Transparentnost volby -- Složitost a potřeba odbornosti pro pochopení vnitřního
+ mechanismu celého procesu.
+\end_layout
+
+\begin_layout Itemize
+Přístupnost pro handicapované -- Možnost zúčastnit se voleb pro handicapované
+ jedince bez nutnosti asistence, a tím i možná zvýšení účasti handicapovaných
+ voličů v jednotlivých volbách.
+\end_layout
+
+\begin_layout Itemize
+Pochopení volebního mechanismu laickou veřejností -- Potřeba porozumění
+ voliče postupu volebního mechanismu při udělení hlasu a ochota voliče naučit
+ se a využít jiný posstup při hlasování.
+ 
+\end_layout
+
+\begin_layout Itemize
+Riziko manipulace volebních výsledků -- Faktor určující riziko podvodu či
+ nepřesnosti při sčítání nebo jiném zacházení s volebními hlasy.
+ Při elektronických volbách je nebezpečím kompromitace technických zařízení
+ náhodným či cizím a úmyslným zaviněním.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+placement H
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Tabular
+<lyxtabular version="3" rows="9" columns="4">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top" width="20text%">
+<column alignment="center" valignment="top" width="20text%">
+<column alignment="center" valignment="top" width="20text%">
+<column alignment="center" valignment="top" width="20text%">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Elektronické volby v kontrolovaném prostoru při použití optických skenerů
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Elektronické volby v kontrolovaném prostoru při použití DRE zařízení
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Elektronické volby v nekontrolovaném prostoru při použití internetových
+ technologií
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Zvýšení rychlosti sečtení hlasů
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+6
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+9
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Zvýšení pohodlnosti volby
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+7
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Snížení dlouhodobých nákladů
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+8
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Tajnost volby
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+6
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Transparentnost volby
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+9
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+6
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Přístupnost pro handicapované
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+8
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Pochopení volebního mechanismu laickou veřejností
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+9
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+8
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Riziko manipulace volebních výsledků
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+9
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+7
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:Porovnání-různých-typů"
+
+\end_inset
+
+Porovnání různých typů elektronických voleb
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Technologie používaná v elektronických volbách
+\end_layout
+
+\begin_layout Standard
+V této části kapitoly se autor zabývá informačními technologiemi a principy
+ informačních technologií používaných v implementacích elektronických voleb.
+\end_layout
+
+\begin_layout Subsection
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:Asymetrická-kryptografie"
+
+\end_inset
+
+Asymetrická kryptografie
+\end_layout
+
+\begin_layout Standard
+Asymetrická kryptografie (označovaná někdy jako asymetrické šifrování) je
+ založena na principu vlastností matematických funkcí, které lze vypočítat
+ pouze v jednom směru.
+ To znamená, že máme-li definovanou funkci 
+\begin_inset Formula $y=f(x)$
+\end_inset
+
+, kdy při jejím použití lze jednoduchým výpočtem získat ze vstupní hodnoty
+ 
+\begin_inset Formula $x$
+\end_inset
+
+ výstupní hodnotu 
+\begin_inset Formula $y$
+\end_inset
+
+, což znamená že takováto funkce je řešitelná v reálném čase.
+ Aby mohla být tato funkce využita pro asymetrickou kryptografii je nutné
+ zvolit takovou funkci, jejíž inverzní funkce 
+\begin_inset Formula $f^{-1}$
+\end_inset
+
+ je v reálném čase neřešitelná.
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+after "str. 51"
+key "aplikovana_kryptografie"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+V asymetrické kryptografii je pro šifrování použit princip dvou klíčů, kdy
+ jeden je určen vždy pro zašifrování zprávy a druhým klíčem je možné zprávu
+ pouze dešifrovat.
+ Jedná se o tyto klíče:
+\end_layout
+
+\begin_layout Itemize
+Veřejný klíč -- Jehož hodnota je veřejně známa.
+\end_layout
+
+\begin_layout Itemize
+Privátní klíč -- Hodnota privátního klíče je známa pouze majiteli klíče
+ či vydávající entitě.
+\end_layout
+
+\begin_layout Standard
+Veřejný klíč se používá pro zašifrování zprávy a privátní pro dešifrování
+ zprávy.
+ Pokud chce uživatel komunikovat pomocí šifrovaného přenosu, musí vygenerovat
+ privátní a veřejný klíč.
+ Veřejný klíč poskytne ostatním uživatelům, kteří na jeho základě šifrují
+ zprávu.
+ Takovouto zprávu mohou poslat nezabezpečeným kanálem, neboť její dešifrování
+ je možné pouze pomocí privátního klíče, který vlastní pouze uživatel, jenž
+ je příjemcem zprávy.
+\begin_inset CommandInset citation
+LatexCommand cite
+after "str. 52"
+key "aplikovana_kryptografie"
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Existuje mnoho způsobů a metod asymetrického šifrování, jejich společná
+ charakteristika je, že jsou založeny na jednocestných funkcích.
+ Mezi takové funkce řadíme například funkce řešící problém faktorizace čísla
+ nebo výpočet diskrétního logaritmu.
+ (Používá Deffie-Hellman systém).
+ Existují i další funkce používané v asymetrické kryptografii, nicméně v
+ praxi jsou nejpoužívanější tyto zmíněné.
+\begin_inset CommandInset citation
+LatexCommand cite
+after "str. 110"
+key "aplikovana_kryptografie"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Nejčastěji je v asymetrické kryptografii užíván systém RSA.
+ Jeho název pochází z prvních písmen jmen tvůrců systému (Rivest, Shamir,
+ Adelman).
+ RSA používá v jednosměrné funkci 
+\begin_inset Formula $f$
+\end_inset
+
+ součin dvou velkých po sobě následujících prvočísel (úloha typu P).
+ Abychom v inverzní funkci nalezli tento součin je nutné nalézt výstupní
+ hodnotu inverzní funkce 
+\begin_inset Formula $f$
+\end_inset
+
+
+\begin_inset Formula $^{-1}$
+\end_inset
+
+, což je v tomto případě faktorizace výstupní hodnoty funkce 
+\begin_inset Formula $f$
+\end_inset
+
+ (úloha typu NP).
+\end_layout
+
+\begin_layout Subsection
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:Digitální-podpis"
+
+\end_inset
+
+Digitální podpis
+\end_layout
+
+\begin_layout Standard
+Digitální podpis (Digital Signature) je systém autentizace pro ověřování
+ pravosti dat.
+ Využívá principů asymetrické kryptografie, ale v inverzním smyslu.
+ Při digitálním podepisování uživatel podepisuje data svým soukromým klíčem
+ a za pomocí veřejného klíče se ověřuje autentičnost těchto dat.
+\begin_inset CommandInset citation
+LatexCommand cite
+after "str. 52"
+key "aplikovana_kryptografie"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Autentičnost je ověřena takovým způsobem, že odesílatel dat k nim přiloží
+ a zašifruje zprávu (svůj podpis) svým soukromým klíčem.
+ Tuto přiloženou zprávu zveřejní a příjemce jí pomocí veřejného klíče dešifruje.
+ Pokud je zveřejněná zpráva totožná s dešifrovanou, pak je možné potvrdit
+ autentičnost odeslaných dat.
+\end_layout
+
+\begin_layout Subsection
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:Hash"
+
+\end_inset
+
+Hash
+\end_layout
+
+\begin_layout Standard
+Hash, označován také jako otisk nebo kontrolní součet, je výstupní hodnota
+ 
+\begin_inset Formula $y$
+\end_inset
+
+ z použití jednosměrné funkce 
+\begin_inset Formula $y=f(x)$
+\end_inset
+
+.
+ Tato funkce je charakterizována následujícími vlastnostmi
+\begin_inset CommandInset citation
+LatexCommand cite
+after "str. 54"
+key "aplikovana_kryptografie"
+
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Itemize
+Různé vstupy 
+\begin_inset Formula $x$
+\end_inset
+
+ funkce 
+\begin_inset Formula $f(x)$
+\end_inset
+
+ mohou mít libovolnou délku, zároveň výstupní hodnota 
+\begin_inset Formula $y$
+\end_inset
+
+ funkce 
+\begin_inset Formula $f(x)$
+\end_inset
+
+ musí nabývat konstantní délky.
+\end_layout
+
+\begin_layout Itemize
+Výstupní hodnota 
+\begin_inset Formula $y$
+\end_inset
+
+ funkce 
+\begin_inset Formula $f(x)$
+\end_inset
+
+ musí být vždy unikátní, nesmí tedy nastat kolize.
+ To znamená, že pro různé vstupní hodnoty 
+\begin_inset Formula $x$
+\end_inset
+
+ nemůže nastat shodnost výstupních hodnot 
+\begin_inset Formula $y$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Nejčastější případ použití hashů je při porovnávání dat a ověřování jejich
+ autentičnosti, kdy je nežádoucí, aby byla známa znalost těchto dat při
+ jejich porovnání.
+ Při ověřování autentičnosti jsou vždy porovnávány hodnoty hashů, tedy máme-li
+ data 
+\begin_inset Formula $x$
+\end_inset
+
+ a 
+\begin_inset Formula $x'$
+\end_inset
+
+ a jejich hashe 
+\begin_inset Formula $h=f(x)$
+\end_inset
+
+ a 
+\begin_inset Formula $h^{'}=f(x^{'})$
+\end_inset
+
+, pak pro autentičnost těchto dat musí platit vztah 
+\begin_inset Formula $h=h^{'}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Realizované elektronické volby
+\end_layout
+
+\begin_layout Standard
+V této části práce se autor pokusí seznámit čtenáře s již realizovanými
+ řešeními elektronických voleb.
+\end_layout
+
+\begin_layout Subsection
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:Estonsko"
+
+\end_inset
+
+Estonsko
+\end_layout
+
+\begin_layout Standard
+Estonská republika byla prvním státem jež realizovala elektronické volby
+ nekontrolovaném prostoru v celostátním rozsahu.
+ V Estonsku probíhají elektronické volby zároveň s klasickými, a to z důvodů
+ obav estonských vlád, že by mohli být elektronické volby kompromitovány.
+ Proto elektronické volby z časového hlediska probíhají před klasickými
+ volbami.
+ Zároveň volič může v klasických volbách změnit své rozhodnutí, při kterém
+ udělil hlas ve volbách elektronických.
+\end_layout
+
+\begin_layout Standard
+Elektronické volby v Estonsku vycházejí z principu, že musí být co nejvíce
+ podobné klasickým volbám a jejich zabezpečení nesmí být o nic menší než-li
+ u klasických voleb.
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "e_voting_estonsko"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Dle legislativy Estonské republiky probíhají elektronické volby od šestého
+ do čtvrtého dne od vyhlášení voleb a musí splňovat tyto požadavky 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "e_voting_estonsko"
+
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Itemize
+Ve dnech, kdy probíhají elektronické volby, mohou voliči volit na webových
+ stránkách Národní Volební Komise.
+\end_layout
+
+\begin_layout Itemize
+Volič se identifikuje na základě digitálního certifikátu, který je vložený
+ v jeho průkazu totožnosti.
+\end_layout
+
+\begin_layout Itemize
+Po identifikaci voliče, je zobrazen ve webové stránce konsolidovaný seznam
+ kandidátů v jeho volebním okrsku, dle trvalého pobytu voliče.
+\end_layout
+
+\begin_layout Itemize
+Volič si na webové stránce může vybrat svého preferovaného kandidáta z jemu
+ zobrazeného konsolidovaného seznamu kandidátů.
+ Zároveň volič podepíše svoji volbu svým digitálním certifikátem
+\end_layout
+
+\begin_layout Itemize
+Po výběru kandidáta je voliči na webové stránce zobrazeno ohlášení, že systém
+ elektronických voleb započítal jeho hlas.
+\end_layout
+
+\begin_layout Itemize
+Volič může změnit své rozhodnutí ve volbě do čtvrtého dne před sečtením
+ hlasů, a to jak pomocí elektronického volebního systému nebo klasickým
+ provedením volby ve volební místnosti.
+ V případě změny voličova rozhodnutí, je jeho předchozí hlas ze systému
+ odstraněn.
+ V případě, že volič provede akt volby klasickým způsobem, nebere se na
+ jeho hlas provedený pomocí systému elektronických voleb zřetel.
+\end_layout
+
+\begin_layout Standard
+Estonské elektronické volby jsou z konceptuálního hlediska velice podobné
+ korespondenčnímu hlasování
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Korespondenční hlasování, někdy označované jako hlasování 
+\begin_inset Quotes gld
+\end_inset
+
+per rollam
+\begin_inset Quotes grd
+\end_inset
+
+, není při volbách v ČR používáno, První výskyt tohoto pojmu v české legislativě
+ se uskutečnil v době nabytí platnosti zákonu o obchodních korporacích.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "zakon_o_obchodnich_korporacich"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+, které je využito v případě, pokud volič volí v jiné volební místnosti,
+ než ve volební místnosti mu určené na základě jeho trvalého pobytu.
+ Část volebního procesu je pomocí korespondenční metody definována takto
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "e_voting_estonsko"
+
+\end_inset
+
+ :
+\end_layout
+
+\begin_layout Enumerate
+Volič se identifikuje volební komisi.
+\end_layout
+
+\begin_layout Enumerate
+Volič zvolí preferovaného kandidáta na volebním lístku a ten následně vloží
+ do obálky.
+\end_layout
+
+\begin_layout Enumerate
+Tuto obálku vloží do další vnější obálky, na kterou volební komise napíše
+ informace o voličovi.
+\end_layout
+
+\begin_layout Enumerate
+Vnější obálka je před sčítáním dopravena do volební místnosti, ve které
+ by volič volil za standardních okolností a je volební komisí otevřena.
+ Poté volební komise hodí vnitřní obálku do volební urny.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename obrazky/korespondencni_hlasovani_estonstko.pdf
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Znázornění-elektronických-voleb-pomocí-korespondenčního-hlasování"
+
+\end_inset
+
+Znázornění elektronických voleb pomocí korespondenčního hlasování
+\begin_inset CommandInset citation
+LatexCommand cite
+key "e_voting_estonsko"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Na rozdíl od použití papírových obálek v korespondenčním hlasování používá
+ systém elektronických voleb vlastností asymetrické kryptografie.
+ Viz 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sub:Asymetrická-kryptografie"
+
+\end_inset
+
+.
+ Volič podepíše svůj hlas veřejným klíčem elektronického volebního systému
+ a výsledná data opět podepíše, ale svým privátním klíčem.
+ Podobnost s korespondenčním hlasováním ilustruje obrázek 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Znázornění-elektronických-voleb-pomocí-korespondenčního-hlasování"
+
+\end_inset
+
+.
+ Hlasy jsou v systému elektronických voleb setříděny, odebrány neplatné
+ hlasy, kdy za platný hlas je voličovo rozhodnutí, které je na časové ose
+ nejblíže k času ukončení voleb a zahájení sčítání hlasů.
+ Z vnějších obálek je sestaven seznam voličů, jež hlasovali pomocí systému
+ elektronických voleb, a poté jsou otevřeny.
+ Obsah otevřených vnějších obálek, tedy vnitřní obálka, je přeposlána části
+ systému, určenému pro sčítání hlasů, která obsahuje privátní klíč elektronickéh
+o volebního systému.
+ Tato část dešifruje obsah obálek a sečte hlasy kandidátů udělené pomocí
+ elektronických voleb.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "e_voting_estonsko"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+V estonském systému elektronických voleb je tajnost volby zachována způsobem,
+ že žádná část systému nemá ve stejný čas přístup k privátnímu klíči systému
+ a privátnímu klíči voliče.
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "e_voting_estonsko"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Architektura systému
+\end_layout
+
+\begin_layout Standard
+Architektura systému elektronických voleb v Estonsku se skládá ze čtyř vzájemně
+ propojených částí, jejich vazby jsou znázorněny na obrázku 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Architektura-elektronických-voleb-estonsko"
+
+\end_inset
+
+.
+ Jedná se o tyto části:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename obrazky/achitektura_e_volebniho_systemu_estonsko.pdf
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Architektura-elektronických-voleb-estonsko"
+
+\end_inset
+
+Architektura elektronických voleb v Estonsku
+\begin_inset CommandInset citation
+LatexCommand cite
+key "e_voting_estonsko"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Rozhraní pro voliče -- Toto rozhraní je implementováno pomocí webové aplikace.
+ Z technologického hlediska se jedná o ActiveX applet podepsaný Národní
+ Volební Komisí, který je nahrán do WWW prohlížeče voliče a umožňuje voliči
+ zašifrovat a podepsat svůj hlas.
+\end_layout
+
+\begin_layout Itemize
+Centrální systém -- Přijímá data z výše zmíněné volební aplikace, která
+ následně zpracovává.
+ Výstupem této části jsou spočítané hlasy kandidátů.
+ Tento systém se skládá ze tří částí.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Vote Forwarding Server (VFS) -- Z technologického principu se jedná a autentizač
+ní proxy server, který ověří identitu voliče a podepsanou obálku s daty
+ přepošle na Vote Storage Server.
+ Při ověřování identity se VFS dotazuje do databází voličů a kandidátů.
+ 
+\end_layout
+
+\begin_layout Itemize
+Vote Storage Server (VSS) -- Přijímá data z Vote Forwarding Serveru a ukládá
+ je.
+ Po ukončení hlasování jsou v této databázi zpracována data dávkově.
+ Nejprve jsou data očištěna.
+ Pod očištěním dat autor práce rozumí odstranění neplatných hlasů voličů,
+ kteří opakovali volbu jak elektronicky, tak klasickým způsobem.
+ Následně jsou dávkovou procedurou otevřeny vnější obálky a připravena data
+ pro přenesení do Vote Counting Application.
+\end_layout
+
+\begin_layout Itemize
+Vote Counting Application (VCA) -- Tato část jako svůj vstup přijímá očištěná
+ data z Vote Storage Serveru a privátní klíč systému.
+ Na základě tohoto vstupu dešifruje hlasy voličů, sečte je a vygeneruje
+ sestavu dat pro interpretaci volebního výsledku.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Správa klíčů -- Jedná se o způsob zacházení se šifrovacími klíči v elektronickém
+ volebním systému.
+\end_layout
+
+\begin_layout Itemize
+Audit -- Systém kontroly řádného průběhu elektronických voleb.
+\end_layout
+
+\begin_layout Standard
+Pro zlepšení zabezpečení tohoto systému je jediná komponenta přístupná ze
+ sítě Internet Vote Forwarding Server.
+ Zbytek technologické části systému je v demilitarizované zóně
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Demilitarizovaná zóna je prostředek, používaný pro zabezpečení v počítačových
+ sítích, ve kterém je možné komunikovat s vnějšími sítěmi pouze skrze jeden
+ předem vybraný uzel sítě.
+\end_layout
+
+\end_inset
+
+.
+ Vzhledem k tomu, že obsahy vnitřních obálek s hlasy voličů jsou velice
+ důvěrná data, je bezpečnost zvýšena tím, že datový přenos mezi Vote Storage
+ Serverem a Vote Counting Application není realizován pomocí počítačových
+ sítí, ale data jsou přenášena fyzickým datovým nosičem
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Pod pojmem fyzický datový nosič si můžeme představit taková média jakými
+ jsou například CD, DVD, či magnetické pásky.
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsubsection
+Průběh volebního procesu při použití elektronického volebního systému
+\end_layout
+
+\begin_layout Standard
+Fyzický akt volby je realizován interakcí voliče a rozhraním elektronického
+ volebního systému ve formě klientské www aplikace, serverová část aplikace
+ je provozována na Vote Forwarding Serveru.
+\end_layout
+
+\begin_layout Enumerate
+Volič se identifikuje Vote Forwarding serveru na základě své identifikační
+ karty a dle jeho PIC
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Personal identification Code (Osobní identifikační kód občana) je v Estonské
+ republice identifikační číslo občana, jeho ekvivalentem v České republice
+ je buď rodné číslo nebo číslo občanského průkazu
+\end_layout
+
+\end_inset
+
+ je vyhledán v příslušném seznamu voličů a VFS předá klientské části aplikace
+ seznam kandidátů ve voličově obvodu.
+ V případě, že volič již jednou volil, je v tomto kroku o jeho předchozí
+ volbě informován.
+\end_layout
+
+\begin_layout Enumerate
+Volič v klientské aplikaci vybere svého preferovaného kandidáta a je klientskou
+ částí aplikace vyzván k potvrzení svého rozhodnutí.
+\end_layout
+
+\begin_layout Enumerate
+Po potvrzení voličova rozhodnutí je klientskou části aplikace zašifrován
+ jeho hlas za pomocí veřejného klíče elektronického volebního systému, zároveň
+ volič tento hlas podepíše svým klíčem uloženým v identifikační kartě a
+ vytvoří tak pomyslnou vnější obálku popisovanou výše.
+\end_layout
+
+\begin_layout Enumerate
+Jeho hlas je předán z VFS do VSS, kde je zároveň uložena časová značka provedení
+ volby voličem.
+ Po ukončení této transakce je kaskádově v systému vyslána zpráva zpět voliči,
+ že jeho hlas byl zaznamenán.
+ Na konci tohoto kroku je ukončena veškerá komunikace s klientskou částí
+ aplikace.
+\end_layout
+
+\begin_layout Standard
+Tento proces může volič opakovat neustále do času, kdy je ukončeno hlasování.
+ Ze všech kroků tohoto procesu jsou generovány logy komponent elektronického
+ volebního systému pro jeho audit viz tabulka 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:Systém-logů"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsubsection
+Správa klíčů
+\end_layout
+
+\begin_layout Standard
+Z hlediska zabezpečení elektronického volebního systému je správa klíčů
+ tím nejrizikovějším místem v systému.
+ Pro každé volby je vygenerován pár klíčů (privátní a veřejný klíč) pro
+ asymetrické šifrování.
+ Privátní klíč se používá pro dešifrování hlasů ve Vote Counting Application
+ a veřejný klíč ve webové aplikaci pro voliče.
+ Z hlediska napadení elektronického volebního systému v šifrování hlasů
+ jsou v Estonském řešení vyskytují dvě možné hrozby:
+\end_layout
+
+\begin_layout Itemize
+Zkompromitování či zveřejnění privátního klíče systému -- Kompromitace principu
+ tajnosti hlasování a možnost zveřejnění hlasů voličů.
+\end_layout
+
+\begin_layout Itemize
+Ztráta nebo porušení integrity privátního klíče systému -- Nemožnost dešifrovat
+ výsledky voleb Národní Volební Komisí, a tím je celé zneplatnit.
+\end_layout
+
+\begin_layout Standard
+Aby se předešlo zneužití klíčů v elektronických volbách jsou oba klíče generován
+y HSM (Hardware Security Module) zařízením
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+HSM je zařízení pro generování a správu klíčů, generování klíče v těchto
+ zařízeních je již implementováno v hardwaru zařízení.
+ HSM zařízení se vyskytují ve formě přídavných karet do počítačů nebo čistě
+ externí s možností přímého propojení s počítačem.
+\end_layout
+
+\end_inset
+
+, a to takovým způsobem, že obsah privátního klíče nikdy toto zařízení neopustí.
+ Pro provádění operací s HSM zařízením je vyžadována přítomnost čtyř členů
+ ze sedmičlenné Národní Volební Komise, všechny operace s HSM zařízením
+ jsou pečlivě dokumentovány, archivovány a podrobeny auditům.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "e_voting_estonsko"
+
+\end_inset
+
+ Po zákonné lhůtě pro podání žaloby pro neregulérnost voleb a v případě,
+ že takováta žaloba nebyla podána, je privátní klíč vždy zničen.
+\end_layout
+
+\begin_layout Subsubsection
+Audit elektronických voleb
+\end_layout
+
+\begin_layout Standard
+Audit elektronických voleb spočívá v kontrole integrity dat, z různých částí
+ systému, aby byl zachován princip tajnosti voleb je u dat týkající se hlasů
+ voliče používán hash (viz.
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sub:Hash"
+
+\end_inset
+
+) těchto dat.
+ Pro umožnění auditu voleb systém generuje několik logů, z každé jeho části.
+ Obsah logů a jejich význam ilustruje tabulka 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:Systém-logů"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Tabular
+<lyxtabular version="3" rows="6" columns="4">
+<features rotate="0" tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="left" valignment="top" width="20text%">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Název logu
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Obsah logu
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Význam logu
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+komponenta systému generující log
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+LOG1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+PIC, hash hlasu
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+přijaté hlasy
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Vote Forwarding Server
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+LOG2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+PIC, hash hlasu,
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+linebreak
+\end_layout
+
+\end_inset
+
+ důvod zneplatnění
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+zneplatněné hlasy
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Vote Storage Server
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+LOG3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+PIC, hash hlasu
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+hlasy k sečtení
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Vote Storage Server
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+LOG4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+hash hlasu
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+neplatné hlasy
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Vote Counting Application
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+LOG6
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="left" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+hash hlasu
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+sečtené hlasy
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Vote Counting Application
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "tab:Systém-logů"
+
+\end_inset
+
+Systém logů při provádění auditu voleb
+\begin_inset CommandInset citation
+LatexCommand cite
+key "e_voting_estonsko"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Zhodnocení realizace elektronických voleb v Estonsku
+\end_layout
+
+\begin_layout Standard
+Vzhledem k tomu, že estonský systém elektronických voleb vychází z korespondenčn
+ího hlasování, které je ověřené desetiletími praktického užívání v mnoha
+ evropských státech, považuje jej autor jako velice zdařilý způsob realizace
+ elektronických voleb.
+ Jako mimořádnou výhodu vidí autor v možnosti opakování volby voliče, která
+ v této realizaci řeší zachování principu svobodné volby.
+ Za hlavní nevýhodu považuji způsob implementace tohoto elektronického volebního
+ systému, neboť byla vyvíjena soukromým sektorem jako individuální aplikační
+ software
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Individuální aplikační Software (IASW) je takový software, který je vytvořen
+ přímo na míru řešeného problému, zároveň je navržen tak, aby optimálně
+ podporoval proces při řešení problému.
+\begin_inset CommandInset citation
+LatexCommand cite
+after "str. 59"
+key "Vorisek_rizeni_podnikove_informatiky"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ pro potřeby realizování elektronických voleb do parlamentu Estonské republiky.
+ U voleb na národní úrovni, ze kterých vzejde reprezentace legislativní
+ složky moci státu, by implementace jejich elektronické varianty měla být
+ určitě licencována s podmínkou otevřenosti zdrojového kódu.
+\end_layout
+
+\begin_layout Subsection
+Španělsko
+\end_layout
+
+\begin_layout Subsection
+Švýcarsko
+\end_layout
+
+\begin_layout Chapter
+\begin_inset CommandInset label
+LatexCommand label
+name "chap:Analýza-elektronických-voleb"
+
+\end_inset
+
+Analýza elektronických voleb ve Straně svobodných občanů
+\end_layout
+
+\begin_layout Chapter
+\begin_inset CommandInset label
+LatexCommand label
+name "chap:Implementace-elektronických-vole"
+
+\end_inset
+
+Implementace elektronických voleb ve Straně svobodných občanů
+\end_layout
+
+\begin_layout Chapter
+\begin_inset CommandInset label
+LatexCommand label
+name "chap:Možnost-použítí-implementace"
+
+\end_inset
+
+Možnost použití implementace ve volbách v České republice
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "kyberprostor"
+
+\end_inset
+
+ 
+\emph on
+An interview with William Gibson (by Dan Josefsson)
+\emph default
+ [online] [cit.
+ 2015-04-06].
+ Dostupné z: 
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+http://www.josefsson.net/gibson/index.html
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "demokracie"
+
+\end_inset
+
+
+\emph on
+Liberální demokracie - možný politický systém pro všechny státy světa?
+\emph default
+ [online] [cit.
+ 2015-04-06].
+ Dostupné z: 
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+http://www.e-polis.cz/clanek/liberalni-demokracie-mozny-politicky-system-pro-vsech
+ny-staty-sveta.html
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "volebni_systemy"
+
+\end_inset
+
+CHYTILEK, Roman.
+ 
+\emph on
+Volební systémy.
+
+\emph default
+ Vyd.
+ 4., V Portálu 1.
+ Praha: Portál, 2009, 375 s.
+ ISBN 978-807-3675-486.
+ 
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "uvod_do_politike_vedy"
+
+\end_inset
+
+CABADA, Ladislav a Michal KUBÁT.
+ 
+\emph on
+Úvod do studia politické vědy.
+
+\emph default
+ Praha: Eurolex Bohemia, 2002, 445 s.
+ Politologie.
+ ISBN 80-864-3241-6.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "cepsr_volebni_proces_klasicke_volby"
+
+\end_inset
+
+CEPSR - Způsoby hlasování ve volbách a jejich historický vývoj: hlasovací
+ technika jako stěžejní proměnná volebního procesu.
+ [online] [cit.
+ 2015-04-06].
+ Dostupné z: 
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+http://www.cepsr.com/clanek.php?ID=306
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "obcansky_zakonik"
+
+\end_inset
+
+ 
+\emph on
+Zákon 89/2012 Sb.
+ Občanský zákoník
+\emph default
+ [online] [cit.
+ 2015-04-07].
+ Dostupné z: 
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+http://portal.gov.cz/app/zakony/download?idBiblio=74907&nr=89~2F2012~20Sb.&ft=txt
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "umluva_zakladnich_prav_a_svobod"
+
+\end_inset
+
+ 
+\emph on
+Úmluva o ochraně lidských práv a základních svobod
+\emph default
+ [online] [cit.
+ 2015-04-16].
+ Dostupné z: 
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+http://www.echr.coe.int/Documents/Convention_CES.pdf
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "code_of_good_practice_in_electoral_matters"
+
+\end_inset
+
+ 
+\emph on
+code of good practice in electoral matters
+\emph default
+ [online] [cit.
+ 2015-04-16].
+ Dostupné z: 
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+http://www.venice.coe.int/webforms/documents/default.aspx?pdffile=CDL-AD(2002)023-e
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "britannica_electronic_voting"
+
+\end_inset
+
+
+\emph on
+Electronic voting | Encyclopedia Britannica
+\emph default
+ [online] [cit.
+ 2015-04-22].
+ Dostupné z: 
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+http://www.britannica.com/EBchecked/topic/1472946/electronic-voting
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "oasis"
+
+\end_inset
+
+
+\emph on
+About us | oasis
+\emph default
+ [online] [cit.
+ 2015-04-22].
+ Dostupné z: 
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+https://www.oasis-open.org/org
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "EML"
+
+\end_inset
+
+
+\emph on
+Election Markup Language (EML) Specification Version 7.0.27
+\emph default
+ [online] [cit.
+ 2015-04-23].
+ Dostupné z: 
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+http://docs.oasis-open.org/election/eml/v7.0/cs01/eml-v7.0-cs01.pdf
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "sindelar_elektronicke_volby"
+
+\end_inset
+
+ŠINDELÁŘ, Petr Elektronické volby,
+\emph on
+ Egovernment
+\emph default
+, 2006, č.
+ 6, [cit.
+ 2015-04-26].
+ s.
+ 14-15 Dostupné z: 
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+http://www.egovernment.cz/archiv/PDF%204-06/4.pdf
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "aplikovana_kryptografie"
+
+\end_inset
+
+Burda, Karel.
+ Aplikovaná kryptografie.
+ 1.
+ vyd.
+ Brno: VUTIUM, 2013.
+ 255 s.
+ ISBN 978-80-214-4612-0.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "e_voting_estonsko"
+
+\end_inset
+
+THE NATIONAL ELECTION COMMITTEE,
+\emph on
+ E-Voting System
+\emph default
+, 2005, [cit.
+ 2015-05-02].
+ Dostupné z: 
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+http://www.vvk.ee/public/dok/Yldkirjeldus-eng.pdf
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "zakon_o_obchodnich_korporacich"
+
+\end_inset
+
+
+\emph on
+Zákon 90/2012 Sb.
+ O obchodních korporacích
+\emph default
+ [online] [cit.
+ 2015-04-02].
+ Dostupné z: 
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+https://portal.gov.cz/app/zakony/download?idBiblio=74908&nr=90~2F2012~20Sb.&ft=txt
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "estonian_id_card"
+
+\end_inset
+
+
+\emph on
+The Estonian ID Card and Digital Signature Concept
+\emph default
+ [online] [cit.
+ 2015-04-03].
+ Dostupné z: 
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+http://www.id.ee/public/The_Estonian_ID_Card_and_Digital_Signature_Concept.pdf
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "Vorisek_rizeni_podnikove_informatiky"
+
+\end_inset
+
+VOŘÍŠEK, Jiří.
+ 
+\emph on
+Principy a modely řízení podnikové informatiky.
+
+\emph default
+ Praha: Oeconomica, 2008.
+ ISBN 978-80-245-1440-6.
+\end_layout
+
+\begin_layout Standard
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+addcontentsline{toc}{chapter}{
+\end_layout
+
+\end_inset
+
+Literatura
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Tento příkaz přidá Literaturu do obsahu
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage cleardoublepage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\start_of_appendix
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Prostředí Příloha vložíme Dokument -> Začít dodatky zde
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pagenumbering{Roman}
+\backslash
+addcontentsline{toc}{part}{Přílohy}
+\backslash
+thispagestyle{empty}  
+\backslash
+renewcommand{
+\backslash
+appendixname}{P
+\backslash
+v{r}iloha}%%přílohy, číslování římskými
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part*
+Přílohy
+\end_layout
+
+\begin_layout Chapter
+\noindent
+\align block
+Test
+\end_layout
+
+\end_body
+\end_document
