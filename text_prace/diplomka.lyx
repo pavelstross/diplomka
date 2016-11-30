@@ -158,7 +158,7 @@ Nemám závažný důvod proti užití tohoto školního díla ve smyslu \S 60 Z
 \paragraph_indentation default
 \quotes_language german
 \papercolumns 1
-\papersides 2
+\papersides 1
 \paperpagestyle default
 \tracking_changes false
 \output_changes false
@@ -4378,7 +4378,7 @@ a, který na EU představují), ale zavádí se systém dvojí většiny, resp.
  Tímto způsobem hlasování mohou např.
  jen čtyři velké země EU zablokovat rozhodnutí Rady.
  Mimo jiné Lisabonská smlouva definuje mechanismy, které dávají EU možnost
- získávat nové pravomoci a rušit právo veta v dalších oblastech bez další
+ získávat nové pravomoci a rušit právo veta v ostatních oblastech bez další
  ratifikace
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -4420,7 +4420,7 @@ key "svobodni_stanovy"
 .
  Otázkou zůstává, proč současný Parlament ČR neschválil možnost uskutečnění
  referenda o odchodu z EU, neboť sice v roce 2003 se 77% českých občanů
- se vyjádřilo pro vstup do EU, avšak přijetím Lisabonské smlouvy a zahraniční
+ vyjádřilo pro vstup do EU, avšak přijetím Lisabonské smlouvy a zahraniční
  politikou EU, danou především představiteli Německa a Francie, se toho
  poměrně dost změnilo
 \begin_inset CommandInset citation
@@ -4439,7 +4439,7 @@ Podle období vzniku strany by se mohla jevit evropská problematika jako
  není hlavním bodem programu, jak se jeví dle představování Svobodných v našich
  hromadných sdělovacích prostředcích.
  Program Svobodných zahrnuje nejen otázky zahraniční politiky a vnější bezpečnos
-ti státu, ale i hospodářství, daňové a měnové politiky, silniční dopravy,
+ti státu, ale i hospodářské, daňové a měnové politiky, silniční dopravy,
  ochrany životního prostředí, zdravotnictví, sociální politiky, školství,
  vědy, zemědělství a veřejné správy a samosprávy.
  V celém programu se prolínají základní postoje Svobodných, které je možné
@@ -4801,7 +4801,7 @@ Primární volby – Primární volby jsou využívány při sestavování kandi
 \end_layout
 
 \begin_layout Itemize
-Usnesení sněmů – Po každém jednání sněmu je hlasování o jednotlivých usneseních
+Usnesení sněmu – Po každém jednání sněmu je hlasování o jednotlivých usneseních
  sněmu postoupeno do hlasování per rollam, aby každý člen, který se neúčastnil
  jednání mohl využívat své aktivní volební právo při hlasování o usneseních.
  Usnesení sněmů se liší od voleb funkcionárů strany a primárních voleb tím,
@@ -4810,14 +4810,15 @@ Usnesení sněmů – Po každém jednání sněmu je hlasování o jednotlivýc
 \end_layout
 
 \begin_layout Standard
-Tyto tři druhy voleb probíhají, zároveň na celorepublikové úrovni, tak na
- lokálních krajských úrovních.
+Tyto tři druhy voleb probíhají zároveň jak na celorepublikové úrovni, tak
+ na lokálních krajských úrovních.
  V případě primárních voleb mají aktivní volební právo vždy členové o jednu
  úroveň vyšší.
  Tedy například při krajských primárních volbách může využívat své aktivní
  volební práv jakýkoliv člen strany, zatímco v komunálních primárních volbách
  může využívat své aktivní volební právo pouze člen daného kraje.
  Vztah mezi typem vnitrostranických voleb a volebními právy znázorňuje tabulka
+ 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "tab:Vztah-typu-voleb-a-prav"
@@ -4831,7 +4832,7 @@ reference "tab:Vztah-typu-voleb-a-prav"
 \begin_inset Float table
 wide false
 sideways true
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Tabular
@@ -5478,10 +5479,6 @@ Vztah typu voleb a volebních práv ve Straně svobodných občanů
 
 \end_layout
 
-\begin_layout Plain Layout
-
-\end_layout
-
 \end_inset
 
 
@@ -5493,7 +5490,7 @@ Procesní model voleb ve Straně svobodných občanů
 
 \begin_layout Standard
 Vzhledem k tomu, že z jedním cílů této práce je navrhnout řešení elektronických
- voleb ve Straně svobodných občanů, je v rámci analýzi vytvořen procesní
+ voleb ve Straně svobodných občanů, je v rámci analýzy vytvořen procesní
  model voleb ve Straně svobodných občanů, popisující celý průběh voleb,
  tak jak ho stanovují stanovy strany a jednací řád volební komise
 \begin_inset CommandInset citation
@@ -5508,7 +5505,7 @@ key "svobodni_stanovy,Jednaci_rad_volebni_komise"
 \begin_layout Standard
 Důvodem tvorby modelu je lepší porozumění procesu voleb a volební procedury
  ve vnitrostranických volbách Svobodných.
- Procesní model se skládá z několika procesů, přičemž model Vnitrostranické
+ Procesní model se skládá z několika procesů, přičemž proces Vnitrostranické
  volby je považován za klíčový proces a ostatní procesy jsou podpůrné procesy
  klíčového procesu Vnitrostranické volby.
  Do modelu jsou zahrnuty následující procesy:
@@ -5523,20 +5520,11 @@ Příprava voleb
 \end_layout
 
 \begin_layout Enumerate
-Přihlašování kandidátů – V případě, že se jedná o volby typu Usnesení sněmů
- tento podpůrný proces v klíčovém procesu neprobíhá.
-\end_layout
-
-\begin_layout Enumerate
-Hlasování
+Průběh hlasování
 \end_layout
 
 \begin_layout Enumerate
 Vyhodnocení voleb
-\end_layout
-
-\begin_layout Enumerate
-Kontrola hlasování
 \end_layout
 
 \begin_layout Subsection
@@ -6525,29 +6513,342 @@ Přílohy
 Chování reality
 \end_layout
 
-\begin_layout Section
-\noindent
-Procesní modely
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways true
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename obrazky/procesni_diagramy/volby_general_proces.svg
+	width 80text%
+
+\end_inset
+
+
 \end_layout
 
-\begin_layout Section
-Případy užití
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Klíčový-proces:-Vnitrostranické"
+
+\end_inset
+
+Klíčový proces: Vnitrostranické volby
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways true
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename obrazky/procesni_diagramy/priprava_voleb_proces_stavajici_stav.svg
+	width 80text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Stávající-stav-procesu-priprava-voleb:"
+
+\end_inset
+
+Stávající stav procesu: Příprava voleb
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways true
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename obrazky/procesni_diagramy/prubeh_hlasovan__stavajici_stav.svg
+	width 80text%
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Stávající-stav-procesu-prubeh-hlasovani"
+
+\end_inset
+
+Stávající stav procesu: Průběh hlasování
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways true
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename obrazky/procesni_diagramy/vyhodnoceni_voleb_stavajici_stav.svg
+	width 80text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Stávající-stav-procesu-vyhodnoceni-voleb"
+
+\end_inset
+
+Stávající stav procesu: Vyhodnocení voleb
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways true
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename obrazky/procesni_diagramy/priprava_voleb_proces_novy_stav.svg
+	width 80text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Navrhované-řešení-procesu-priprava-voleb"
+
+\end_inset
+
+Navrhované řešení procesu: Příprava voleb
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways true
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename obrazky/procesni_diagramy/prubeh_hlasovani_novy_stav.svg
+	width 80text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Navrhované-řešení-procesu-prubeh-hlasovani"
+
+\end_inset
+
+Navrhované řešení procesu: Průběh hlasování
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways true
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename obrazky/procesni_diagramy/vyhodnoceni_voleb_novy_stav.svg
+	width 80text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Narvhované-řešení-procesu-vyhodnoceni-voleb"
+
+\end_inset
+
+Narvhované řešení procesu: Vyhodnocení voleb
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways true
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename obrazky/procesni_diagramy/kontrola_voleb.svg
+	width 80text%
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Proces:-Kontrola-voleb"
+
+\end_inset
+
+Proces: Kontrola voleb
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Chapter
 Struktura reality
-\end_layout
-
-\begin_layout Section
-Diagram tříd
-\end_layout
-
-\begin_layout Section
-Stavové diagramy
-\end_layout
-
-\begin_layout Section
-Diagram toku dat
 \end_layout
 
 \end_body
