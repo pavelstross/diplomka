@@ -4724,17 +4724,18 @@ JWT (JSON Web Token) je přístupový token umožňující používat jedno př�
 
 \begin_layout Itemize
 Finance – Aplikace implementující párování dat o darech, členských a přiznivecký
-ch poplatků poplatků s finančními ústavy.
- Zároveň tato aplikace obsluhuje procesy týkající se finanční agendy, neboť
- politické strany a hnutí mají naprosto odlišný účetní režim od ostatních
- právních subjektů v ČR
+ch poplatků s finančními ústavy.
+ Zároveň tato aplikace obsluhuje procesy týkající se finanční agendy, zejména
+ účetnictví neboť politické strany a hnutí mají naprosto odlišný účetní
+ režim od ostatních právních subjektů v ČR
 \begin_inset CommandInset citation
 LatexCommand cite
 key "zakon_o_politickych_stranach"
 
 \end_inset
 
-.
+, tudíž jeho podpora není zahrnuta v žádném typovém aplikačním softwaru
+ na trhu.
 \end_layout
 
 \begin_layout Itemize
@@ -4759,7 +4760,8 @@ Znalostní báze strany – Znalostní báze umožňuje členům a příznivcům
 Volební systém – Aplikace, jenž obsluhuje procesy týkající se vnitrostranických
  voleb.
  Volební systém je poslední komponentou, která ještě plně nesplňuje požadavky
- na nový informační systém.
+ na nový informační systém, a je součástí starého monolitického informačního
+ systému.
 \end_layout
 
 \begin_layout Section
@@ -4769,6 +4771,16 @@ Vnitrostranické volby Svobodných
 \begin_layout Standard
 Vnitrostranické volby ve Straně svobodných občanů jsou velice častým jevem,
  dalo by se říci, že každý měsíc probíhají alespoň jedny volby.
+ Svobodní používají semiproporční systém voleb, založený na kombinaci neomezenéh
+o hlasování a schvalování/odmítání (viz část 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "subsec:Semiproporční-volební-systémy"
+
+\end_inset
+
+), kdy pořadí kandidátů určuje počet kladných hlasů a v případě rovnosti
+ kladných hlasů rozhoduje o pořadí počet záporných hlasů.
 \end_layout
 
 \begin_layout Subsection
@@ -5508,35 +5520,818 @@ Důvodem tvorby modelu je lepší porozumění procesu voleb a volební procedur
  Procesní model se skládá z několika procesů, přičemž proces Vnitrostranické
  volby je považován za klíčový proces a ostatní procesy jsou podpůrné procesy
  klíčového procesu Vnitrostranické volby.
- Do modelu jsou zahrnuty následující procesy:
+ Do modelu jsou tedy zahrnuty následující procesy:
 \end_layout
 
-\begin_layout Enumerate
-Vnitrostranické volby
+\begin_layout Itemize
+Vnitrostranické volby, viz obrázek 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Klíčový-proces:-Vnitrostranické"
+
+\end_inset
+
+
 \end_layout
 
-\begin_layout Enumerate
+\begin_layout Itemize
+Příprava voleb, viz obrázek 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Stávající-stav-procesu-priprava-voleb:"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Průběh hlasování, viz obrázek 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Stávající-stav-procesu-prubeh-hlasovani"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Vyhodnocení voleb, viz obrázek 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Stávající-stav-procesu-vyhodnoceni-voleb"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Kontrola voleb,viz obrázek 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Proces:-Kontrola-voleb"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Dalším procesem je kontrola voleb.
+ Narozdíl od legislativy České republiky stanovy a vnitřní řády strany nedefinuj
+í lhůtu pro stížnost na špatný průběh voleb, či jejich výsledky, pro to
+ je v modelu zahrnut i proces kontrola voleb.
+ Tento proce není součástí klíčového procesu, nicméně je nezbytné ho popsat
+ pro pochopení reality vnitrostranických voleb ve Svobodných.
+\end_layout
+
+\begin_layout Subsubsection
 Příprava voleb
 \end_layout
 
-\begin_layout Enumerate
+\begin_layout Standard
+Před zahájením samotných voleb probíhá jejich příprava.
+ Ta začíná v momentě, kdy se předsednictvo usnese, že je potřeba uskutečnit
+ nějaké vnitrostranické volby.
+ 
+\end_layout
+
+\begin_layout Standard
+Tato sitauce nastává obvykle tím, že některému členovi končí funkční období
+ mandátu vnitrostranické funke.
+ Další situací, kdy předsednictvo jedná o vyhlášení voleb je v případě konání
+ některého ze sněmů, na konci zasedání každého sněmu jsou dána hlasování,
+ která se uskutečnila během zasedání do hlasování per-rollam, aby členové,
+ kteří se nemohli zůčastnit sněmu měli možnost uplatnit své aktivní volební
+ právo.
+\end_layout
+
+\begin_layout Standard
+V případě, že se předsednictvo usnese o vyhlášení vnitrostranických voleb,
+ umístí své usnesení do zápisu jednání předsednictva.
+ V tomto usnesení, musí být specifikovány vlasnosti voleb, např.
+ kolik je volitelných míst, tj.
+ kolik kandidátů z proběhlích voleb získá mandát, termíny přihlašování kandidátů
+, celkový čas volební procedury apod.
+ Předsednictvo informuje volební komisi o svém záměru vyhlásit vnitrostranické
+ volby a předá jí zápis ze svého jednání.
+ Následně jsou volby v režii volební komise.
+\end_layout
+
+\begin_layout Standard
+Volební komise vytvoří ve volební aplikaci vnitrostranické volby a v případě,
+ že se nejedná o hlasování o usnesení po proběhnuvším sněmu informuje potencioná
+lní účastníky voleb mající pasivní volební právo o volbách.
+\end_layout
+
+\begin_layout Standard
+Do lhůty dané z vlastností voleb, které připravilo předsednictvo, volební
+ komise posbírá přihlášky kandidátů do vnitrostranických voleb a sestavý
+ kandidátní listinu.
+ Kterou následně zveřejní ve znalostní bázi informačního systému a na úložišti
+ dokumentů.
+\end_layout
+
+\begin_layout Standard
+Poté vyhlásí volby a zprávou informuje všechny účastníky daných voleb, kteří
+ mají v těchto volbách aktivní volební právo.
+ Grafické znázornění procesu je zachyceno v obrázku 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Stávající-stav-procesu-priprava-voleb:"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsubsection
 Průběh hlasování
 \end_layout
 
-\begin_layout Enumerate
+\begin_layout Standard
+Po zahájení voleb mají voliči ve volební aplikaci možnost využít své aktivní
+ volební právo v případě jeho využití je volební komise za pomocí volební
+ aplikace autentizuje a autorizuje k volbám.
+\end_layout
+
+\begin_layout Standard
+Volič odevzdá svůj hlas ve formě hlasovacího lístku.
+ Volební komise tento hlas započte a uloží jeho kontrolní součet do databáze
+ volební aplikace.
+ Zároveň tento kontrolní součet odešle voliči, pro případnou kontrolu jeho
+ rozhodnutí, viz obrázek
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Stávající-stav-procesu-prubeh-hlasovani"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsubsection
 Vyhodnocení voleb
 \end_layout
 
-\begin_layout Subsection
-Podrobný popis procesů
+\begin_layout Standard
+Při vyhodnocování voleb, volební komise sečte hlasy jednotlivých kandidátů
+ popř.
+ kladné a záporné hlasy pro schválení usnesení.
+ Následně vypracuje volební protokol a vystaví ho v úložišti dokumentů viz
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Stávající-stav-procesu-vyhodnoceni-voleb"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsubsection
+Kontrola voleb
+\end_layout
+
+\begin_layout Standard
+Kontrola voleb je prováděna pouze na základě stížnosti od účastníka voleb.
+ Kontrolou se zabývá rozhodčí a volební komise.
+\end_layout
+
+\begin_layout Standard
+Napřed kontrolní komise projedná závažnost a opodstatnění stížnosti na průběh
+ voleb.
+ Pokud je stížnost opodstatněná začne šetřit okolnosti okolo férovosti
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Do porušení principu férovosti voleb jsou zahrnuty aktivity účastníků voleb
+ z jakéhokoliv pohledu, tedy například, kupování hlasů, fyzické zastrašování
+ účastníků voleb apod.
+\end_layout
+
+\end_inset
+
+ voleb.
+ V případě podání stížnosti na průběh volební procedury, či aplikace(viz
+ část 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "subsec:Volební-procedura"
+
+\end_inset
+
+) volební komise přezkoumá průběh a vyhodnocení voleb a v případě manipulaci
+ s daty volebního procesu je výsledek přezkoumání předán zpět rozhodčí komisi,
+ ta v obou případech provedete prošetření všech ostatních okolností voleb
+ a vydá stanovisko ke zrušení voleb a anulování jejich výsledku.
 \end_layout
 
 \begin_layout Section
-Elektronický volební systém Svobodných
+Elektronická volební aplikace Svobodných
 \end_layout
 
 \begin_layout Subsection
-Požadavky na volební systém Svobodných
+Požadavky na volební aplikaci Svobodných
+\end_layout
+
+\begin_layout Standard
+Požadavky na vyvíjenou aplikaci vyplývají jednak z výše popsaných procesů
+ a ze zachování principů voleb z pohledu mezinárodního práva(viz část 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:Volby-z-pohledu"
+
+\end_inset
+
+).
+ Přičemž z pohledu mezinárodního práva je u vnitrostranických voleb porušena
+ zásada všeobecnosti, neboť přiznivci nemají možnost se zůčastnit některých
+ voleb aktivně a všech pasivně (viz tabulka 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "tab:Vztah-typu-voleb-a-prav"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+Mezi další požadavky můžeme zařadit následující:
+\end_layout
+
+\begin_layout Itemize
+Volební aplikace nesmí obsahovat znalost autentizačních údajů svých uživatelů.
+\end_layout
+
+\begin_layout Itemize
+Volební aplikace musí používat vždy aktuální data o členech, příznivcích.
+\end_layout
+
+\begin_layout Itemize
+Volební aplikace umožní archivovat data uplynulých voleb.
+\end_layout
+
+\begin_layout Itemize
+Provoz volební aplikace musí zajišťovat volební komise a musí být nezávislá
+ na infrastruktuře ostatních 
+\end_layout
+
+\begin_layout Subsection
+Funkční požadavky
+\end_layout
+
+\begin_layout Standard
+Z uvedených procesů a z povahy zaměření aplikace autor definoval sadu funkcional
+it, kterými by měla aplikace disponovat.
+\end_layout
+
+\begin_layout Standard
+Funkční požadavky jsou nastíněny v následujícím textu s použitím diagramu
+ užití 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Diagram-užití-volební"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Diagram-užití-volební"
+
+\end_inset
+
+Diagram užití volební aplikace
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Hlavními aktéry v tomto diagramu jsou:
+\end_layout
+
+\begin_layout Itemize
+uživatel - má možnost přihlásti se a odhlásit se, zobrazovat seznamy voleb,
+ hlasovat a prohlížet informace o uplynulých volbách.
+\end_layout
+
+\begin_layout Itemize
+účastník s pasivním volebním právem - je mu umožněno kandidovat ve volbách.
+\end_layout
+
+\begin_layout Itemize
+účastník s aktivním volebním právem - má možnost zobrazení volebního lístku
+ a hlasování.
+\end_layout
+
+\begin_layout Itemize
+člen volební komise - může vytvářet a rušit volby, odstraňovat kandidáty
+ z nezahájených voleb a vyhodnotit volby.
+\end_layout
+
+\begin_layout Subsubsection
+Přihlásit se
+\end_layout
+
+\begin_layout Enumerate
+Uživatel vybere odkaz 
+\emph on
+
+\begin_inset Quotes gld
+\end_inset
+
+Přihlásit se
+\begin_inset Quotes grd
+\end_inset
+
+
+\emph default
+.
+\end_layout
+
+\begin_layout Enumerate
+Aplikace zobrazí formulář obsahující vstupní pole uživatelské jméno a heslo.
+\end_layout
+
+\begin_layout Enumerate
+Uživatel vyplní formulář a stiskne tlačítko přihlásit se.
+ V případě, že se uživatel přihlašuje do aplikace poprvé musí potrvdit poskytnut
+í svých osobních údajů z registru členů a příznivců.
+\end_layout
+
+\begin_layout Enumerate
+Pokud proběhne v pořádku kontrola údajů registr členů a příznivců autentizuje
+ uživatele volební aplikace.
+\end_layout
+
+\begin_layout Subsubsection
+Odhlásit se
+\end_layout
+
+\begin_layout Enumerate
+Uživatel vybere odkaz 
+\emph on
+
+\begin_inset Quotes gld
+\end_inset
+
+Odhlásit se
+\begin_inset Quotes grd
+\end_inset
+
+
+\emph default
+.
+\end_layout
+
+\begin_layout Enumerate
+Aplikace uživatele odhlásí.
+\end_layout
+
+\begin_layout Subsubsection
+Zobrazit probíhající volby
+\end_layout
+
+\begin_layout Enumerate
+Uživatel vybere odkaz v Menu 
+\emph on
+
+\begin_inset Quotes gld
+\end_inset
+
+Probíhající volby
+\begin_inset Quotes grd
+\end_inset
+
+
+\emph default
+.
+\end_layout
+
+\begin_layout Enumerate
+Aplikace zobrazí seznam všech probíhajích voleb.
+\end_layout
+
+\begin_layout Subsubsection
+Zobrazit volby ve fázi přípravy
+\end_layout
+
+\begin_layout Enumerate
+Uživatel vybere odkaz v Menu 
+\emph on
+
+\begin_inset Quotes gld
+\end_inset
+
+Přihlášení kandidátů
+\begin_inset Quotes grd
+\end_inset
+
+
+\emph default
+.
+\end_layout
+
+\begin_layout Enumerate
+Aplikace zobrazí seznam všech voleb, ve kterých probíhá sestavování kandidátské
+ listiny, u jednotlivých položek voleb aplikace zobrazí odkaz 
+\begin_inset Quotes gld
+\end_inset
+
+Podat kandidaturu
+\begin_inset Quotes grd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsubsection
+Zobrazit uplynulé volby
+\end_layout
+
+\begin_layout Enumerate
+Uživatel vybere odkaz v Menu 
+\emph on
+
+\begin_inset Quotes gld
+\end_inset
+
+Uplynulé volby
+\begin_inset Quotes grd
+\end_inset
+
+
+\emph default
+.
+\end_layout
+
+\begin_layout Enumerate
+Aplikace zobrazí seznam uplynulých voleb, které již byli volební komisí
+ vyhodnocené, u jednotlivých položek voleb zobrazí odkaz pro zobrazení obsahu
+ volební urny voleb a odkaz pro zobrazení volebního protokolu voleb.
+\end_layout
+
+\begin_layout Subsubsection
+Zobrazit obsah volební urny uplynulých voleb
+\end_layout
+
+\begin_layout Enumerate
+Uživatel vybere odkaz 
+\begin_inset Quotes gld
+\end_inset
+
+
+\emph on
+Volební urna
+\emph default
+
+\begin_inset Quotes grd
+\end_inset
+
+ v položce seznamu voleb.
+\end_layout
+
+\begin_layout Enumerate
+Aplikace zobrazí obsah volební urny konkrétních uplynulých voleb.
+ Z obsahu volební urny nezobrazuje hlasy, nýbrž kontrolní součty hlasů všech
+ kandidátů.
+ Obsah volební urny je možné zobrazit až po vyhodnocení voleb.
+\end_layout
+
+\begin_layout Subsubsection
+Zobrazit volební protokol
+\end_layout
+
+\begin_layout Enumerate
+Uživatel vybere odkaz 
+\emph on
+
+\begin_inset Quotes gld
+\end_inset
+
+Volební protokol
+\begin_inset Quotes grd
+\end_inset
+
+
+\emph default
+ v položce voleb.
+\end_layout
+
+\begin_layout Enumerate
+Aplikace zobrazí volební protokol konkrétních uplynulých voleb, který je
+ možné zobrazit, až po vyhodnocení voleb.
+\end_layout
+
+\begin_layout Subsubsection
+Kandidovat ve volbách
+\end_layout
+
+\begin_layout Enumerate
+Uživatel vybere odkaz 
+\begin_inset Quotes gld
+\end_inset
+
+Podat kandidaturu
+\begin_inset Quotes grd
+\end_inset
+
+ v obrazovce Zobrazit volby ve fázi přípravy.
+\end_layout
+
+\begin_layout Enumerate
+Aplikace přidá kandidáta do databáze a potvrdí účastníkovi voleb s pasivním
+ volebním právem podání jeho kandidatury.
+ V případě, že se nejedná o účastníka voleb s pasivním volebním právem nebo
+ volby nejsou ve fázi přípravy, aplikace vrátí chybu.
+\end_layout
+
+\begin_layout Subsubsection
+Zobrazit kandidáty
+\end_layout
+
+\begin_layout Enumerate
+Uživatel vybere odkaz 
+\begin_inset Quotes gld
+\end_inset
+
+
+\emph on
+Zobrazit kandidáty
+\emph default
+
+\begin_inset Quotes grd
+\end_inset
+
+ u položky v seznamu voleb.
+\end_layout
+
+\begin_layout Enumerate
+Aplikace zobrazí uživateli seznam kandidátů na kandidátní listině daných
+ voleb.
+\end_layout
+
+\begin_layout Subsubsection
+Zobrazit volební lístek a možnost hlasovat ve volbách
+\end_layout
+
+\begin_layout Enumerate
+Uživatel vybere odkaz 
+\begin_inset Quotes gld
+\end_inset
+
+
+\emph on
+Zobrazit volební lístek
+\emph default
+
+\begin_inset Quotes grd
+\end_inset
+
+ u konkrétních voleb v seznamu probíhajících voleb.
+\end_layout
+
+\begin_layout Enumerate
+Uživateli se zobrazí obrazovka reprezentující volební lístek.
+\end_layout
+
+\begin_layout Enumerate
+Uživatel vybere hlasy pro/proti u jednotlivých položek hlasovacího lístku.
+\end_layout
+
+\begin_layout Enumerate
+Uživatel stiskne tlačítko 
+\emph on
+Hlasovat
+\emph default
+.
+\end_layout
+
+\begin_layout Subsubsection
+Administrace
+\end_layout
+
+\begin_layout Enumerate
+Člen volební komise vybere odkaz v Menu 
+\emph on
+
+\begin_inset Quotes gld
+\end_inset
+
+Administrace
+\begin_inset Quotes grd
+\end_inset
+
+
+\emph default
+.
+\end_layout
+
+\begin_layout Enumerate
+Aplikace zobrazí seznam všech voleb.
+\end_layout
+
+\begin_layout Subsubsection
+Založit volby
+\end_layout
+
+\begin_layout Enumerate
+Člen volební komise vybere odkaz v Menu 
+\emph on
+
+\begin_inset Quotes gld
+\end_inset
+
+Založit volby
+\begin_inset Quotes grd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+Aplikace zobrazí formulář, který obsahuje vstupní a výběrová pole.
+ Vyplnění všech polí je povinné.
+ Dále autor uvádí pole s jejich popisem:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+výběrové pole Působnost – Člen volební komise musí zvolit působnost voleb
+ 
+\begin_inset Quotes gld
+\end_inset
+
+Celá republika
+\begin_inset Quotes grd
+\end_inset
+
+ nebo 
+\begin_inset Quotes gld
+\end_inset
+
+kraj
+\begin_inset Quotes grd
+\end_inset
+
+, v případě nastavení volby 
+\begin_inset Quotes gld
+\end_inset
+
+Celá republika je výběrové pole kraj v logice aplikace ignorováno.
+\end_layout
+
+\begin_layout Itemize
+výběrové pole Kraj – Člen volební komise má možnost zvolit kraj působnosti
+ voleb.
+\end_layout
+
+\begin_layout Itemize
+výběrové pole Typ voleb – Člen volební komise musí zvolit typ voleb.
+ Mezi typy voleb je možné vybrat: Usnesení, Primárky, Stranická funkce.
+\end_layout
+
+\begin_layout Itemize
+výběrová pole pro nastavení času:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Začátek přihlašování kandidátů – Člen volební komise musí zvolit čas začátku
+ přihlašování kandidátů.
+\end_layout
+
+\begin_layout Itemize
+Konec přihlašování kandidátů – Člen volební komise musí zvolit zvolit čas
+ konce přihlašování kandidátů.
+\end_layout
+
+\begin_layout Itemize
+Začátek hlasování – Člen volební komise musí zvolit čas začátku hlasování.
+\end_layout
+
+\begin_layout Itemize
+Konec hlasování – Člen volební komise musí zvolit čas konce hlasování.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+vstupní pole název – Člen volební komise pojmenuje volby, např.
+ primární volby do voleb zastupitelstva středočeského kraje.
+\end_layout
+
+\begin_layout Itemize
+vstupní pole popis – Člen volební komise vyplní popis voleb.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Člen volební komise vyplní formulář a stiskne tlačítko 
+\emph on
+Založit volby
+\end_layout
+
+\begin_layout Enumerate
+Aplikace provede validaci hodnot.
+ Povinné jsou všechny udaje.
+ Pokud validace skončí úspěšně, aplikace vygeneruje veřejný a soukromý klíč
+ voleb.
+ Aplikace vloží nové volby s veřejným klíčem do databáze, v opačném případě
+ zobrazí chybu.
+ Po úspěšném vložení voleb do databáze, aplikace zobrazí soukromý klíč členovi
+ volební komise.
+ Způsob uložení soukromého klíče voleb je v gesci člena volební komise.
+\end_layout
+
+\begin_layout Subsubsection
+Odstranit kandidáta
+\end_layout
+
+\begin_layout Enumerate
+Člen volební komise vybere odkaz 
+\emph on
+
+\begin_inset Quotes gld
+\end_inset
+
+Odstranit kandidáta
+\begin_inset Quotes grd
+\end_inset
+
+
+\emph default
+ v seznamu kandidátů na kandidátní listině daných voleb.
+\end_layout
+
+\begin_layout Enumerate
+Aplikace odstraní kandidáta z databáze a vrátí aktualizovaný seznam kandidátů
+ na kandidátní listině daných voleb.
+\end_layout
+
+\begin_layout Subsubsection
+Zrušit volby
+\end_layout
+
+\begin_layout Enumerate
+Člen volební komise vybere odkaz 
+\begin_inset Quotes gld
+\end_inset
+
+Zrušit volby
+\begin_inset Quotes grd
+\end_inset
+
+ v seznamu voleb.
+\end_layout
+
+\begin_layout Enumerate
+Aplikace odstraní volby z databáze a vrátí aktualizovaný seznam všech voleb.
+\end_layout
+
+\begin_layout Subsubsection
+Vyhodnotit volby
+\end_layout
+
+\begin_layout Enumerate
+Člen volební komise vybere odkaz Vyhodnotit volby v seznamu voleb.
+\end_layout
+
+\begin_layout Enumerate
+Aplikace spočítá hlasy a uloží do databáze volební protokol, poté zobrazí
+ volební protokol.
 \end_layout
 
 \begin_layout Chapter
@@ -6404,6 +7199,37 @@ status collapsed
 \begin_layout Plain Layout
 
 https://www.svobodni.cz/files/docs/jednaci-rad-volebni-komise.pdf
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "vratkost_autokrativni_demokracie"
+
+\end_inset
+
+Jiří Payne, 
+\emph on
+Vratkost autokrativní demokracie
+\emph default
+ [online]
+\emph on
+ 
+\emph default
+[cit.
+ 2016-10-16].
+ Dostupné z: 
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+http://payne.blog.idnes.cz/blog.aspx?c=373459
 \end_layout
 
 \end_inset
