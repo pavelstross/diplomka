@@ -4662,8 +4662,12 @@ Dle těchto požadavků byl vyvinut a nasazen nový informační systém, který
 
 \begin_layout Itemize
 Registr členů a příznivců – Jedná se o komponentu, která obsluhuje procesy
- týkající se správy členů a příznivců strany, kdy zároveň umožňuje členům
- a příznivcům zobrazit jejich osobní údaje na bázi principu Opt-in
+ týkající se správy členů a příznivců strany.
+ Z toho výplývá, že v registru jsou uloženy osobní údaje každého člena a
+ přínivce, k těmto osobním údajům mají přístup pouze funkcionáři strany
+ na základě jejich regionální působnosti.
+ Registr zároveň umožňuje členům a příznivcům zobrazit jejich osobní údaje
+ na základě principu Opt-in
 \begin_inset Foot
 status collapsed
 
@@ -4674,7 +4678,7 @@ Jedná se o princip, kdy musí uživatel služby dát vždy souhlas s poskytnut�
 
 \end_inset
 
-.
+ ostatním členům a příznivcům.
  Z technologického hlediska se jedná o webovou aplikaci postavené na REST
  architektuře
 \begin_inset Foot
@@ -4765,6 +4769,12 @@ Volební systém – Aplikace, jenž obsluhuje procesy týkající se vnitrostra
 \end_layout
 
 \begin_layout Section
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Vnitrostranické-volby-Svobodných"
+
+\end_inset
+
 Vnitrostranické volby Svobodných
 \end_layout
 
@@ -4784,6 +4794,12 @@ reference "subsec:Semiproporční-volební-systémy"
 \end_layout
 
 \begin_layout Subsection
+\begin_inset CommandInset label
+LatexCommand label
+name "subsec:Typy-voleb-a"
+
+\end_inset
+
 Typy voleb a jejich vlastnosti
 \end_layout
 
@@ -5497,6 +5513,12 @@ Vztah typu voleb a volebních práv ve Straně svobodných občanů
 \end_layout
 
 \begin_layout Subsection
+\begin_inset CommandInset label
+LatexCommand label
+name "subsec:Procesní-model-voleb"
+
+\end_inset
+
 Procesní model voleb ve Straně svobodných občanů
 \end_layout
 
@@ -5680,8 +5702,8 @@ Vyhodnocení voleb
 Při vyhodnocování voleb, volební komise sečte hlasy jednotlivých kandidátů
  popř.
  kladné a záporné hlasy pro schválení usnesení.
- Následně vypracuje volební protokol a vystaví ho v úložišti dokumentů viz
- 
+ Následně vypracuje volební protokol a vystaví ho v úložišti dokumentů,
+ viz obrázek 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "fig:Stávající-stav-procesu-vyhodnoceni-voleb"
@@ -5711,6 +5733,13 @@ status collapsed
 Do porušení principu férovosti voleb jsou zahrnuty aktivity účastníků voleb
  z jakéhokoliv pohledu, tedy například, kupování hlasů, fyzické zastrašování
  účastníků voleb apod.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "vratkost_autokrativni_demokracie"
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -5728,13 +5757,17 @@ reference "subsec:Volební-procedura"
  s daty volebního procesu je výsledek přezkoumání předán zpět rozhodčí komisi,
  ta v obou případech provedete prošetření všech ostatních okolností voleb
  a vydá stanovisko ke zrušení voleb a anulování jejich výsledku.
+ Pokud rozhodčí komise vydá takovéto stanovisko, jsou veškerá data voleb
+ nenávratně smazána.
 \end_layout
 
 \begin_layout Section
-Elektronická volební aplikace Svobodných
-\end_layout
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Požadavky-na-volební"
 
-\begin_layout Subsection
+\end_inset
+
 Požadavky na volební aplikaci Svobodných
 \end_layout
 
@@ -5761,7 +5794,8 @@ reference "tab:Vztah-typu-voleb-a-prav"
 \end_layout
 
 \begin_layout Standard
-Mezi další požadavky můžeme zařadit následující:
+Mezi další požadavky republikového výboru na volební aplikaci je nutno zařadit
+ následující:
 \end_layout
 
 \begin_layout Itemize
@@ -5778,10 +5812,269 @@ Volební aplikace umožní archivovat data uplynulých voleb.
 
 \begin_layout Itemize
 Provoz volební aplikace musí zajišťovat volební komise a musí být nezávislá
- na infrastruktuře ostatních 
+ na infrastruktuře ostatních komponent IS Svobodných.
+\end_layout
+
+\begin_layout Itemize
+Systém elektronických voleb musí být implementován právě v jedné aplikaci.
+\end_layout
+
+\begin_layout Section
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Návrh-řešení"
+
+\end_inset
+
+Návrh řešení
+\end_layout
+
+\begin_layout Standard
+Koncept elektronických voleb v nekontrolovaném prostoru narvhovaného řešení
+ vnikl kombinací vlastností Estonského a Ženevského řešení elektronických
+ voleb.
+ V navrhovaném konceptu převažují vlastnosti Ženevského řešení s doplněním
+ prvků řešení Estonského.
+ 
+\end_layout
+
+\begin_layout Standard
+Architektura navrhovaného řešení vychází z Ženevského pojetí elektronických
+ voleb, viz obrázek 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Architektura-navrhovaného-řešení"
+
+\end_inset
+
+.
+ V architektuře se předpokládá, že komunikace mezi PC voliče a volební aplikací
+ probíhá šifrovaně.
+ 
+\end_layout
+
+\begin_layout Standard
+Narozdíl od vydávání hlasovacích karet v Ženevě je autentizace voliče řešena
+ pomocí OAuth2 strategie proti komponentě IS Svobodných registr členů a
+ příznivců.
+ Tajnost hlasování je zajištěna použitím virtuální volební urny, kde neznalost
+ jejího obsahu je převedena do elektronického prostředí pomocí principů
+ asymetrické kryptografie.
+\end_layout
+
+\begin_layout Standard
+Z Estonských elektronických voleb se autor inspiroval systémem logů pro
+ audit voleb.
+ Narozdíl od Estonských elektronických voleb jsou kontrolní součty v navrhované
+ implementaci ukládany do databáze a zároveň odesílány voliči z důvodu kontroly
+ řádného průběhu voleb.
+\end_layout
+
+\begin_layout Standard
+Navrhovaná architektura je auterem považována za ideální, avšak tato architektur
+a je v rozporu s požadavky na volební aplikaci dané republikovým výborem
+ strany.
+ Z tohoto důvodu bude implementace navrhovaného řešení provedena tak, aby
+ bylo možné jednoduchou úpravou implementovaného řešení přejít na 
+\begin_inset Quotes gld
+\end_inset
+
+ideální architekturu
+\begin_inset Quotes grd
+\end_inset
+
+ elektronického volebního systému.
+\end_layout
+
+\begin_layout Subsubsection
+Správa klíčů a zabezpečení klíčů v navrhovaném řešení
+\end_layout
+
+\begin_layout Standard
+Pro zabezpečení klíčů, tedy nejrizikovějšího místa elektronického volebního
+ systému je použit následující postup:
+\end_layout
+
+\begin_layout Enumerate
+Pověřený člen volební komise organizací voleb vygeneruje za pomocí pseudonáhodné
+ho generátoru čísel jeden pár asymetrických klíčů.
+\end_layout
+
+\begin_layout Enumerate
+Veřejný asymetrický klíč je bezpečně nahrán do volební aplikace.
+ Soukromý volební klíč si pověřený člen volební komise uschová na offline
+ médiu, ideálně by měli být použit alespoň dvě redundatní média.
+ Avšak je na odpovědnosti člena volební komise, jak se soukromým klíčem
+ naloží.
+\end_layout
+
+\begin_layout Enumerate
+Pro dešifrování hlasů je použit soukromý klíč, který je po ukončení hlasování
+ nahrán do volební aplikace.
 \end_layout
 
 \begin_layout Subsection
+Procesní model
+\end_layout
+
+\begin_layout Standard
+Pro ucelenost informací o narvhovaném řešení byl kromě ostatních výstupů
+ vytvořen procesní model vnitrostranických voleb po implementaci navrhovaného
+ řešení.
+\end_layout
+
+\begin_layout Standard
+Navrhovaný procesní model vychází z procesního modelu současného stavu (viz
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "subsec:Procesní-model-voleb"
+
+\end_inset
+
+), je složen z několika procesů, přičemž klíčový proces Vnitrostranické
+ volby je totožný s modelem současného stavu a modifikovány byly procesy
+ podpůrné.
+ Do modelu jsou zahrnuty následující modifikované procesy:
+\end_layout
+
+\begin_layout Itemize
+Příprava voleb, viz obrázek 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Navrhované-řešení-procesu-priprava-voleb"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Průběh hlasování, viz obrázek 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Navrhované-řešení-procesu-prubeh-hlasovani"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Vyhodnocení voleb, viz obrázek 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Narvhované-řešení-procesu-vyhodnoceni-voleb"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Příprava voleb
+\end_layout
+
+\begin_layout Standard
+Před zahájením samotných voleb probíhá jejich příprava.
+ Ta začíná v momentě, kdy se předsednictvo usnese, že je potřeba uskutečnit
+ nějaké vnitrostranické volby.
+ 
+\end_layout
+
+\begin_layout Standard
+Tato sitauce nastává obvykle tím, že některému členovi končí funkční období
+ mandátu vnitrostranické funkce.
+ Další situací, kdy předsednictvo jedná o vyhlášení voleb je v případě konání
+ některého ze sněmů, na konci zasedání každého sněmu jsou dána hlasování,
+ která se uskutečnila během zasedání do hlasování per-rollam, aby členové,
+ kteří se nemohli zůčastnit sněmu měli možnost uplatnit své aktivní volební
+ právo.
+\end_layout
+
+\begin_layout Standard
+V případě, že se předsednictvo usnese o vyhlášení vnitrostranických voleb,
+ umístí své usnesení do zápisu jednání předsednictva.
+ V tomto usnesení, musí být specifikovány vlasnosti voleb, např.
+ kolik je volitelných míst, tj.
+ kolik kandidátů z proběhlích voleb získá mandát, termíny přihlašování kandidátů
+, celkový čas volební procedury apod.
+ Předsednictvo informuje volební komisi o svém záměru vyhlásit vnitrostranické
+ volby a předá jí zápis ze svého jednání.
+ Následně jsou volby v režii volební komise.
+\end_layout
+
+\begin_layout Standard
+Volební komise vytvoří ve volební aplikaci vnitrostranické volby.
+ Volební komise vygeneruje pár klíčů, veřejný klíč voleb je uložen ve volební
+ aplikaci a soukromý klíč voleb si pověřený člen volební komise uloží na
+ 
+\begin_inset Quotes gld
+\end_inset
+
+offline
+\begin_inset Quotes grd
+\end_inset
+
+ médium.
+ V případě, že se nejedná o hlasování o usnesení po proběhnuvším sněmu informuje
+ potencionální účastníky voleb mající pasivní volební právo o volbách.
+\end_layout
+
+\begin_layout Standard
+Do lhůty dané z vlastností voleb, které připravilo předsednictvo, volební
+ komise posbírá přihlášky kandidátů do vnitrostranických voleb a sestavý
+ kandidátní listinu.
+ Kterou následně zveřejní ve znalostní bázi informačního systému a na úložišti
+ dokumentů.
+\end_layout
+
+\begin_layout Standard
+Poté vyhlásí volby a zprávou informuje všechny účastníky daných voleb, kteří
+ mají v těchto volbách aktivní volební právo.
+\end_layout
+
+\begin_layout Subsubsection
+Průběh hlasování
+\end_layout
+
+\begin_layout Standard
+Po zahájení voleb mají voliči ve volební aplikaci možnost využít své aktivní
+ volební právo v případě jeho využití je volební komise za pomocí volební
+ aplikace autentizuje a autorizuje k volbám.
+\end_layout
+
+\begin_layout Standard
+Volič odevzdá svůj hlas ve formě hlasovacího lístku.
+ Volební komise vypočte kontrolní součet voličova hlasovacího lístku.
+ Tento kontrolní součet mu odešle.
+ Poté zašifruje volební lístek včetně jeho kontrolního součtu a vypočte
+ kontrolní součet zašifrovaného volebního lístku.
+ Tento další kontrolní součet odešle voliči, poté uloží voličův hlas ve
+ formě zašifrovaného hlsaovacího lístku do databáze volební aplikace.
+ Odeslané kontrolní součty slouží voliči pro případnou kontrolu jeho volebního
+ rozhodnutí.
+\end_layout
+
+\begin_layout Subsubsection
+Vyhodnocení voleb
+\end_layout
+
+\begin_layout Standard
+Při vyhodnocování voleb, volební komise dešifruje privátním klíčem obsah
+ volební urny, tedy vložené hlasovací lístky ve volební urně.
+ Poté sečte hlasy jednotlivých kandidátů popř.
+ kladné a záporné hlasy pro schválení usnesení.
+ Následně vypracuje volební protokol a vystaví ho v úložišti dokumentů.
+\end_layout
+
+\begin_layout Subsection
+\begin_inset CommandInset label
+LatexCommand label
+name "subsec:Funkční-požadavky"
+
+\end_inset
+
 Funkční požadavky
 \end_layout
 
@@ -5806,7 +6099,7 @@ reference "fig:Diagram-užití-volební"
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 
@@ -6334,6 +6627,187 @@ Aplikace spočítá hlasy a uloží do databáze volební protokol, poté zobraz
  volební protokol.
 \end_layout
 
+\begin_layout Subsection
+\begin_inset CommandInset label
+LatexCommand label
+name "subsec:Doménový-model"
+
+\end_inset
+
+Doménový model
+\end_layout
+
+\begin_layout Standard
+Doménový model aplikace popisuje jednotlivé entity (doménové třídy) a vztahy
+ mezi nimi.
+ Nejdůležitější entitou volební aplikace je třída Election.
+ Ta reprezentuje konkrétní volby.
+ Její atributy představují informace, které jsou platné pro každé volby
+ a reprezentují vlastnosti konkrétních voleb.
+ V modelu jsou obsaženy následující entity:
+\end_layout
+
+\begin_layout Itemize
+Voter – Entita Voter reprezentuje voliče ve volbách, má jeden jediný atribut
+ id_person_party_registry.
+ Tento atribut je totožný s primárním klíčem člena či příznivce v komponentě
+ IS svobodných registr členů a příznivců
+\end_layout
+
+\begin_layout Itemize
+Region – Entita Region představuje číselník krajů v ČR, má dva atributy
+ id a name.
+ První představuje primární klíč kraje a druhý jméno kraje.
+\end_layout
+
+\begin_layout Itemize
+ParticipantList – ParticipantList, reprezentuje registr voličů navržený
+ v ideální architektuře elektronického volebního systému.
+\end_layout
+
+\begin_layout Itemize
+Candidate – Entita Candidate představuje kandidáta, účastnícího se konkrétních
+ voleb.
+ Obsahuje tři atributy: id_person_party_registry (primární klíč člena nebo
+ příznivce v komponentě IS Svobodných registr členů a příznivců , first_name
+ (křestní jméno), last_name (příjmení).
+\end_layout
+
+\begin_layout Itemize
+BallotPaper – Entita BallotPaper reprezentuje hlasovací lístek.
+ Jejími atributy jsou:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+encrypted_vote – Tento atribut reprezentuje zašifrovanou volbu hlasujícího
+ voliče.
+\end_layout
+
+\begin_layout Itemize
+vote_hash – Kontrolní součet nezašifrované volby hlasujícího voliče.
+\end_layout
+
+\begin_layout Itemize
+encrypted_vote_hash – Kontrolní součet dat obsažených v atributu encrypted_vote.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+BallotBox – Reprezentuje volební urnu.
+\end_layout
+
+\begin_layout Itemize
+Election – Entita reprezentující konkrétní volby.
+\end_layout
+
+\begin_layout Subsubsection
+\begin_inset CommandInset label
+LatexCommand label
+name "subsec:Entita-Election"
+
+\end_inset
+
+Entita Election
+\end_layout
+
+\begin_layout Standard
+Tato entita, jak již bylo výše zmíňeno je nejdůležitější entitou z celého
+ modelu.
+ Reprezentuje konkrétní volby.
+ Třída election má následující atributy:
+\end_layout
+
+\begin_layout Itemize
+election_type – Reprezentuje typ voleb, zda se jedná o volby do vnitrostranickýc
+h funkcí, primární volby, nebo schvalování návrhu usnesení.
+\end_layout
+
+\begin_layout Itemize
+state – Stav voleb, jedná se o fázi volební procedury, podle stavu můžeme
+ určit, zda se již mohou přihlašovat kandidáti, či zda mohou voliči ve volbách
+ hlasovat.
+\end_layout
+
+\begin_layout Itemize
+title – Představuje název voleb (např Primárky do zastupitelstva Magistrátu
+ hl.m.
+ Prahy.)
+\end_layout
+
+\begin_layout Itemize
+description – popis voleb, jedná se o vlastnosti voleb z pohledu volební
+ procedury, představuje doplňující informace o volbách, kterými můžou být
+ například počet volitelných míst na kandidátce, text schvalovaného usnesení
+ apod.
+\end_layout
+
+\begin_layout Itemize
+scope_type – Tento atribut určuje působnost voleb, zda volby probíhají pouze
+ v jednom kraji nebo ve všech krajích České republiky.
+\end_layout
+
+\begin_layout Itemize
+scope_id_region – Atribut určuje kraj, působnosti voleb.
+\end_layout
+
+\begin_layout Itemize
+preparation_starts_at – Čas zahájení podávání kandidátských přihlášek do
+ voleb.
+\end_layout
+
+\begin_layout Itemize
+preparation_ends_at – Čas ukončení podávání kandidátských přihlášek do voleb.
+\end_layout
+
+\begin_layout Itemize
+voting_starts_at – Čas zahájení hlasování.
+\end_layout
+
+\begin_layout Itemize
+voting_ends_at – Čas ukončení hlasování.
+\end_layout
+
+\begin_layout Itemize
+public_key – V tomto atributu je uchován vygenerovaný veřejný klíč konkrétních
+ voleb.
+\end_layout
+
+\begin_layout Standard
+Životní cyklus objektů entity Election je znázorněn v obrázku [OBRAZEK]
+ a je popsán šesti jejími stavy, kterými jsou:
+\end_layout
+
+\begin_layout Itemize
+initialized – Volby jsou vytvořeny, čeká se na čas zahájení přihlašování
+ kandidátů do voleb, tento stav je počátečním stavem každého objektu této
+ entity.
+\end_layout
+
+\begin_layout Itemize
+preparation – Do voleb se mohou přihlašovat kandidáti.
+ Tento stav trvá v časovém intervalu atributů preparation_starts_at a preparatio
+n_ends_at.
+\end_layout
+
+\begin_layout Itemize
+prepared – Je sestavena kandidátní listina, čeká se na zahájení hlasování.
+\end_layout
+
+\begin_layout Itemize
+voting – Ve volbách je možno hlasovat, stav je ohraničen časovým intervalem
+ atributů voting_starts_at a voting_ends_at.
+\end_layout
+
+\begin_layout Itemize
+voting_ended – v tomto stavu je hlasování ukončeno a čeká se na sečtení
+ hlasů volební komisí.
+\end_layout
+
+\begin_layout Itemize
+votes_counted – Hlasy jsou sečteny a konkrétní volby jsou oficiálně ukončeny.
+\end_layout
+
 \begin_layout Chapter
 \begin_inset CommandInset label
 LatexCommand label
@@ -6344,6 +6818,525 @@ name "chap:Implementace-elektronických-vole"
 Implementace elektronických voleb ve Straně svobodných občanů
 \end_layout
 
+\begin_layout Standard
+V této kapitole jsou autorem popsány technologie zvolené pro implementaci
+ elektronických voleb ve Straně svobodných občanů.
+\end_layout
+
+\begin_layout Standard
+Před fází implementace elektronických voleb je nutné zvolit technologie,
+ na kterých bude implementace postavena.
+ Použité technologie by měli vycházet z analýzi popisované v předchozí kapitole.
+ Zároveň použité technologie ovlivní výslednou architekturu implementace.
+\end_layout
+
+\begin_layout Standard
+Jejich popis by měl posloužit k lepšímu pochopení implementace volební aplikace
+ a dalšího textu.
+\end_layout
+
+\begin_layout Section
+Použité technologie
+\end_layout
+
+\begin_layout Standard
+Z analýzy požadavků vyplynulo, že elektronický volební systém musí být webovou
+ aplikací.
+ Autor musel vybrat platformu pro implementaci této aplikace.
+\end_layout
+
+\begin_layout Standard
+Pro implementaci bylo možné použít několik variant, nakonec byla vybrána
+ implementace na platformě Ruby on Rails, a to převážně díky programovacímu
+ jazyku Ruby.
+\end_layout
+
+\begin_layout Standard
+Jazyk Ruby je velice orientován na člověka, protože jeho autor se domnívá,
+ že kód v programovacím jazyce je určen pro potřebu lidí nikoliv pro potřebu
+ strojů.
+ Používání programovacího jazyka má být jednoduché a intuitivní pro jeho
+ uživatele.
+\begin_inset CommandInset citation
+LatexCommand cite
+after "str. 24"
+key "ruby"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Mezi hlavní přednosti jazyka Ruby patří:
+\end_layout
+
+\begin_layout Itemize
+Inspirace nejlépších řešení jazyka z ostatních programovacích jazyků, například
+ zpracování řetězců je převzaté z jazyka Perl, práce s objekty z jazyka
+ Smalltalk, práce se seznamy je převzata z jazyku Lisp atd.
+\end_layout
+
+\begin_layout Itemize
+Ruby je stabilní programovací jazyk, tím je myšleno, že není novinkou a
+ jeho rapidní vývoj se ustálil.
+\end_layout
+
+\begin_layout Itemize
+Syntaxe jazyka je velice čitelná a to tak, že zdrojový kód jazyka disponuje
+ samodokumentační vlastností
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Pod pojmem samodokumentační vlastnost je autorem myšlena taková vlastnost
+ zdrojového kódu, že již napsaný zdrojový kód vychází z přirozeného jazyka
+ a je natoliktak čitelný, že sám slouží jako dokumentace zdrojového kódu
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Jazyk nenutí uživatele psát věci subjektivně správně dle autorů jazyka.
+ Autor jazyka Ruby vidí programování jako cestu k cíly a je pouze na uživateli
+ jazyka, jaký směr cesty k cíly použije.
+\begin_inset CommandInset citation
+LatexCommand cite
+after "str. 23"
+key "ruby"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Ekosystém jazyka Ruby je velice rozsáhlý.
+ Základem tohoto ekosystému jsou tzv.
+ gemy, jedná se o balíček programů nebo knihoven jazyka.
+ Zároveň je pro gemy implementován jejich balíčkovací systém, který uživatelům
+ jazyka poskytuje distribuci a řešení závislostí různých gemů.
+\end_layout
+
+\begin_layout Standard
+U popisu každé technologie je autorem stručně zdůvodněno její použití v
+ implementovaném řešení.
+\end_layout
+
+\begin_layout Subsection
+Použité gemy jazyka Ruby
+\end_layout
+
+\begin_layout Subsubsection
+Rails
+\end_layout
+
+\begin_layout Standard
+Ruby on rails je frameworkem
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Framework, neboli aplikační rámec je sada softwaru, který slouží jako podpora
+ při vývoji softwarových projektů, může obsahovat další podpůrné programy
+ či knihovny.
+\end_layout
+
+\end_inset
+
+ pro vývoj webových aplikací používající architekturu MVC (
+\emph on
+Model-View-Controller
+\emph default
+), striktně tedy rozděluje aplikaci na 3 vrstvy.
+ 
+\end_layout
+
+\begin_layout Standard
+Vrstva Model představuje datový model aplikace, jsou v ní obsaženy doménové
+ třídy aplikace, jedná se o standardní Ruby třídy, které jsou v typické
+ konfiguraci potomkem třídy ActiveRecord.
+ Tyto doménové třídy mohou upravovat logiku aplikace či validaci dat.
+ Doménové třídy se nacházejí v adresáři app/model/ aplikace.
+\end_layout
+
+\begin_layout Standard
+Třídy další vrstvy, Controller jsou určeny pro zpracování požadavků a jejich
+ vstupů v aplikaci.
+ Je v ní definováno logické chování aplikace.
+ Ve vrstvě Controller mohou být měněna data vrstvy Model a vrstvy View.
+ Třídy vrstvy Controller se nalézají v adresáři app/controller
+\end_layout
+
+\begin_layout Standard
+Vrstva View představuje prezentační vrstvu aplikace, kde jsou prezentována
+ dat z vrstvy Model.
+\end_layout
+
+\begin_layout Standard
+Kromě vrstev architektury MVC RoR poskytuje vrstvu helpers, ve které je
+ umožněno vývojářům implementovat pomocné metody pro výše popisované vrstvy,
+ z důvodu udržení elegantnějšího zdrojového kódu aplikace.
+\end_layout
+
+\begin_layout Standard
+Zároveň je v Ruby on Rails(v dalším textu zmiňováno pod zkratkou RoR) kladen
+ důraz na jednoduchost vývoje webových aplikací.
+ Tato jednoduchost spočívá v dodržování principu 
+\begin_inset Quotes gld
+\end_inset
+
+
+\emph on
+Convention over Configuration
+\emph default
+
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Princip Convention over Configuration je snaha omezit konfiguraci aplikace
+ a to jak ve formě konfiguračních souborů tak anotací ve zdrojovém kódu
+ na minimum.
+ Pokud není nějaká konfigurační hodnota nastavena je použita implicitní
+ konfigurační hodnota, která je dána konvencí.
+\end_layout
+
+\end_inset
+
+
+\begin_inset Quotes grd
+\end_inset
+
+.
+ Mezi další charakteristické rysy RoR patří:
+\end_layout
+
+\begin_layout Itemize
+Používání principu DRY(
+\emph on
+Don't repeat yourself
+\emph default
+) – Jedná se o princip při vývoji softwaru zaměřený na odstraňování duplicitního
+ počtu informací ve zdrojovém kódu softwaru.
+\end_layout
+
+\begin_layout Itemize
+Striktní využívání architektury MVC, která dělí aplikaci na tři logické
+ vrstvy Tyto tři vrstvy jsou Model, View a Controller.
+ Model reprezentuje persistentní vrstvu a business logiku aplikace.
+ Viev představuje prezentační vrstvu aplikace, tedy například uživatelské
+ rozhraní.
+ Controller je vrstva aplikace, která určuje tok dat mezi vrstvou View a
+ Model a obecnou aplikační logiku.
+\end_layout
+
+\begin_layout Itemize
+používání jazyka eRuby (Embedded Ruby) v šablonách aplikace prezentační
+ vrstvy.
+ Jedná se o vnořený kód jazyka Ruby do textových dokumentů.
+\end_layout
+
+\begin_layout Itemize
+Na základě principu Convention over Configuration, RoR zajišťuje tok dat
+ mezi vrstvami aplikace.
+\end_layout
+
+\begin_layout Itemize
+Tok dat mezi vrstvou aplikační logikou (Controller) a prezentační vrstvou
+ (View), je založen na AJAX
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+AJAX (Asynchronous JavaScript and XML) je obecné označení technologie interaktiv
+ních webových aplikací, které mění obsah webových stránek za pomoci asynchroního
+ zpracování bez nutnosti znovunačtení celého dokumentu.
+\end_layout
+
+\end_inset
+
+ principu.
+\end_layout
+
+\begin_layout Itemize
+Používání ORM(objektově-relační mapování) frameworku ActiveRecord, který
+ používá princip Convention over Configuration při mapování Ruby tříd na
+ tabulky relační databáze.
+ Zajímavostí na frameworku ActiveRecord je, že v doménových třídách není
+ nutnost definovat jejich atributy, jako atributy jsou rovnou použity názvy
+ sloupců v databázi.
+\end_layout
+
+\begin_layout Itemize
+Při vývoji je použit princip Scaffoldingu, jedná se o princip, kdy se na
+ základě standardně dodaných pravidel frameworku RoR používají generátory,
+ pro vygenorování tříd vrstev Model, Controller a Viev ze šablon RoR.
+\end_layout
+
+\begin_layout Subsubsection
+Mongoid
+\end_layout
+
+\begin_layout Standard
+Mongoid je framework, který umožňuje tzv.
+ objektové-dokumentové mapování.
+ Řeší tedy otázku převodu mezi kolekcemi databáze MongoDB a Ruby třídami,
+ mapování mezi datovými strukturami používaných v Ruby a datovými strukturami
+ používaných v databázi MongoDB.
+ K mapování využívá princip Convention over Configuration, kdy konvence
+ jsou velice podobné frameworku ActiveRecord.
+\end_layout
+
+\begin_layout Standard
+Tento gem nahradí ORM framework ActiveRecord, který součástí distribuce
+ RoR, protože místo tradiční relační databáze bude použita databáze dokumentová.
+\end_layout
+
+\begin_layout Subsubsection
+Configatron
+\end_layout
+
+\begin_layout Standard
+Configatron je gem usnadňující konfiguraci aplikace zavedením globální struktury
+ 
+\emph on
+configatron
+\emph default
+ do aplikace, používáním této struktury je výsledný kód aplikace elegantnější,
+ neboť vyvojář nemusí používat různé globální proměnné apod.
+\end_layout
+
+\begin_layout Subsubsection
+Httparty
+\end_layout
+
+\begin_layout Standard
+Jedná se o gem implementující klientskou část protokolu http, avšak je zaměřen
+ na usnadnění příjímání dat z webových služeb a služeb postavených na architektu
+ře REST.
+ Gem Httparty bude využíván při komunikaci s ostatními komponentami IS Svobodnýc
+h.
+ 
+\end_layout
+
+\begin_layout Subsubsection
+OmniAuth
+\end_layout
+
+\begin_layout Standard
+Omniauth je autentizační middleware pro webové aplikace implementované v
+ jazyce Ruby, na jedné straně tohoto middlewaru je implementována autentizace
+ pro různé ruby gemy, jakými jsou například rails nebo sinatra.
+ Na druhé straně middlewaru umožňuje OmniAuth vývojáři naimplementovat tzv.
+ strategii proti jakémukoliv autentizačnímu serveru.
+ Autentizačním serverem může být například LDAP databáze, Microsoft ActiveDirect
+ory, webová služba atd.
+\end_layout
+
+\begin_layout Standard
+Autorem bude použit gem OmniAuth-OAuth2, který poskytne základní šablonu
+ pro implementaci autentizační strategie proti komponentě IS Svobodných
+ registr členů a příznivců.
+\end_layout
+
+\begin_layout Subsubsection
+CanCan
+\end_layout
+
+\begin_layout Standard
+CanCan je autorizačním gemem pro RoR aplikace.
+ Gem CanCan striktně zachovává princip DRY, a to tím, že přidává do modelu
+ aplikace třídu Ability, která slouží vývojáři aplikace k deklarování uživatelsk
+ých práv pro manipulaci s objekty tříd v RoR aplikaci.
+ CanCan předpokládá výskyt metody current_user v Controllerech aplikace
+ a umožňuje přidat autorizační filtry do tříd Controllerů.
+\end_layout
+
+\begin_layout Standard
+Pomocí gemu CanCan bude implementována autorizace nad objekty a jejich daty
+ v implementovaném řešení.
+\end_layout
+
+\begin_layout Subsubsection
+Aasm
+\end_layout
+
+\begin_layout Standard
+Gem AASM přidává rozhraní chování konečného stavového automatu do Ruby tříd.
+ Zároveň poskytuje adaptéry pro ORM a ODM frameworky, tudíž je možné při
+ jeho použití snadno ukládat stavy konečného automatu v persistentní vrstvě
+ aplikace.
+\end_layout
+
+\begin_layout Subsubsection
+Encryption
+\end_layout
+
+\begin_layout Standard
+Encryption gem poskytuje kryptografické funkce.
+ Smyslem tohoto gemu je obalení funkcí z kryptografických nástrojů projektu
+ OpenSSL tak, aby se vývojáři kryptografické funkce snadno používali.
+\end_layout
+
+\begin_layout Standard
+Za pomocí gemu Encryption je možné snadno vygenerovat klíče asymetrické
+ kryptografie a šifrovat či dešifrovat data v aplikaci.
+\end_layout
+
+\begin_layout Subsubsection
+Sidekiq
+\end_layout
+
+\begin_layout Standard
+Vzhledem k tomu, že aplikace postavené na architektuře MVC využívají zpravidla
+ synchroní zpracování dat.
+ Je vhodné použít asynchroní zpracování některých úloh na pozadí pro akce,
+ které se mají provést v jinou dobu než probíhá zpracování či odesílání
+ požadavků a odpovědí aplikace nebo zpracování dat v aplikaci probíhá v
+ nepřijatelně dlouhém čase pro ideální odezvu aplikace.
+\end_layout
+
+\begin_layout Standard
+Sidekiq je gem, který slouží pro asynchroní zpracování dat na pozadí, zároveň
+ obsahuje i plánovač úloh pro zpracování těchto dat.
+\end_layout
+
+\begin_layout Standard
+Ve volební aplikaci bude použit plánovač z gemu sidekiq pro automatizované
+ přepínání stavů v objektech třídy Election.
+\end_layout
+
+\begin_layout Subsection
+MongoDB
+\end_layout
+
+\begin_layout Standard
+Jako databázový systém byl autorem zvolen MongoDB.
+ Jedná se o open-source NoSQL databázový systém, postaveném na principech
+ dokumentové databáze.
+ Tedy narozdíl od tradičních relačních databázových systému nepoužívá tabulky,
+ ale kolekce dokumentů.
+ MongoDB byla původně vyvíjena společnosté 10gen jako komponenta jejich
+ cloudového produktu, ale v roce 2009 byly zveřejněny její zdrojové kódy
+ pod open-source licencí.
+\end_layout
+
+\begin_layout Standard
+MongoDB byla autorem vybrána pro svoje vlastnosti dokumentové databáze,
+ protože pokud budeme brát papírové volby v reálném světě jedná se právě
+ o kolekce dokumentů, než-li množiny dat asociované pomocí relací.
+ Pokud by byl v implementovaném řešení použit tradiční relační databázový
+ systém, museli bychom data denormalizovat z třetí normálové formy, za účelem
+ zachování principu tajnosti voleb.
+\end_layout
+
+\begin_layout Subsection
+Redis
+\end_layout
+
+\begin_layout Standard
+Redis je nerelační databázový systém využívající ukládání dat a datových
+ struktur do vazby klíč-hodnota.
+ Ve volební aplikaci je použit jako úložistě dat naplánovaných akcí pro
+ gem sidekiq.
+\end_layout
+
+\begin_layout Subsection
+OpenSSL
+\end_layout
+
+\begin_layout Standard
+OpenSSL je knihovna implementující protokoly SSL a TLS, zároveň jsou v této
+ knihovně implementovány různé kryptografické funkce.
+ Mezi funkce využívané v implementaci elektronických voleb volební aplikací,
+ budou autorem používány funkce asymetrického kryptografického systému RSA.
+\end_layout
+
+\begin_layout Standard
+Funkce knihovny OpenSSL nebudou volány přímo, nýbrž skrze volání funkcí
+ gemu description.
+\end_layout
+
+\begin_layout Section
+Architektura volební aplikace
+\end_layout
+
+\begin_layout Standard
+Každá aplikace vytvářena pomocí frameworku Ruby on Rails používá architektonický
+ návrhový vzor Model-View-Controller.
+ 
+\end_layout
+
+\begin_layout Subsection
+Vrstva Model
+\end_layout
+
+\begin_layout Standard
+Ve vrstvě Model jsou implementovány doménové třídy, vycházející z části
+ 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "subsec:Doménový-model"
+
+\end_inset
+
+.
+ Nejdůležitější třídou je třída implementující Entitu Election, tato třída
+ reprezentuje konkrétní volby, jejich vlastnosti.
+ Tato doménová třída je zároveň implementována, jako konečný stavový automat,
+ charakterizující průběh volební procedurou.
+\end_layout
+
+\begin_layout Standard
+V této vrstvě se také nachází třída Ability, která není obsažena v doménovém
+ modelu, této třídě jsou definovány role uživatelů volební aplikace.
+ Uživatelské role jsou definovány na základě analýzi funkčních požadavků
+ v části 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "subsec:Funkční-požadavky"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+Vrstva Controller
+\end_layout
+
+\begin_layout Standard
+Skoro u každé doménové třídy se vyskytuje ve vrstvě Controller její protějšek.
+ Toto chování vychází z architektury MVC a frameworku RoR.
+ Dále se autor zaměří na třídy vrstvy kontroler, které nemají svůj protějšek
+ ve vrstvě Model.
+\end_layout
+
+\begin_layout Standard
+ApplicationController je třídou, která je předkem všech tříd vrstvy Controller,
+ stěžejní metodou této třídy je metoda current_user, která slouží pro identifiko
+vání daného přihlášeného uživatele aplikace za účelem autorizace v aplikaci.
+\end_layout
+
+\begin_layout Standard
+Třída SessionController obsluhuje akce s konkrétní relací přihlášeného uživatele
+, umožňuje tedy uživateli jeho přihlášení a odhlášení v aplikaci.
+\end_layout
+
+\begin_layout Subsection
+Vrstva View
+\end_layout
+
+\begin_layout Standard
+Tato vrstva obsahuje šablony pro zobrazování dat v modelu, do šablon jsou
+ načítána data z modelu, za pomocí vrstvy Controller.
+ Šablony této vrstvy mají své protějšky ve vrstvě Controller a vrstvě Model.
+\end_layout
+
 \begin_layout Chapter
 \begin_inset CommandInset label
 LatexCommand label
@@ -6352,6 +7345,118 @@ name "chap:Možnost-použítí-implementace"
 \end_inset
 
 Možnost použití implementace ve volbách v České republice
+\end_layout
+
+\begin_layout Standard
+V současnosti jsou veškeré volby do veřejných funkcí v České republice konány
+ za pomocí papírových voleb, vyžadující voličovu přítomnost v kontrolovaném
+ prostoru.
+ V České republice dosud nebyla zavedana možnost korespondenčního hlasování
+ ani elektronického hlasování.
+\end_layout
+
+\begin_layout Standard
+V legislativě České republiky jsou každé volby definovány svým zákonem a
+ jejich výčet je následující:
+\end_layout
+
+\begin_layout Itemize
+Volby do Poslanecké sněmovny Parlamentu České republiky, definovány zákonem
+ č.
+ 247/1995 Sb., o volbách do Parlamentu České republiky a o změně a doplnění
+ některých dalších zákonů
+\end_layout
+
+\begin_layout Itemize
+Volby do Senátu Parlamentu České republiky, definovány zákonem, definovány
+ zákonem č.
+ 247/1995 Sb., o volbách do Parlamentu České republiky a o změně a doplnění
+ některých dalších zákonů
+\end_layout
+
+\begin_layout Itemize
+Volby do krajských zastupitelstev, definovány zákonem č.
+ 130/2000 Sb., o volbách do zastupitelstev krajů a o změně některých zákonů
+\end_layout
+
+\begin_layout Itemize
+Volby do zastupitelstev obcí, definovány zákonem č.
+ 491/2001 Sb., o volbách do zastupitelstev obcí a o změně některých zákonů
+\end_layout
+
+\begin_layout Itemize
+Volby do zastupitelstva Magistrátu hl.
+ m.
+ Prahy, definovány zákonem č.
+ 131/2000 Sb.Zákon o hlavním městě Praze
+\end_layout
+
+\begin_layout Itemize
+Volby do Evropského parlamentu, definovány zákonem č.
+ 62/2003 Sb., o volbách do Evropského parlamentu a o změně některých zákonů
+\end_layout
+
+\begin_layout Itemize
+Volba prezidenta republiky, definovány zákonem č.
+ 275/2012 Sb., o volbě prezidenta republiky a o změně některých zákonů
+\end_layout
+
+\begin_layout Standard
+tohoto výčtu lze usoudit, že každý průběh volební procedury se bude vždy
+ lišit, proto autor považuje za řešení kompletní problematiky voleb v rámci
+ České republiky přesahující rozsah diplomové práce.
+ Nicméně pokusí se zamyslet, zda by bylo možné aplikovat část řešení ve
+ Straně svobodných občanů pro řešení elektronických voleb v rámci voleb
+ do veřejných funkcí v České republice.
+\end_layout
+
+\begin_layout Standard
+Autor se domnívá, že nikoliv a to z následujících důvodů: 
+\end_layout
+
+\begin_layout Enumerate
+Řešení elektronických voleb ve Svobodných vychází převážně ze Ženevského
+ řešení, to předpokládá již funkční korespondenční hlasování, které v České
+ republice nebylo nikdy zavedeno.
+ 
+\end_layout
+
+\begin_layout Enumerate
+Řešení elektronických voleb ve Svobodných používá doručování zpráv s kontrolnímy
+ součty přímo voličům, to by vyžadovalo úpravu legislativy ČR tak, aby občan
+ byl povinen používat jednotný komunikační systém se státní správou.
+ V případě ČR je takovýmto komunikačním systémem systém datových schránek,
+ avšak autor považuje povinost užívání datové schránky občany za porušení
+ jejich občanských svobod.
+\end_layout
+
+\begin_layout Standard
+Pro řešení elektronických voleb v České republice se nejlépe hodí hlasování
+ pomocí DRE v kontrolovaném prostoru, za předpokladu, že DRE řešení bude
+ otevřené a budou na něm prováděny pravidelné audity v krátkých časových
+ intervalech.
+ V případě elektronického hlasování v nekontrolovaném prostoru je nejvhodnější
+ Estonský model a to z následujících důvodů:
+\end_layout
+
+\begin_layout Itemize
+Orgány veřejné správy, už nyní vydávají elektronické občanské průkazy.
+ Tyto elektronické občanské průkazy v sobě nesou čip, na který by bylo možné
+ vygenerovat asymetrické klíče voliče.
+\end_layout
+
+\begin_layout Itemize
+Zachování možnosti hlasovat za pomocí papírových voleb, tak aniž by se měnil
+ průběh volební procedury z pohledu voliče při paralelním užití voleb elektronic
+kých.
+\end_layout
+
+\begin_layout Chapter
+Závěr
+\end_layout
+
+\begin_layout Standard
+Napíšu až vstanu.
 \end_layout
 
 \begin_layout Bibliography
@@ -7237,6 +8342,24 @@ http://payne.blog.idnes.cz/blog.aspx?c=373459
 
 \end_layout
 
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "ruby"
+
+\end_inset
+
+FULTON, Hal Edwin.
+ 
+\emph on
+Ruby: kompendium znalostí pro začátečníky i profesionály.
+
+\emph default
+ Brno: Zoner Press, 2009.
+ Encyklopedie Zoner Press.
+ ISBN 978-80-7413-018-2.
+\end_layout
+
 \begin_layout Standard
 \begin_inset space ~
 \end_inset
@@ -7555,7 +8678,7 @@ Navrhované řešení procesu: Příprava voleb
 \begin_inset Float figure
 wide false
 sideways true
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -7675,6 +8798,54 @@ Proces: Kontrola voleb
 
 \begin_layout Chapter
 Struktura reality
+\end_layout
+
+\begin_layout Chapter
+Ostatní přílohy
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways true
+status collapsed
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename obrazky/architektura_navrhovaneho_systemu.svg
+	width 80text%
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Architektura-navrhovaného-řešení"
+
+\end_inset
+
+Architektura navrhovaného řešení
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_body
