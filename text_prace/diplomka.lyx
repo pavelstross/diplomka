@@ -7486,12 +7486,12 @@ reference "sec:Cíle-práce"
 
 \end_inset
 
- této práce bylo vytočeno několik na sebe navazujících cílů:
+ této práce bylo vytyčeno několik na sebe navazujících cílů:
 \end_layout
 
 \begin_layout Itemize
-Poskytnout znalosti dostatek teoretických znalostí, které je možné použít
- pro praktickou část práce.
+Poskytnout dostatek teoretických znalostí, které je možné použít pro praktickou
+ část práce.
  Tedy implementaci elektronických voleb ve Straně svobodných občanů.
 \end_layout
 
@@ -7551,7 +7551,7 @@ reference "chap:Elektronické-volby"
 
 \end_inset
 
- detailně popsány již realizované řešení elektronických voleb ve světě.
+ detailně popsána již realizovaná řešení elektronických voleb ve světě.
  Tato část práce tak poskytuje základ informací pro svou následující část.
 \end_layout
 
@@ -7626,7 +7626,7 @@ reference "chap:Analýza-elektronických-voleb"
 \end_layout
 
 \begin_layout Standard
-Čtvrtým a posledním přínosem této práce je naimplentování funkční volební
+Čtvrtým a posledním přínosem této práce je naimplementování funkční volební
  aplikace, která se v budoucnu stane jednou z komponent IS Strany svobodných
  občanů.
 \end_layout
@@ -7636,7 +7636,7 @@ Možná budoucí rozšíření
 \end_layout
 
 \begin_layout Standard
-Možné rozšíření této práce jsou návaznosti různých projektů týkající se
+Možná rozšíření této práce jsou v návaznosti různých projektů týkající se
  IS Strany svobodných občanů.
 \end_layout
 
