@@ -124,8 +124,8 @@ Nemám závažný důvod proti užití tohoto školního díla ve smyslu \S 60 Z
 \output_sync 0
 \bibtex_command default
 \index_command default
-\paperfontsize default
-\spacing single
+\paperfontsize 12
+\spacing onehalf
 \use_hyperref false
 \papersize a4paper
 \use_geometry false
@@ -3021,7 +3021,7 @@ Vnější obálka je před sčítáním dopravena do volební místnosti, ve kte
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -3042,7 +3042,7 @@ name "fig:Znázornění-elektronických-voleb-pomocí-korespondenčního-hlasov�
 
 \end_inset
 
-Znázornění elektronických voleb pomocí korespondenčního hlasování
+Znázornění podobnosti s korespondenčním hlasováním
 \begin_inset CommandInset citation
 LatexCommand cite
 key "e_voting_estonsko"
@@ -3416,7 +3416,7 @@ reference "tab:Systém-logů"
 \begin_inset Float table
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Tabular
@@ -3458,7 +3458,7 @@ Význam logu
 \begin_inset Text
 
 \begin_layout Plain Layout
-komponenta systému generující log
+Komponenta generující log
 \end_layout
 
 \end_inset
@@ -3928,7 +3928,7 @@ Vhozené hlasy musí být zpracovávány v systému v jiném pořadí, než ve k
 
 \begin_layout Itemize
 Dohled a zajištění bezpečnosti elektronického volebního systému a jeho dat
- je prováděna nezávislou volební komisí.
+ jsou prováděny nezávislou volební komisí.
  Tato komise se skládá ze zástupců volebních stran a vybraných IT specialistů.
 \end_layout
 
@@ -4322,7 +4322,7 @@ Zhodnocení realizace elektronických voleb ve Švýcarsku
  Z tohoto důvodu se autor domnívá, že náklady na nasazení volebního systému
  a jeho provoz jsou velice nízké, oproti jiným řešením.
  Ovšem nevýhodou takovéto provázanosti je závislost elektronického hlasování
- na hlasování korespondeční.
+ na hlasování korespondečním.
  Mezi další výhody švýcarského řešení je jeho legislativní úprava, která
  umožňuje odborné veřejnosti provádět audit elektronických voleb, a to i
  na úrovni zdrojového kódu.
@@ -4483,7 +4483,7 @@ Organizační struktura Svobodných
 
 \begin_layout Standard
 Z organizačního hlediska je struktura Svobodných koncipována tak, aby reflektova
-la dělbu státní moci České republiky .
+la dělbu státní moci České republiky.
  Orgány strany mají vždy pouze zákonodárnou, výkonnou či soudní moc.
  Dle stanov Strany svobodných občanů jsou zřízeny tyto orgány
 \begin_inset CommandInset citation
@@ -4545,7 +4545,7 @@ Rozhodčí komise – Rozhoduje ve sporech mezi členy strany a odpovídá za z�
 \end_layout
 
 \begin_layout Itemize
-Kontrolní komise – Dohlíží na hospodoření výkonných orgánů strany a dodržování
+Kontrolní komise – Dohlíží na hospodaření výkonných orgánů strany a dodržování
  usnesení orgánů a stanov.
 \end_layout
 
@@ -4872,7 +4872,7 @@ reference "tab:Vztah-typu-voleb-a-prav"
 \begin_inset Float table
 wide false
 sideways true
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \begin_inset Tabular
@@ -4881,7 +4881,7 @@ status collapsed
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top">
-<column alignment="center" valignment="top">
+<column alignment="center" valignment="top" width="2cm">
 <column alignment="center" valignment="top">
 <row>
 <cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
@@ -4958,7 +4958,7 @@ Volba funkcionářů strany
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -5005,7 +5005,7 @@ Volba funkcionářů strany
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -5052,7 +5052,7 @@ Volba funkcionářů strany
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -5099,7 +5099,7 @@ Volba funkcionářů strany
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -5146,7 +5146,7 @@ Volba funkcionářů strany
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -5193,7 +5193,7 @@ Volba funkcionářů strany
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -5240,7 +5240,7 @@ Primární volby
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -5287,7 +5287,7 @@ Primární volby
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -5334,7 +5334,7 @@ Primární volby
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -5381,7 +5381,7 @@ Primární volby
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -5428,7 +5428,7 @@ Usnesení sněmů
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -5713,7 +5713,7 @@ Vyhodnocení voleb
 \begin_layout Standard
 Při vyhodnocování voleb, volební komise sečte kladné a záporné hlasy jednotlivýc
 h kandidátů, popř.
- kladné a záporné hlasy, pro schválení či odmnítnutí usnesení.
+ kladné a záporné hlasy, pro schválení či odmítnutí usnesení.
  Následně vypracuje volební protokol a vystaví ho v úložišti dokumentů,
  viz obrázek 
 \begin_inset CommandInset ref
@@ -5767,7 +5767,7 @@ reference "subsec:Volební-procedura"
 
 ) volební komise přezkoumá průběh a vyhodnocení voleb a v případě manipulaci
  s daty volebního procesu je výsledek přezkoumání předán zpět rozhodčí komisi,
- ta v obou případech provedete prošetření všech ostatních okolností voleb
+ ta v obou případech provede prošetření všech ostatních okolností voleb
  a vydá stanovisko ke zrušení voleb a anulování jejich výsledku.
  Pokud rozhodčí komise vydá takovéto stanovisko, jsou veškerá data voleb
  nenávratně smazána.
@@ -6038,9 +6038,8 @@ offline
 \begin_layout Standard
 Do lhůty dané z vlastností voleb, které připravilo předsednictvo, volební
  komise posbírá přihlášky kandidátů do vnitrostranických voleb a sestaví
- kandidátní listinu.
- Kterou následně zveřejní ve znalostní bázi informačního systému a na úložišti
- dokumentů.
+ kandidátní listinu, kterou následně zveřejní ve znalostní bázi informačního
+ systému a na úložišti dokumentů.
 \end_layout
 
 \begin_layout Standard
@@ -6654,7 +6653,14 @@ Doménový model
 
 \begin_layout Standard
 Doménový model aplikace popisuje jednotlivé entity (doménové třídy) a vztahy
- mezi nimi.
+ mezi nimi, jejich grafické znázornění je vyobrazeno na obrázku 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Diagram-tříd-navrhovaného"
+
+\end_inset
+
+.
  Nejdůležitější entitou volební aplikace je třída Election.
  Ta reprezentuje konkrétní volby.
  Její atributy představují informace, které jsou platné pro každé volby
@@ -6789,7 +6795,13 @@ public_key – V tomto atributu je uchován vygenerovaný veřejný klíč konkr
 \end_layout
 
 \begin_layout Standard
-Životní cyklus objektů entity Election je znázorněn v obrázku [OBRAZEK]
+Životní cyklus entity Election je znázorněn v obrázku 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Žitvotní-cyklus-třídy"
+
+\end_inset
+
  a je popsán šesti jejími stavy, kterými jsou:
 \end_layout
 
@@ -6889,7 +6901,7 @@ Mezi hlavní přednosti jazyka Ruby patří:
 \begin_layout Itemize
 Inspirace nejlepších řešení jazyka z ostatních programovacích jazyků, například
  zpracování řetězců je převzaté z jazyka Perl, práce s objekty z jazyka
- Smalltalk, práce se seznamy je převzata z jazyku Lisp atd.
+ Smalltalk, práce se seznamy je převzata z jazyka Lisp atd.
 \end_layout
 
 \begin_layout Itemize
@@ -6917,7 +6929,7 @@ Pod pojmem samodokumentační vlastnost je autorem myšlena taková vlastnost
 \begin_layout Itemize
 Jazyk nenutí uživatele psát věci subjektivně správně dle autorů jazyka.
  Autor jazyka Ruby vidí programování jako cestu k cíli a je pouze na uživateli
- jazyka, jaký směr cesty k cíly použije.
+ jazyka, jaký směr cesty k cíli použije.
 \begin_inset CommandInset citation
 LatexCommand cite
 after "str. 23"
@@ -6994,8 +7006,9 @@ Vrstva View představuje prezentační vrstvu aplikace, kde jsou prezentována
 
 \begin_layout Standard
 Kromě vrstev architektury MVC RoR poskytuje vrstvu helpers, ve které je
- umožněno vývojářům implementovat pomocné metody pro výše popisované vrstvy,
- z důvodu udržení elegantnějšího zdrojového kódu aplikace.
+ umožněno vývojářům z důvodu udržení elegantnějšího zdrojového kódu aplikace
+ implementovat pomocné metody pro výše popisované vrstvy.
+ 
 \end_layout
 
 \begin_layout Standard
@@ -7247,8 +7260,8 @@ MongoDB byla autorem vybrána pro svoje vlastnosti dokumentové databáze,
  protože pokud budeme brát papírové volby v reálném světě, jedná se právě
  o kolekce dokumentů, než-li množiny dat asociované pomocí relací.
  Pokud by byl v implementovaném řešení použit tradiční relační databázový
- systém, museli bychom data denormalizovat z třetí normálové formy, za účelem
- zachování principu tajnosti voleb.
+ systém, museli bychom za účelem zachování principu tajnosti voleb denormalizova
+t schéma databáze z třetí normálové formy.
 \end_layout
 
 \begin_layout Subsection
@@ -7380,25 +7393,27 @@ V legislativě České republiky jsou každé volby definovány svým zákonem a
 \begin_layout Itemize
 Volby do Poslanecké sněmovny Parlamentu České republiky, definovány zákonem
  č.
- 247/1995 Sb., o volbách do Parlamentu České republiky a o změně a doplnění
- některých dalších zákonů
+ 247/1995 Sb., Zákon o volbách do Parlamentu České republiky a o změně a
+ doplnění některých dalších zákonů
 \end_layout
 
 \begin_layout Itemize
 Volby do Senátu Parlamentu České republiky, definovány zákonem, definovány
  zákonem č.
- 247/1995 Sb., o volbách do Parlamentu České republiky a o změně a doplnění
- některých dalších zákonů
+ 247/1995 Sb., Zákon o volbách do Parlamentu České republiky a o změně a
+ doplnění některých dalších zákonů
 \end_layout
 
 \begin_layout Itemize
 Volby do krajských zastupitelstev, definovány zákonem č.
- 130/2000 Sb., o volbách do zastupitelstev krajů a o změně některých zákonů
+ 130/2000 Sb., Zákon o volbách do zastupitelstev krajů a o změně některých
+ zákonů
 \end_layout
 
 \begin_layout Itemize
 Volby do zastupitelstev obcí, definovány zákonem č.
- 491/2001 Sb., o volbách do zastupitelstev obcí a o změně některých zákonů
+ 491/2001 Sb., Zákon o volbách do zastupitelstev obcí a o změně některých
+ zákonů
 \end_layout
 
 \begin_layout Itemize
@@ -7410,12 +7425,13 @@ Volby do zastupitelstva Magistrátu hl.
 
 \begin_layout Itemize
 Volby do Evropského parlamentu, definovány zákonem č.
- 62/2003 Sb., o volbách do Evropského parlamentu a o změně některých zákonů
+ 62/2003 Sb., Zákon o volbách do Evropského parlamentu a o změně některých
+ zákonů
 \end_layout
 
 \begin_layout Itemize
 Volba prezidenta republiky, definována zákonem č.
- 275/2012 Sb., o volbě prezidenta republiky a o změně některých zákonů
+ 275/2012 Sb., Zákon o volbě prezidenta republiky a o změně některých zákonů
 \end_layout
 
 \begin_layout Standard
@@ -7457,7 +7473,7 @@ Pro řešení elektronických voleb v České republice se nejlépe hodí hlasov
 \end_layout
 
 \begin_layout Itemize
-Orgány veřejné správy, už nyní vydávají elektronické občanské průkazy.
+Orgány veřejné správy už nyní vydávají elektronické občanské průkazy.
  Tyto elektronické občanské průkazy v sobě nesou čip, na který by bylo možné
  vygenerovat asymetrické klíče voliče.
 \end_layout
@@ -8486,7 +8502,8 @@ key "Jednaci_rad_volebni_komise"
 
 
 \emph on
-Jednací řád Volební komise
+Jednací řád Volební komise.
+
 \emph default
  [online]
 \emph on
@@ -8496,7 +8513,7 @@ Jednací řád Volební komise
  2016-10-05].
  Dostupné z: 
 \begin_inset Flex URL
-status collapsed
+status open
 
 \begin_layout Plain Layout
 
@@ -8875,7 +8892,7 @@ Navrhované řešení procesu: Příprava voleb
 \begin_inset Float figure
 wide false
 sideways true
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -8997,6 +9014,694 @@ Proces: Kontrola voleb
 Struktura reality
 \end_layout
 
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Diagram-tříd-navrhovaného"
+
+\end_inset
+
+Diagram tříd navrhovaného řešení
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Žitvotní-cyklus-třídy"
+
+\end_inset
+
+Žitvotní cyklus třídy Election
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+\begin_inset CommandInset label
+LatexCommand label
+name "subsec:Json-schéma-zdroje"
+
+\end_inset
+
+Json schéma zdroje people v api Registr členů a příznivců
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+s
+\lang czech
+chema": "http://
+registr.svobodni.cz/people/
+\lang czech
+#",
+\end_layout
+
+\begin_layout Plain Layout
+  "type": "object",
+\end_layout
+
+\begin_layout Plain Layout
+  "properties": {
+\end_layout
+
+\begin_layout Plain Layout
+    "person": {
+\end_layout
+
+\begin_layout Plain Layout
+      "type": "object",
+\end_layout
+
+\begin_layout Plain Layout
+      "properties": {
+\end_layout
+
+\begin_layout Plain Layout
+        "id": {
+\end_layout
+
+\begin_layout Plain Layout
+          "type": "integer",
+\end_layout
+
+\begin_layout Plain Layout
+          "id": "id"
+\end_layout
+
+\begin_layout Plain Layout
+        },
+\end_layout
+
+\begin_layout Plain Layout
+        "name": {
+\end_layout
+
+\begin_layout Plain Layout
+          "type": "string",
+\end_layout
+
+\begin_layout Plain Layout
+          "id": "name"
+\end_layout
+
+\begin_layout Plain Layout
+        },
+\end_layout
+
+\begin_layout Plain Layout
+        "type": {
+\end_layout
+
+\begin_layout Plain Layout
+          "type": "string",
+\end_layout
+
+\begin_layout Plain Layout
+          "id": "type"
+\end_layout
+
+\begin_layout Plain Layout
+        },
+\end_layout
+
+\begin_layout Plain Layout
+        "status": {
+\end_layout
+
+\begin_layout Plain Layout
+          "type": "string",
+\end_layout
+
+\begin_layout Plain Layout
+          "id": "status"
+\end_layout
+
+\begin_layout Plain Layout
+        },
+\end_layout
+
+\begin_layout Plain Layout
+        "person_status": {
+\end_layout
+
+\begin_layout Plain Layout
+          "type": "string",
+\end_layout
+
+\begin_layout Plain Layout
+          "id": "person_status"
+\end_layout
+
+\begin_layout Plain Layout
+        },
+\end_layout
+
+\begin_layout Plain Layout
+        "member_status": {
+\end_layout
+
+\begin_layout Plain Layout
+          "type": "string",
+\end_layout
+
+\begin_layout Plain Layout
+          "id": "member_status"
+\end_layout
+
+\begin_layout Plain Layout
+        },
+\end_layout
+
+\begin_layout Plain Layout
+        "supporter_status": {
+\end_layout
+
+\begin_layout Plain Layout
+          "type": "null",
+\end_layout
+
+\begin_layout Plain Layout
+          "id": "supporter_status"
+\end_layout
+
+\begin_layout Plain Layout
+        },
+\end_layout
+
+\begin_layout Plain Layout
+        "first_name": {
+\end_layout
+
+\begin_layout Plain Layout
+          "type": "string",
+\end_layout
+
+\begin_layout Plain Layout
+          "id": "first_name"
+\end_layout
+
+\begin_layout Plain Layout
+        },
+\end_layout
+
+\begin_layout Plain Layout
+        "last_name": {
+\end_layout
+
+\begin_layout Plain Layout
+          "type": "string",
+\end_layout
+
+\begin_layout Plain Layout
+          "id": "last_name"
+\end_layout
+
+\begin_layout Plain Layout
+        },
+\end_layout
+
+\begin_layout Plain Layout
+        "email": {
+\end_layout
+
+\begin_layout Plain Layout
+          "type": "string",
+\end_layout
+
+\begin_layout Plain Layout
+          "id": "email"
+\end_layout
+
+\begin_layout Plain Layout
+        },
+\end_layout
+
+\begin_layout Plain Layout
+        "photo_url": {
+\end_layout
+
+\begin_layout Plain Layout
+          "type": "string",
+\end_layout
+
+\begin_layout Plain Layout
+          "id": "photo_url"
+\end_layout
+
+\begin_layout Plain Layout
+        },
+\end_layout
+
+\begin_layout Plain Layout
+        "cv_url": {
+\end_layout
+
+\begin_layout Plain Layout
+          "type": "string",
+\end_layout
+
+\begin_layout Plain Layout
+          "id": "cv_url"
+\end_layout
+
+\begin_layout Plain Layout
+        },
+\end_layout
+
+\begin_layout Plain Layout
+        "contacts": {
+\end_layout
+
+\begin_layout Plain Layout
+          "type": "array",
+\end_layout
+
+\begin_layout Plain Layout
+          "uniqueItems": false,
+\end_layout
+
+\begin_layout Plain Layout
+          "items": {},
+\end_layout
+
+\begin_layout Plain Layout
+          "id": "contacts"
+\end_layout
+
+\begin_layout Plain Layout
+        },
+\end_layout
+
+\begin_layout Plain Layout
+        "domestic_region": {
+\end_layout
+
+\begin_layout Plain Layout
+          "type": "object",
+\end_layout
+
+\begin_layout Plain Layout
+          "properties": {
+\end_layout
+
+\begin_layout Plain Layout
+            "name": {
+\end_layout
+
+\begin_layout Plain Layout
+              "type": "string",
+\end_layout
+
+\begin_layout Plain Layout
+              "id": "name"
+\end_layout
+
+\begin_layout Plain Layout
+            },
+\end_layout
+
+\begin_layout Plain Layout
+            "id": {
+\end_layout
+
+\begin_layout Plain Layout
+              "type": "integer",
+\end_layout
+
+\begin_layout Plain Layout
+              "id": "id"
+\end_layout
+
+\begin_layout Plain Layout
+            }
+\end_layout
+
+\begin_layout Plain Layout
+          },
+\end_layout
+
+\begin_layout Plain Layout
+          "id": "domestic_region",
+\end_layout
+
+\begin_layout Plain Layout
+          "required": [
+\end_layout
+
+\begin_layout Plain Layout
+            "name",
+\end_layout
+
+\begin_layout Plain Layout
+            "id"
+\end_layout
+
+\begin_layout Plain Layout
+          ]
+\end_layout
+
+\begin_layout Plain Layout
+        },
+\end_layout
+
+\begin_layout Plain Layout
+        "guest_region": {
+\end_layout
+
+\begin_layout Plain Layout
+          "type": "object",
+\end_layout
+
+\begin_layout Plain Layout
+          "properties": {
+\end_layout
+
+\begin_layout Plain Layout
+            "name": {
+\end_layout
+
+\begin_layout Plain Layout
+              "type": "string",
+\end_layout
+
+\begin_layout Plain Layout
+              "id": "name"
+\end_layout
+
+\begin_layout Plain Layout
+            },
+\end_layout
+
+\begin_layout Plain Layout
+            "id": {
+\end_layout
+
+\begin_layout Plain Layout
+              "type": "integer",
+\end_layout
+
+\begin_layout Plain Layout
+              "id": "id"
+\end_layout
+
+\begin_layout Plain Layout
+            }
+\end_layout
+
+\begin_layout Plain Layout
+          },
+\end_layout
+
+\begin_layout Plain Layout
+          "id": "guest_region",
+\end_layout
+
+\begin_layout Plain Layout
+          "required": [
+\end_layout
+
+\begin_layout Plain Layout
+            "name",
+\end_layout
+
+\begin_layout Plain Layout
+            "id"
+\end_layout
+
+\begin_layout Plain Layout
+          ]
+\end_layout
+
+\begin_layout Plain Layout
+        },
+\end_layout
+
+\begin_layout Plain Layout
+        "domestic_branch": {
+\end_layout
+
+\begin_layout Plain Layout
+          "type": "object",
+\end_layout
+
+\begin_layout Plain Layout
+          "properties": {
+\end_layout
+
+\begin_layout Plain Layout
+            "name": {
+\end_layout
+
+\begin_layout Plain Layout
+              "type": "string",
+\end_layout
+
+\begin_layout Plain Layout
+              "id": "name"
+\end_layout
+
+\begin_layout Plain Layout
+            },
+\end_layout
+
+\begin_layout Plain Layout
+            "id": {
+\end_layout
+
+\begin_layout Plain Layout
+              "type": "integer",
+\end_layout
+
+\begin_layout Plain Layout
+              "id": "id"
+\end_layout
+
+\begin_layout Plain Layout
+            }
+\end_layout
+
+\begin_layout Plain Layout
+          },
+\end_layout
+
+\begin_layout Plain Layout
+          "id": "domestic_branch",
+\end_layout
+
+\begin_layout Plain Layout
+          "required": [
+\end_layout
+
+\begin_layout Plain Layout
+            "name",
+\end_layout
+
+\begin_layout Plain Layout
+            "id"
+\end_layout
+
+\begin_layout Plain Layout
+          ]
+\end_layout
+
+\begin_layout Plain Layout
+        },
+\end_layout
+
+\begin_layout Plain Layout
+        "roles": {
+\end_layout
+
+\begin_layout Plain Layout
+          "type": "array",
+\end_layout
+
+\begin_layout Plain Layout
+          "uniqueItems": false,
+\end_layout
+
+\begin_layout Plain Layout
+          "items": {},
+\end_layout
+
+\begin_layout Plain Layout
+          "id": "roles"
+\end_layout
+
+\begin_layout Plain Layout
+        }
+\end_layout
+
+\begin_layout Plain Layout
+      },
+\end_layout
+
+\begin_layout Plain Layout
+      "id": "person",
+\end_layout
+
+\begin_layout Plain Layout
+      "required": [
+\end_layout
+
+\begin_layout Plain Layout
+        "id",
+\end_layout
+
+\begin_layout Plain Layout
+        "name",
+\end_layout
+
+\begin_layout Plain Layout
+        "type",
+\end_layout
+
+\begin_layout Plain Layout
+        "status",
+\end_layout
+
+\begin_layout Plain Layout
+        "person_status",
+\end_layout
+
+\begin_layout Plain Layout
+        "member_status",
+\end_layout
+
+\begin_layout Plain Layout
+        "supporter_status",
+\end_layout
+
+\begin_layout Plain Layout
+        "first_name",
+\end_layout
+
+\begin_layout Plain Layout
+        "last_name",
+\end_layout
+
+\begin_layout Plain Layout
+        "email",
+\end_layout
+
+\begin_layout Plain Layout
+        "photo_url",
+\end_layout
+
+\begin_layout Plain Layout
+        "cv_url",
+\end_layout
+
+\begin_layout Plain Layout
+        "contacts",
+\end_layout
+
+\begin_layout Plain Layout
+        "domestic_region",
+\end_layout
+
+\begin_layout Plain Layout
+        "guest_region",
+\end_layout
+
+\begin_layout Plain Layout
+        "domestic_branch",
+\end_layout
+
+\begin_layout Plain Layout
+        "roles"
+\end_layout
+
+\begin_layout Plain Layout
+      ]
+\end_layout
+
+\begin_layout Plain Layout
+    }
+\end_layout
+
+\begin_layout Plain Layout
+  },
+\end_layout
+
+\begin_layout Plain Layout
+  "id": "/",
+\end_layout
+
+\begin_layout Plain Layout
+  "required": [
+\end_layout
+
+\begin_layout Plain Layout
+    "person"
+\end_layout
+
+\begin_layout Plain Layout
+  ]
+\end_layout
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Chapter
 Ostatní přílohy
 \end_layout
@@ -9006,10 +9711,6 @@ Ostatní přílohy
 wide false
 sideways true
 status collapsed
-
-\begin_layout Plain Layout
-
-\end_layout
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -9033,10 +9734,6 @@ Architektura navrhovaného řešení
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Plain Layout
 
 \end_layout
 
