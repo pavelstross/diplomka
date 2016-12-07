@@ -545,7 +545,7 @@ Druhým cílem je připravit funkční implementaci elektronických voleb ve Str
 \end_layout
 
 \begin_layout Standard
-Přínos autora v této diplomové práci spočívá v naplění stanovených cílů.
+Přínos autora v této diplomové práci spočívá v naplnění stanovených cílů.
  Při zpracování práce je proveden výzkum problematiky voleb a elektronických
  voleb.
  Po získání těchto znalostí je autorem provedena analýza, návrh řešení implement
@@ -1105,7 +1105,7 @@ Příprava voleb je započata vyhlášením voleb, kdy jsou stanoveny i lhůty
  zajistit možnost volby voličům, kteří se nemohou v den voleb dostavit do
  místa volby.
  To lze zajistit vydáním voličského průkazu pro voliče nebo použitím metody
- korespondencního hlasování viz část 
+ korespondenčního hlasování viz část 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "subsec:Estonsko"
@@ -1364,9 +1364,9 @@ Cílem proporčních volebních systémů je zachování rovnováhy mezi počtem
 h mandátů a získaných hlasů.
  To tedy znamená, že v ideálním případě relativní počet získaných hlasů
  by měl být shodný s relativním počtem obdržených mandátů.
- Takové systémy se používají převážně ve vícemandátových volebních obvodech
+ Takové systémy se používají převážně ve více-mandátových volebních obvodech
  za použití kandidátních listin.
- Za autory proporčního volebního systému jsou považováni matematikové Jaen
+ Za autory proporčního volebního systému jsou považováni matematici Jaen
  Antoine Condorcet a Joseph Diez Cergonne.
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -2068,7 +2068,7 @@ ie.
 \begin_layout Standard
 Vzhledem k tomu, že se tento typ voleb liší velice málo proti klasickým
  volbám, autor považuje za jeho nevýhodu podobné náklady, které mohou být
- i vyšší v případě varianty s centrálním úložistěm, neboť je nutné zajistit
+ i vyšší v případě varianty s centrálním úložištěm, neboť je nutné zajistit
  i datový komunikační kanál pro přenos hlasů.
  Další možným rizikem je možnost kompromitace hlasovacího zařízení škodlivým
  kódem.
@@ -2099,9 +2099,9 @@ Takovýto typ elektronických voleb není závislý na fyzickém místě při pr
  Z toho vyplývá největší výhoda tohoto typu, protože zvyšuje komfort pro
  voliče, a to zejména z časových důvodů.
  Volič může volit v jakýkoliv čas a z jakéhokoliv místa.
- V dloudobém časovém horizontu je při tomto typu elektronických voleb snížení
- nákladů, protože takový systém elektronických voleb je možné využít při
- jejich dalším opakování.
+ V dlouhodobém časovém horizontu je při tomto typu elektronických voleb
+ snížení nákladů, protože takový systém elektronických voleb je možné využít
+ při jejich dalším opakování.
 \end_layout
 
 \begin_layout Standard
@@ -2110,7 +2110,7 @@ Mezi hlavní nevýhody můžeme zařadit procesní a technickou náročnost real
  Z pohledu pořadatele voleb je nutné zajistit identifikaci voliče a jeho
  oprávnění volit v jednotlivých volbách.
  Dále je nutné zajistit anonymizaci hlasů.
- Další nevýhodou pro realizaci elektronických voleb je také nízká přispůsobilost
+ Další nevýhodou pro realizaci elektronických voleb je také nízká přizpůsobivost
  voličů a tendence lpění na již zavedeném konceptu.
 \end_layout
 
@@ -2155,13 +2155,13 @@ name "sec:Porovnání-různých-typů"
 
 \end_inset
 
-Porovnání různých typů elekronických voleb
+Porovnání různých typů elektronických voleb
 \end_layout
 
 \begin_layout Standard
 V této části autor porovnává výhody a nevýhody výše zmíněných řešení elektronick
 ých voleb.
- K tomuto porovnání je využita vicekriteriální analýza, ve které jsou jednotlivý
+ K tomuto porovnání je využita vícekriteriální analýza, ve které jsou jednotlivý
 m faktorům přiřazená diskrétní čísla v oboru hodnot od jedné do deseti.
  Hodnota deset zde znázorňuje nejvyšší možný užitek daného řešení.
  Tato analýza je zobrazena v tabulce 
@@ -2183,7 +2183,7 @@ Mezi zvolené způsoby voleb autor zahrnuje elektronické volby v kontrolovaném
 \end_layout
 
 \begin_layout Itemize
-Zvýšení rychlosti sečtení hlasů – Snížení doby sečtění hlasů díky využití
+Zvýšení rychlosti sečtení hlasů – Snížení doby sečtení hlasů díky využití
  informačních technologií, při kterých odpadá namáhavé a časově náročné
  ruční sčítání hlasů.
 \end_layout
@@ -2219,7 +2219,7 @@ Přístupnost pro handicapované – Možnost zúčastnit se voleb pro handicapo
 \begin_layout Itemize
 Pochopení volebního mechanismu laickou veřejností – Potřeba porozumění voliče
  postupu volebního mechanismu při udělení hlasu a ochota voliče naučit se
- a využít jiný posstup při hlasování.
+ a využít jiný podstup při hlasování.
  
 \end_layout
 
@@ -3431,7 +3431,7 @@ key "e_voting_estonsko"
 \end_inset
 
  Po zákonné lhůtě pro podání žaloby pro neregulérnost voleb a v případě,
- že takováta žaloba nebyla podána, je privátní klíč vždy zničen.
+ že takováto žaloba nebyla podána, je privátní klíč vždy zničen.
 \end_layout
 
 \begin_layout Subsubsection
@@ -4153,7 +4153,7 @@ Data umožňující voliči hlasovat v elektronickém systému voleb.
 Tato data nejsou agregována v žádné databázi, nýbrž jsou z nich přímo vygenerová
 ny tiskové soubory volebních karet voličů.
  Volební karta je po svém vytisknutí a předání voliči používána jako jeho
- indentifikátor a hlasovací lístek ve fyzické volební místnosti nebo při
+ identifikátor a hlasovací lístek ve fyzické volební místnosti nebo při
  korespondenční volbě.
  Zároveň údaje na volební kartě slouží k autentizování voliče v elektronickém
  systému voleb.
@@ -4284,7 +4284,7 @@ key "the_geneva_internet_voting_system"
 \end_layout
 
 \begin_layout Enumerate
-Následně je soukromý klíč zabezpečen dvěmi hesly pro nemožnost získání jeho
+Následně je soukromý klíč zabezpečen dvěma hesly pro nemožnost získání jeho
  hodnoty.
  Tato hesla zadávají dvě skupiny členů volební komise.
  Zároveň tato hesla zapíší na papír a vloží do obálky, která je předána
@@ -4334,9 +4334,9 @@ Volič si ve webovém prohlížeči načte rozhraní elektronického volebního 
 \end_layout
 
 \begin_layout Enumerate
-Volič se indetifikuje v rozhraní elektronického volebního systému na základě
+Volič se identifikuje v rozhraní elektronického volebního systému na základě
  jeho volební karty, tj.
- vyplní číslo volební karty, která se skládá z šestnácti číslic a potrvdí
+ vyplní číslo volební karty, která se skládá z šestnácti číslic a potvrdí
  podmínky užívání elektronického volebního systému.
 \end_layout
 
@@ -4348,7 +4348,7 @@ Následně volič v rozhraní volebního systému vybírá kandidáty z kandidá
 \begin_layout Enumerate
 V další obrazovce rozhraní, je voliči zobrazena jeho volba pro kontrolu
  jeho rozhodnutí.
- Zároveň v této obrazovce je volič povinen vyplňit do formuláře své heslo,
+ Zároveň v této obrazovce je volič povinen vyplnit do formuláře své heslo,
  datum narození a volební okrsek.
  Po vyplnění formuláře volič stiskne tlačítko hlasovat a elektronický volební
  systém jeho hlas započítá.
@@ -4366,12 +4366,12 @@ Zhodnocení realizace elektronických voleb ve Švýcarsku
  Pro funkčnost takovéhoto elektronického volebního systému není nutné, aby
  orgány švýcarské veřejné správy modifikovaly identifikační doklady občanů,
  neboť touto modifikací je například umístění specializovaného čipu do dokladu.
- Pro funkční řešení stačilo do volební karty doplnit data nutná pro použítí
+ Pro funkční řešení stačilo do volební karty doplnit data nutná pro použití
  elektronického volebního systému.
  Z tohoto důvodu se autor domnívá, že náklady na nasazení volebního systému
  a jeho provoz jsou velice nízké, oproti jiným řešením.
  Ovšem nevýhodou takovéto provázanosti je závislost elektronického hlasování
- na hlasování korespondečním.
+ na hlasování korespondenčním.
  Mezi další výhody švýcarského řešení je jeho legislativní úprava, která
  umožňuje odborné veřejnosti provádět audit elektronických voleb, a to i
  na úrovni zdrojového kódu.
@@ -4418,7 +4418,7 @@ Prvopočátkem vzniku Strany svobodných občanů byla nespokojenost některých
  členů ODS s touto situací, kteří již v roce 2001 sepsali pro ideovou konferenci
  ODS dokument nazvaný Manifest českého eurorealismu.
  Manifest se sice nestal oficiálním programovým dokumentem strany, ale shrnul
- postoje euroskeptického křídla ODS, které mimo jiné v dokumentu uvádí,
+ postoje euro-skeptického křídla ODS, které mimo jiné v dokumentu uvádí,
  že při rozhodování mezi nadnárodním a mezivládním modelem evropské integrace
  by se ČR měla jasně postavit za mezivládní.
  Dalším významným podnětem pro vznik Svobodných byl 19.
@@ -4462,10 +4462,10 @@ I když uvedené události předcházely vzniku Strany svobodných občanů, hla
 Podíváme-li se na politický program a další materiály Svobodných ve srovnání
  se znaky jiných ideologií, je možné konstatovat, že se prolíná klasický
  liberalismus a liberální konzervatismus.
- To, že Svobodní jsou na veřejnosti představováni hlavně jako strana euroskeptic
-ká, vyplývá z jejich liberální ideologie, neboť EU pro ně přestavuje omezování
- osobních svobod jednotlivce a následně i svobodu rozhodování suverénního
- státu.
+ To, že Svobodní jsou na veřejnosti představováni hlavně jako strana euro
+ skeptická, vyplývá z jejich liberální ideologie, neboť EU pro ně přestavuje
+ omezování osobních svobod jednotlivce a následně i svobodu rozhodování
+ suverénního státu.
  Evropská unie dle Svobodných nenaplňuje ideály liberalismu, naopak na ně
  útočí a ohrožuje tak podstatu demokracie.
  Řada zákonů je v Poslanecké sněmovně schvalována tzv.
@@ -4553,7 +4553,7 @@ Republikový sněm – Jedná se o nejvyšší legislativní orgán strany, kter
  a volí se na něm či odvolávají členové dalších orgánů.
  Každý člen Strany svobodných občanů je vždy členem republikového sněmu.
  Všichni členové republikového sněmu mají právo rozhodovat (hlasovací právo).
- V přirovnání ke státu se defacto jedná o občany státu.
+ V přirovnání ke státu se de facto jedná o občany státu.
  Na sněmu se mimo jiné projednávají a schvalují výroční zprávy o hospodaření
  strany, zprávy předsedy strany a zprávy kontrolní komise.
  Sněm je oprávněn změnit a schválit nové stanovy nebo základní ideové dokumenty.
@@ -4691,9 +4691,9 @@ reference "sec:Porovnání-různých-typů"
 \end_layout
 
 \begin_layout Standard
-Z tohoto důvodu se v roce 2014 republikový výbor usnesl na potřebu použítí
+Z tohoto důvodu se v roce 2014 republikový výbor usnesl na potřebu použití
  nového informačního systému.
- Požadavky na něj jsou následujcí:
+ Požadavky na něj jsou následující:
 \end_layout
 
 \begin_layout Enumerate
@@ -4718,14 +4718,14 @@ Informační systém musí umožnit autentizaci aplikacím třetích stran.
 
 \begin_layout Standard
 Dle těchto požadavků byl vyvinut a nasazen nový informační systém, který
- je složen z následujících kompenent:
+ je složen z následujících komponent:
 \end_layout
 
 \begin_layout Itemize
 Registr členů a příznivců – Jedná se o komponentu, která obsluhuje procesy
  týkající se správy členů a příznivců strany.
- Z toho výplývá, že v registru jsou uloženy osobní údaje každého člena a
- přínivce, k těmto osobním údajům mají přístup pouze funkcionáři strany
+ Z toho vyplývá, že v registru jsou uloženy osobní údaje každého člena a
+ příznivce, k těmto osobním údajům mají přístup pouze funkcionáři strany
  na základě jejich regionální působnosti.
  Registr zároveň umožňuje členům a příznivcům zobrazit jejich osobní údaje
  na základě principu Opt-in
@@ -4788,7 +4788,7 @@ JWT (JSON Web Token) je přístupový token umožňující používat jedno př�
 \end_layout
 
 \begin_layout Itemize
-Finance – Aplikace implementující párování dat o darech, členských a přiznivecký
+Finance – Aplikace implementující párování dat o darech, členských a příznivecký
 ch poplatků s finančními ústavy.
  Zároveň tato aplikace obsluhuje procesy týkající se finanční agendy, zejména
  účetnictví neboť politické strany a hnutí mají naprosto odlišný účetní
@@ -4815,7 +4815,7 @@ Znalostní báze strany – Znalostní báze umožňuje členům a příznivcům
 \end_layout
 
 \begin_layout Itemize
-Úložistě dokumentů – Slouží pro ukládání a archivování dokumentů vydaných
+Úložiště dokumentů – Slouží pro ukládání a archivování dokumentů vydaných
  orgány strany.
  Tato aplikace umožňuje uživateli používat webové rozhraní nebo rozhraní
  WebDAV.
@@ -4886,14 +4886,14 @@ Volby funkcionářů strany – Jedná se o volby, ve kterých je možné volit 
 Primární volby – Primární volby jsou využívány při sestavování kandidátních
  listin pro volby do veřejných funkcí.
  V primárních volbách mají členové strany aktivní i pasivní volební právo,
- zatímco přiznivci pouze aktivní volební právo.
+ zatímco příznivci pouze aktivní volební právo.
 \end_layout
 
 \begin_layout Itemize
 Usnesení sněmu – Po každém jednání sněmu je hlasování o jednotlivých usneseních
  sněmu postoupeno do hlasování per rollam, aby každý člen, který se neúčastnil
  jednání mohl využívat své aktivní volební právo při hlasování o usneseních.
- Usnesení sněmů se liší od voleb funkcionárů strany a primárních voleb tím,
+ Usnesení sněmů se liší od voleb funkcionářů strany a primárních voleb tím,
  že volič ve své volbě nepreferuje kandidáty, nýbrž hlasuje pro/proti o
  výroku, jenž je podstatou usnesení sněmu.
 \end_layout
@@ -5683,11 +5683,11 @@ Před zahájením samotných voleb probíhá jejich příprava.
 
 \begin_layout Standard
 Tato situace nastává obvykle tím, že některému členovi končí funkční období
- mandátu vnitrostranické funke.
+ mandátu vnitrostranické funkce.
  Další situací, kdy předsednictvo jedná o vyhlášení voleb je v případě konání
  některého ze sněmů, na konci zasedání každého sněmu jsou dána hlasování,
  která se uskutečnila během zasedání do hlasování per-rollam, aby členové,
- kteří se nemohli zůčastnit sněmu měli možnost uplatnit své aktivní volební
+ kteří se nemohli zúčastnit sněmu měli možnost uplatnit své aktivní volební
  právo.
 \end_layout
 
@@ -5843,7 +5843,7 @@ reference "sec:Volby-z-pohledu"
 
 ).
  Přičemž z pohledu mezinárodního práva je u vnitrostranických voleb porušena
- zásada všeobecnosti, neboť přiznivci nemají možnost se zúčastnit některých
+ zásada všeobecnosti, neboť příznivci nemají možnost se zúčastnit některých
  voleb aktivně a všech pasivně (viz tabulka 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -5926,8 +5926,8 @@ Na rozdíl od vydávání hlasovacích karet v Ženevě je autentizace voliče �
 \begin_layout Standard
 Z Estonských elektronických voleb se autor inspiroval systémem logů pro
  audit voleb.
- Narozdíl od Estonských elektronických voleb jsou kontrolní součty v navrhované
- implementaci ukládany do databáze a zároveň odesílány voliči z důvodu kontroly
+ Na rozdíl od Estonských elektronických voleb jsou kontrolní součty v navrhované
+ implementaci ukládány do databáze a zároveň odesílány voliči z důvodu kontroly
  řádného průběhu voleb.
 \end_layout
 
@@ -6050,14 +6050,14 @@ Tato situace nastává obvykle tím, že některému členovi končí funkční 
  Další situací, kdy předsednictvo jedná o vyhlášení voleb, je v případě
  konání některého ze sněmů.
  Na konci zasedání každého sněmu jsou dána hlasování, která se uskutečnila
- během zasedání do hlasování per-rollam, aby členové, kteří se nemohli zůčastnit
+ během zasedání do hlasování per-rollam, aby členové, kteří se nemohli zúčastnit
  sněmu měli možnost uplatnit své aktivní volební právo.
 \end_layout
 
 \begin_layout Standard
 V případě, že se předsednictvo usnese o vyhlášení vnitrostranických voleb,
  umístí své usnesení do zápisu jednání předsednictva.
- V tomto usnesení musí být specifikovány vlasnosti voleb, např.
+ V tomto usnesení musí být specifikovány vlastnosti voleb, např.
  kolik je volitelných míst, tj.
  kolik kandidátů z proběhlých voleb získá mandát, termíny přihlašování kandidátů
 , celkový čas volební procedury apod.
@@ -6207,7 +6207,7 @@ Aplikace zobrazí formulář obsahující vstupní pole uživatelské jméno a h
 
 \begin_layout Enumerate
 Uživatel vyplní formulář a stiskne tlačítko přihlásit se.
- V případě, že se uživatel přihlašuje do aplikace poprvé musí potrvdit poskytnut
+ V případě, že se uživatel přihlašuje do aplikace poprvé musí potvrdit poskytnut
 í svých osobních údajů z Registru členů a příznivců.
 \end_layout
 
@@ -6261,7 +6261,7 @@ Probíhající volby
 \end_layout
 
 \begin_layout Enumerate
-Aplikace zobrazí seznam všech probíhajích voleb.
+Aplikace zobrazí seznam všech probírajících voleb.
 \end_layout
 
 \begin_layout Subsubsection
@@ -6923,12 +6923,12 @@ Ruby je stabilní programovací jazyk, tím je myšleno, že není novinkou a
 
 \begin_layout Itemize
 Syntaxe jazyka je velice čitelná, a to tak, že zdrojový kód jazyka disponuje
- samodokumentační vlastností
+ samo-dokumentační vlastností
 \begin_inset Foot
 status collapsed
 
 \begin_layout Plain Layout
-Pod pojmem samodokumentační vlastnost je autorem myšlena taková vlastnost
+Pod pojmem samo-dokumentační vlastnost je autorem myšlena taková vlastnost
  zdrojového kódu, že již napsaný zdrojový kód vychází z přirozeného jazyka
  a je natoliktak čitelný, že sám slouží jako dokumentace zdrojového kódu
 \end_layout
@@ -7208,7 +7208,7 @@ Configatron je gem usnadňující konfiguraci aplikace zavedením globální str
 configatron
 \emph default
  do aplikace, používáním této struktury je výsledný kód aplikace elegantnější,
- neboť vyvojář nemusí používat různé globální proměnné apod
+ neboť vývojář nemusí používat různé globální proměnné apod
 \begin_inset CommandInset citation
 LatexCommand cite
 key "configatron"
@@ -7286,8 +7286,8 @@ key "cancancan"
 \end_layout
 
 \begin_layout Standard
-Pomocí gemu CanCan bude implementována autorizace nad objekty a jejich daty
- v implementovaném řešení.
+Pomocí gemu CanCanCan bude implementována autorizace nad objekty a jejich
+ daty v implementovaném řešení.
 \end_layout
 
 \begin_layout Subsubsection
@@ -7494,8 +7494,11 @@ Controller
 \emph default
  její protějšek.
  Toto chování vychází z architektury MVC a frameworku RoR.
- Dále se autor zaměří na třídy vrstvy kontroler, které nemají svůj protějšek
- ve vrstvě 
+ Dále se autor zaměří na třídy vrstvy 
+\emph on
+Controller
+\emph default
+, které nemají svůj protějšek ve vrstvě 
 \emph on
 Model
 \emph default
@@ -7851,7 +7854,7 @@ Prozkoumat již realizovaná řešení elektronických voleb ve světě.
 
 \end_deeper
 \begin_layout Itemize
-Připravit funkční implementaci elektronických voleb ve Straně svobodých
+Připravit funkční implementaci elektronických voleb ve Straně svobodných
  občanů.
 \end_layout
 
