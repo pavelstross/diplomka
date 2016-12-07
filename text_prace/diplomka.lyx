@@ -6110,43 +6110,6 @@ reference "fig:Diagram-užití-volební"
 \end_layout
 
 \begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status collapsed
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:Diagram-užití-volební"
-
-\end_inset
-
-Diagram užití volební aplikace
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
 Hlavními aktéry v tomto diagramu jsou:
 \end_layout
 
@@ -7101,8 +7064,8 @@ Používání ORM(objektově-relační mapování) frameworku ActiveRecord, kter
 \end_layout
 
 \begin_layout Itemize
-Při vývoji je použit princip Scaffoldingu, jedná se o princip, kdy se na
- základě standardně dodaných pravidel frameworku RoR používají generátory,
+Při vývoji je využíván princip Scaffoldingu, jedná se o princip, kdy se
+ na základě standardně dodaných pravidel frameworku RoR používají generátory,
  pro vygenerování tříd vrstev Model, Controller a Viev ze šablon RoR.
 \end_layout
 
@@ -7670,6 +7633,103 @@ Dalším projektem je rozšíření volební aplikace tak, aby bylo možné skrz
  ni provádět hlasování všech orgánů strany.
  Tento projekt by, ale znamenal úpravu všech komponent IS strany a poupravení
  jednacích řádu všech dotčených orgánů takovýmto projektem.
+\end_layout
+
+\begin_layout Chapter*
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+addcontentsline{toc}{chapter}{
+\end_layout
+
+\end_inset
+
+Terminologický slovník
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+Terminologický slovník
+\end_layout
+
+\begin_layout Standard
+\begin_inset FloatList figure
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+addcontentsline{toc}{chapter}{
+\end_layout
+
+\end_inset
+
+Seznam obrázků
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset FloatList table
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+addcontentsline{toc}{chapter}{
+\end_layout
+
+\end_inset
+
+Seznam tabulek
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Bibliography
@@ -9010,6 +9070,35 @@ Proces: Kontrola voleb
 
 \end_layout
 
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Diagram-užití-volební"
+
+\end_inset
+
+Diagram užití navrhovaného řešení
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Chapter
 Struktura reality
 \end_layout
@@ -9081,9 +9170,13 @@ name "fig:Žitvotní-cyklus-třídy"
 \end_layout
 
 \begin_layout Chapter
+Popis API Registr členů a příznivců
+\end_layout
+
+\begin_layout Section
 \begin_inset CommandInset label
 LatexCommand label
-name "subsec:Json-schéma-zdroje"
+name "subsec:Json-schéma-zdroje-people"
 
 \end_inset
 
@@ -9683,6 +9776,136 @@ registr.svobodni.cz/people/
 
 \begin_layout Plain Layout
     "person"
+\end_layout
+
+\begin_layout Plain Layout
+  ]
+\end_layout
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Json schéma zdroje regions v API Registr členů a příznivců
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\begin_layout Plain Layout
+  "$schema": "http://registr.svobodni.cz/regions.json",
+\end_layout
+
+\begin_layout Plain Layout
+  "type": "object",
+\end_layout
+
+\begin_layout Plain Layout
+  "properties": {
+\end_layout
+
+\begin_layout Plain Layout
+    "regions": {
+\end_layout
+
+\begin_layout Plain Layout
+      "type": "array",
+\end_layout
+
+\begin_layout Plain Layout
+      "uniqueItems": false,
+\end_layout
+
+\begin_layout Plain Layout
+      "items": {
+\end_layout
+
+\begin_layout Plain Layout
+        "type": "object",
+\end_layout
+
+\begin_layout Plain Layout
+        "properties": {
+\end_layout
+
+\begin_layout Plain Layout
+          "id": {
+\end_layout
+
+\begin_layout Plain Layout
+            "type": "integer"
+\end_layout
+
+\begin_layout Plain Layout
+          },
+\end_layout
+
+\begin_layout Plain Layout
+          "name": {
+\end_layout
+
+\begin_layout Plain Layout
+            "type": "string"
+\end_layout
+
+\begin_layout Plain Layout
+          }
+\end_layout
+
+\begin_layout Plain Layout
+        },
+\end_layout
+
+\begin_layout Plain Layout
+        "required": [
+\end_layout
+
+\begin_layout Plain Layout
+          "id",
+\end_layout
+
+\begin_layout Plain Layout
+          "name"
+\end_layout
+
+\begin_layout Plain Layout
+        ]
+\end_layout
+
+\begin_layout Plain Layout
+      }
+\end_layout
+
+\begin_layout Plain Layout
+    }
+\end_layout
+
+\begin_layout Plain Layout
+  },
+\end_layout
+
+\begin_layout Plain Layout
+  "required": [
+\end_layout
+
+\begin_layout Plain Layout
+    "regions"
 \end_layout
 
 \begin_layout Plain Layout

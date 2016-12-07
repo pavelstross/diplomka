@@ -1,0 +1,28 @@
+{
+  "$schema": "http://registr.svobodni.cz/regions.json",
+  "type": "object",
+  "properties": {
+    "regions": {
+      "type": "array",
+      "uniqueItems": false,
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer"
+          },
+          "name": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "id",
+          "name"
+        ]
+      }
+    }
+  },
+  "required": [
+    "regions"
+  ]
+}
