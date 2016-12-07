@@ -6991,8 +6991,15 @@ Framework, neboli aplikační rámec je sada softwaru, který slouží jako podp
 \emph on
 Model-View-Controller
 \emph default
-), striktně tedy rozděluje aplikaci na 3 vrstvy.
- 
+), striktně tedy rozděluje aplikaci na 3 vrstvy
+\begin_inset CommandInset citation
+LatexCommand cite
+after "str. 667"
+key "ruby"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
@@ -7044,12 +7051,28 @@ Princip Convention over Configuration je snaha omezit konfiguraci aplikace
  na minimum.
  Pokud není nějaká konfigurační hodnota nastavena je použita implicitní
  konfigurační hodnota, která je dána konvencí.
+\begin_inset CommandInset citation
+LatexCommand cite
+after "str. 668"
+key "ruby"
+
+\end_inset
+
+ 
 \end_layout
 
 \end_inset
 
 
 \begin_inset Quotes grd
+\end_inset
+
+
+\begin_inset CommandInset citation
+LatexCommand cite
+after "str. 668"
+key "ruby"
+
 \end_inset
 
 .
@@ -7096,6 +7119,14 @@ status collapsed
 AJAX (Asynchronous JavaScript and XML) je obecné označení technologie interaktiv
 ních webových aplikací, které mění obsah webových stránek za pomoci asynchroního
  zpracování bez nutnosti znovunačtení celého dokumentu.
+\begin_inset CommandInset citation
+LatexCommand cite
+after "str. 669"
+key "ruby"
+
+\end_inset
+
+ 
 \end_layout
 
 \end_inset
@@ -7115,7 +7146,15 @@ Používání ORM(objektově-relační mapování) frameworku ActiveRecord, kter
 \begin_layout Itemize
 Při vývoji je využíván princip Scaffoldingu, jedná se o princip, kdy se
  na základě standardně dodaných pravidel frameworku RoR používají generátory,
- pro vygenerování tříd vrstev Model, Controller a Viev ze šablon RoR.
+ pro vygenerování tříd vrstev Model, Controller a Viev ze šablon RoR
+\begin_inset CommandInset citation
+LatexCommand cite
+after "str. 668"
+key "ruby"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Subsubsection
@@ -7129,7 +7168,14 @@ Mongoid je framework, který umožňuje tzv.
  mapování mezi datovými strukturami používaných v Ruby a datovými strukturami
  používaných v databázi MongoDB.
  K mapování využívá princip Convention over Configuration, kdy konvence
- jsou velice podobné frameworku ActiveRecord.
+ jsou velice podobné frameworku ActiveRecord
+\begin_inset CommandInset citation
+LatexCommand cite
+key "mongoid"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
@@ -7148,7 +7194,14 @@ Configatron je gem usnadňující konfiguraci aplikace zavedením globální str
 configatron
 \emph default
  do aplikace, používáním této struktury je výsledný kód aplikace elegantnější,
- neboť vyvojář nemusí používat různé globální proměnné apod.
+ neboť vyvojář nemusí používat různé globální proměnné apod
+\begin_inset CommandInset citation
+LatexCommand cite
+key "configatron"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Subsubsection
@@ -7158,10 +7211,16 @@ Httparty
 \begin_layout Standard
 Jedná se o gem implementující klientskou část protokolu http, avšak je zaměřen
  na usnadnění příjímání dat z webových služeb a služeb postavených na architektu
-ře REST.
+ře REST
+\begin_inset CommandInset citation
+LatexCommand cite
+key "httparty"
+
+\end_inset
+
+.
  Gem Httparty bude využíván při komunikaci s ostatními komponentami IS Svobodnýc
 h.
- 
 \end_layout
 
 \begin_layout Subsubsection
@@ -7176,7 +7235,14 @@ Omniauth je autentizační middleware pro webové aplikace implementované v
  Na druhé straně middlewaru umožňuje OmniAuth vývojáři naimplementovat tzv.
  strategii proti jakémukoliv autentizačnímu serveru.
  Autentizačním serverem může být například LDAP databáze, Microsoft ActiveDirect
-ory, webová služba atd.
+ory, webová služba atd
+\begin_inset CommandInset citation
+LatexCommand cite
+key "omniauth"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
@@ -7186,16 +7252,23 @@ Autorem bude použit gem OmniAuth-OAuth2, který poskytne základní šablonu
 \end_layout
 
 \begin_layout Subsubsection
-CanCan
+CanCanCan
 \end_layout
 
 \begin_layout Standard
-CanCan je autorizačním gemem pro RoR aplikace.
- Gem CanCan striktně zachovává princip DRY, a to tím, že přidává do modelu
+CanCanCan je autorizačním gemem pro RoR aplikace.
+ Gem CanCanCan striktně zachovává princip DRY, a to tím, že přidává do modelu
  aplikace třídu Ability, která slouží vývojáři aplikace k deklarování uživatelsk
 ých práv pro manipulaci s objekty tříd v RoR aplikaci.
- CanCan předpokládá výskyt metody current_user v Controllerech aplikace
- a umožňuje přidat autorizační filtry do tříd Controllerů.
+ CanCanCan předpokládá výskyt metody current_user v Controllerech aplikace
+ a umožňuje přidat autorizační filtry do tříd Controllerů
+\begin_inset CommandInset citation
+LatexCommand cite
+key "cancancan"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
@@ -7211,7 +7284,14 @@ Aasm
 Gem AASM přidává rozhraní chování konečného stavového automatu do Ruby tříd.
  Zároveň poskytuje adaptéry pro ORM a ODM frameworky, tudíž je možné při
  jeho použití snadno ukládat stavy konečného automatu v persistentní vrstvě
- aplikace.
+ aplikace
+\begin_inset CommandInset citation
+LatexCommand cite
+key "aasm"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Subsubsection
@@ -7222,6 +7302,13 @@ Encryption
 Encryption gem poskytuje kryptografické funkce.
  Smyslem tohoto gemu je obalení funkcí z kryptografických nástrojů projektu
  OpenSSL tak, aby se vývojáři kryptografické funkce snadno používaly.
+\begin_inset CommandInset citation
+LatexCommand cite
+key "encryption"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -7239,7 +7326,14 @@ Vzhledem k tomu, že aplikace postavené na architektuře MVC využívají zprav
  Je vhodné použít asynchronní zpracování některých úloh na pozadí pro akce,
  které se mají provést v jinou dobu než probíhá zpracování či odesílání
  požadavků a odpovědí aplikace nebo zpracování dat v aplikaci probíhá v
- nepřijatelně dlouhém čase pro ideální odezvu aplikace.
+ nepřijatelně dlouhém čase pro ideální odezvu aplikace
+\begin_inset CommandInset citation
+LatexCommand cite
+key "sidekiq"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
@@ -7264,7 +7358,14 @@ Jako databázový systém byl autorem zvolen MongoDB.
  ale kolekce dokumentů.
  MongoDB byla původně vyvíjena společností 10gen jako komponenta jejich
  cloudového produktu, ale v roce 2009 byly zveřejněny její zdrojové kódy
- pod open-source licencí.
+ pod open-source licencí
+\begin_inset CommandInset citation
+LatexCommand cite
+key "mongoDB"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
@@ -7282,7 +7383,14 @@ Redis
 
 \begin_layout Standard
 Redis je nerelační databázový systém využívající ukládání dat a datových
- struktur do vazby klíč-hodnota.
+ struktur do vazby klíč-hodnota
+\begin_inset CommandInset citation
+LatexCommand cite
+key "redis"
+
+\end_inset
+
+.
  Ve volební aplikaci je použit jako úložistě dat naplánovaných akcí pro
  gem sidekiq.
 \end_layout
@@ -7295,7 +7403,14 @@ OpenSSL
 OpenSSL je knihovna implementující protokoly SSL a TLS.
  Zároveň jsou v této knihovně implementovány různé kryptografické funkce.
  Mezi funkce využívané v implementaci elektronických voleb volební aplikací,
- budou autorem používány funkce asymetrického kryptografického systému RSA.
+ budou autorem používány funkce asymetrického kryptografického systému RSA
+\begin_inset CommandInset citation
+LatexCommand cite
+key "openssl"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
@@ -8685,6 +8800,348 @@ Ruby: kompendium znalostí pro začátečníky i profesionály.
  Brno: Zoner Press, 2009.
  Encyklopedie Zoner Press.
  ISBN 978-80-7413-018-2.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "mongoid"
+
+\end_inset
+
+
+\emph on
+Mongoid | Mongoid is the officially supported ODM (Object-Document-Mapper)
+ framework for MongoDB in Ruby.:,
+\emph default
+[online]
+\emph on
+ 
+\emph default
+[cit.
+ 2016-11-02].
+ Dostupné z: 
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+https://mongoid.github.io/
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "configatron"
+
+\end_inset
+
+
+\emph on
+markbates/configatron: A super cool, simple, and feature rich configuration
+ system for Ruby apps.:,
+\emph default
+[online]
+\emph on
+ 
+\emph default
+[cit.
+ 2016-11-02].
+ Dostupné z: 
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+https://github.com/markbates/configatron
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "httparty"
+
+\end_inset
+
+
+\emph on
+File: README — Documentation for jnunemaker/httparty (master):,
+\emph default
+[online]
+\emph on
+ 
+\emph default
+[cit.
+ 2016-11-02].
+ Dostupné z: 
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+http://www.rubydoc.info/github/jnunemaker/httparty#Help_and_Docs
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "omniauth"
+
+\end_inset
+
+
+\emph on
+omniauth/omniauth: OmniAuth is a flexible authentication system utilizing
+ Rack middleware.:
+\emph default
+, [online]
+\emph on
+ 
+\emph default
+[cit.
+ 2016-11-02].
+ Dostupné z: 
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+https://github.com/omniauth/omniauth
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "cancancan"
+
+\end_inset
+
+
+\emph on
+CanCanCommunity/cancancan: Continuation of CanCan, the authorization Gem
+ for Ruby on Rails.:
+\emph default
+, [online]
+\emph on
+ 
+\emph default
+[cit.
+ 2016-11-02].
+ Dostupné z: 
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+https://github.com/CanCanCommunity/cancancan
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "aasm"
+
+\end_inset
+
+
+\emph on
+aasm/aasm: AASM - State machines for Ruby classes (Plain Ruby, ActiveRecord,
+ Mongoid, MongoMapper), 
+\emph default
+[online]
+\emph on
+ 
+\emph default
+[cit.
+ 2016-11-02].
+ Dostupné z: 
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+https://github.com/aasm/aasm
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "encryption"
+
+\end_inset
+
+
+\emph on
+Encryption by itay-grude,
+\emph default
+ [online]
+\emph on
+ 
+\emph default
+[cit.
+ 2016-11-02].
+ Dostupné z: 
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+http://itay-grudev.github.io/encryption/
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "sidekiq"
+
+\end_inset
+
+
+\emph on
+Getting Started - mperham/sidekiq Wiki, 
+\emph default
+[online]
+\emph on
+ 
+\emph default
+[cit.
+ 2016-11-02].
+ Dostupné z: 
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+https://github.com/mperham/sidekiq/wiki/Getting-Started
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "mongoDB"
+
+\end_inset
+
+
+\emph on
+About us | MongoDB, 
+\emph default
+[online]
+\emph on
+ 
+\emph default
+[cit.
+ 2016-11-02].
+ Dostupné z: 
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+https://www.mongodb.com/company
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "redis"
+
+\end_inset
+
+Introduction to Redis,[online]
+\emph on
+ 
+\emph default
+[cit.
+ 2016-11-02].
+ Dostupné z: 
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+https://redis.io/topics/introduction
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "openssl"
+
+\end_inset
+
+
+\emph on
+OpenSSL Overview
+\emph default
+,[online]
+\emph on
+ 
+\emph default
+[cit.
+ 2016-11-02].
+ Dostupné z: 
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+https://wiki.openssl.org/index.php/OpenSSL_Overview
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
