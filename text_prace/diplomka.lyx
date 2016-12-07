@@ -8028,7 +8028,164 @@ Terminologický slovník
 \end_layout
 
 \begin_layout Description
-termin asdasdasd
+volební
+\begin_inset space ~
+\end_inset
+
+proces Proces začínající oznámením o konaných volbách, který je ukončen
+ interpretací výsledků voleb
+\begin_inset CommandInset citation
+LatexCommand cite
+after "str. 272"
+key "uvod_do_politike_vedy"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Description
+DRE Direct Recording machines (Elektronická zaznamenávací zařízení) jsou
+ specializovaná elektronická zařízení pro zaznamenání hlasu voliče.
+\end_layout
+
+\begin_layout Description
+e-voting Hlasování pomocí elektronického zařízení
+\begin_inset CommandInset citation
+LatexCommand cite
+key "britannica_electronic_voting"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Description
+i-voting Hlasování pomocí elektronického zařízení prostřednictvím internetu
+\begin_inset CommandInset citation
+LatexCommand cite
+key "britannica_electronic_voting"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Description
+veřejný
+\begin_inset space ~
+\end_inset
+
+klíč Veřejná část páru klíčů asymetrické kryptografie
+\begin_inset CommandInset citation
+LatexCommand cite
+after "str. 52"
+key "aplikovana_kryptografie"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Description
+soukromý
+\begin_inset space ~
+\end_inset
+
+klíč Soukromá část páru klíčů asymetrické kryptografie
+\begin_inset CommandInset citation
+LatexCommand cite
+after "str. 52"
+key "aplikovana_kryptografie"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Description
+hash Otisk dat, kontrolní součet dat slouží k ověření autenticity dat
+\begin_inset CommandInset citation
+LatexCommand cite
+after "str. 54"
+key "aplikovana_kryptografie"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Description
+REST Representational State Transfer, manipulace s daty předem daného zdroje
+ z pomocí základních HTTP volání
+\begin_inset CommandInset citation
+LatexCommand cite
+key "REST"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Description
+primární
+\begin_inset space ~
+\end_inset
+
+volby Vnitrostranické volby, jejich výsledek je určujícím pořadí na kandidátní
+ listině ve volbách do veřejných funkcí
+\begin_inset CommandInset citation
+LatexCommand cite
+key "svobodni_stanovy"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Description
+člen Člen Strany svobodných občanů
+\begin_inset CommandInset citation
+LatexCommand cite
+key "svobodni_stanovy"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Description
+příznivec Příznivec strany svobodných občanů, má možnost pasivně vstupovat
+ do vnitřních procesů strany, avšak nemůže se jich aktivně účastnit.
+ Výjimkou je možnost hlasovat v primárních volbách
+\begin_inset CommandInset citation
+LatexCommand cite
+key "svobodni_stanovy"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Description
+Convention
+\begin_inset space ~
+\end_inset
+
+over
+\begin_inset space ~
+\end_inset
+
+Configuration Snaha omezit konfiguraci aplikace používáním přednastavených
+ hodnot (konvencí)
+\begin_inset CommandInset citation
+LatexCommand cite
+after "str. 668"
+key "ruby"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
