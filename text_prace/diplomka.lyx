@@ -8815,15 +8815,11 @@ name "fig:Klíčový-proces:-Vnitrostranické"
 
 \end_inset
 
-Klíčový proces: Vnitrostranické volby
+Klíčový proces: Vnitrostranické volby (Zdroj: autor)
 \end_layout
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Plain Layout
 
 \end_layout
 
@@ -8858,7 +8854,7 @@ name "fig:Stávající-stav-procesu-priprava-voleb:"
 
 \end_inset
 
-Stávající stav procesu: Příprava voleb
+Stávající stav procesu: Příprava voleb (Zdroj: autor)
 \end_layout
 
 \end_inset
@@ -8898,7 +8894,7 @@ name "fig:Stávající-stav-procesu-prubeh-hlasovani"
 
 \end_inset
 
-Stávající stav procesu: Průběh hlasování
+Stávající stav procesu: Průběh hlasování (Zdroj: autor)
 \end_layout
 
 \end_inset
@@ -8941,7 +8937,7 @@ name "fig:Stávající-stav-procesu-vyhodnoceni-voleb"
 
 \end_inset
 
-Stávající stav procesu: Vyhodnocení voleb
+Stávající stav procesu: Vyhodnocení voleb (Zdroj: autor)
 \end_layout
 
 \end_inset
@@ -8984,7 +8980,7 @@ name "fig:Navrhované-řešení-procesu-priprava-voleb"
 
 \end_inset
 
-Navrhované řešení procesu: Příprava voleb
+Navrhované řešení procesu: Příprava voleb (Zdroj: autor)
 \end_layout
 
 \end_inset
@@ -9027,7 +9023,7 @@ name "fig:Navrhované-řešení-procesu-prubeh-hlasovani"
 
 \end_inset
 
-Navrhované řešení procesu: Průběh hlasování
+Navrhované řešení procesu: Průběh hlasování (Zdroj: autor)
 \end_layout
 
 \end_inset
@@ -9066,7 +9062,7 @@ name "fig:Narvhované-řešení-procesu-vyhodnoceni-voleb"
 
 \end_inset
 
-Narvhované řešení procesu: Vyhodnocení voleb
+Narvhované řešení procesu: Vyhodnocení voleb (Zdroj: autor)
 \end_layout
 
 \end_inset
@@ -9106,7 +9102,7 @@ name "fig:Proces:-Kontrola-voleb"
 
 \end_inset
 
-Proces: Kontrola voleb
+Proces: Kontrola voleb (Zdroj: autor)
 \end_layout
 
 \end_inset
@@ -9139,7 +9135,7 @@ name "fig:Diagram-užití-volební"
 
 \end_inset
 
-Diagram užití navrhovaného řešení
+Diagram užití navrhovaného řešení (Zdroj: autor)
 \end_layout
 
 \end_inset
@@ -9172,7 +9168,7 @@ name "fig:Diagram-tříd-navrhovaného"
 
 \end_inset
 
-Diagram tříd navrhovaného řešení
+Diagram tříd navrhovaného řešení (Zdroj: autor)
 \end_layout
 
 \end_inset
@@ -9205,7 +9201,7 @@ name "fig:Žitvotní-cyklus-třídy"
 
 \end_inset
 
-Žitvotní cyklus třídy Election
+Žitvotní cyklus třídy Election (Zdroj: autor)
 \end_layout
 
 \end_inset
@@ -9882,7 +9878,10 @@ status open
 \end_layout
 
 \begin_layout Plain Layout
-      "uniqueItems": false,
+      "uniqueItems": 
+true
+\lang czech
+,
 \end_layout
 
 \begin_layout Plain Layout
