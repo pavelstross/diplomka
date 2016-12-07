@@ -7003,30 +7003,44 @@ key "ruby"
 \end_layout
 
 \begin_layout Standard
-Vrstva Model představuje datový model aplikace, jsou v ní obsaženy doménové
- třídy aplikace, jedná se o standardní Ruby třídy, které jsou v typické
- konfiguraci potomkem třídy ActiveRecord.
+Vrstva 
+\emph on
+Model
+\emph default
+ představuje datový model aplikace, jsou v ní obsaženy doménové třídy aplikace,
+ jedná se o standardní Ruby třídy, které jsou v typické konfiguraci potomkem
+ třídy ActiveRecord.
  Tyto doménové třídy mohou upravovat logiku aplikace či validaci dat.
  Doménové třídy se nacházejí v adresáři app/model/ aplikace.
 \end_layout
 
 \begin_layout Standard
-Třídy další vrstvy, Controller jsou určeny pro zpracování požadavků a jejich
- vstupů v aplikaci.
+Třídy další vrstvy, 
+\emph on
+Controller
+\emph default
+ jsou určeny pro zpracování požadavků a jejich vstupů v aplikaci.
  Je v ní definováno logické chování aplikace.
  Ve vrstvě Controller mohou být měněna data vrstvy Model a vrstvy View.
  Třídy vrstvy Controller se nalézají v adresáři app/controller
 \end_layout
 
 \begin_layout Standard
-Vrstva View představuje prezentační vrstvu aplikace, kde jsou prezentována
- data z vrstvy Model.
+Vrstva 
+\emph on
+View
+\emph default
+ představuje prezentační vrstvu aplikace, kde jsou prezentována data z vrstvy
+ Model.
 \end_layout
 
 \begin_layout Standard
-Kromě vrstev architektury MVC RoR poskytuje vrstvu helpers, ve které je
- umožněno vývojářům z důvodu udržení elegantnějšího zdrojového kódu aplikace
- implementovat pomocné metody pro výše popisované vrstvy.
+Kromě vrstev architektury MVC RoR poskytuje vrstvu 
+\emph on
+Helpers
+\emph default
+, ve které je umožněno vývojářům z důvodu udržení elegantnějšího zdrojového
+ kódu aplikace implementovat pomocné metody pro výše popisované vrstvy.
  
 \end_layout
 
@@ -7424,7 +7438,11 @@ Architektura volební aplikace
 
 \begin_layout Standard
 Každá aplikace vytvářena pomocí frameworku Ruby on Rails používá architektonický
- návrhový vzor Model-View-Controller.
+ návrhový vzor 
+\emph on
+Model-View-Controller
+\emph default
+.
  
 \end_layout
 
@@ -7433,8 +7451,11 @@ Vrstva Model
 \end_layout
 
 \begin_layout Standard
-Ve vrstvě Model jsou implementovány doménové třídy, vycházející z části
- 
+Ve vrstvě 
+\emph on
+Model
+\emph default
+ jsou implementovány doménové třídy, vycházející z části 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "subsec:Doménový-model"
@@ -7467,16 +7488,27 @@ Vrstva Controller
 \end_layout
 
 \begin_layout Standard
-Skoro u každé doménové třídy se vyskytuje ve vrstvě Controller její protějšek.
+Skoro u každé doménové třídy se vyskytuje ve vrstvě 
+\emph on
+Controller
+\emph default
+ její protějšek.
  Toto chování vychází z architektury MVC a frameworku RoR.
  Dále se autor zaměří na třídy vrstvy kontroler, které nemají svůj protějšek
- ve vrstvě Model.
+ ve vrstvě 
+\emph on
+Model
+\emph default
+.
 \end_layout
 
 \begin_layout Standard
-ApplicationController je třídou, která je předkem všech tříd vrstvy Controller,
- stěžejní metodou této třídy je metoda current_user, která slouží pro identifiko
-vání daného přihlášeného uživatele aplikace za účelem autorizace v aplikaci.
+ApplicationController je třídou, která je předkem všech tříd vrstvy 
+\emph on
+Controller
+\emph default
+, stěžejní metodou této třídy je metoda current_user, která slouží pro identifik
+ování daného přihlášeného uživatele aplikace za účelem autorizace v aplikaci.
 \end_layout
 
 \begin_layout Standard
@@ -7489,9 +7521,178 @@ Vrstva View
 \end_layout
 
 \begin_layout Standard
-Tato vrstva obsahuje šablony pro zobrazování dat v modelu, do šablon jsou
- načítána data z modelu, za pomocí vrstvy Controller.
- Šablony této vrstvy mají své protějšky ve vrstvě Controller a vrstvě Model.
+Tato vrstva obsahuje šablony pro zobrazování dat z vrstvy 
+\emph on
+Model
+\emph default
+, do šablon jsou načítána data z modelů, za pomocí vrstvy 
+\emph on
+Controller
+\emph default
+.
+ Šablony této vrstvy mají své protějšky ve vrstvě 
+\emph on
+Controller
+\emph default
+ a vrstvě 
+\emph on
+Model
+\emph default
+.
+\end_layout
+
+\begin_layout Section
+Komunikace a výměna dat s Registrem členů a příznivců
+\end_layout
+
+\begin_layout Standard
+Jak již bylo zmíněno v části 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "subsec:Informační-systémy-Svobodných"
+
+\end_inset
+
+ není možné zpracovávat globálně dávkovým způsobem data z Registru členů
+ a příznivců.
+ K datům je možné přistupovat pouze z kontextu přihlášeného uživatele, který
+ je nucen při prvním přihlášení do volební aplikace souhlasit s poskytnutím
+ svých dat.
+ Tedy bez tohoto souhlasu uživatele není možné se do volební aplikace přihlásit.
+\end_layout
+
+\begin_layout Standard
+V případě, že uživatel poskytne souhlas k přístupu ke svým osobním údajům.
+ Registr členů a příznivců autorizuje volební aplikace ke zdrojům v REST
+ API.
+ Jakýkoliv následný přenos dat mezi volební aplikaci a registrem je vždy
+ součást relace přihlášeného uživatele volební aplikace a relace přihlášeného
+ uživatele v registru.
+\end_layout
+
+\begin_layout Standard
+Volební aplikace přistupuje ke zdrojům people a region.
+ Zdroj region poskytuje reprezentaci číselníku krajů (JSON schéma tohoto
+ zdroje se nalézá v příloze 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:Json-schéma-zdroje-regions"
+
+\end_inset
+
+) v registru.
+ Zdroj people slouží k poskytování údajů o členech a příznivcích (JSON schéma
+ tohoto zdroje se nalézá v příloze 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "subsec:Json-schéma-zdroje-people"
+
+\end_inset
+
+).
+ Tento zdroj slouží ke dvěma účelům:
+\end_layout
+
+\begin_layout Enumerate
+Pokud je přihlášen jakýkoliv uživatel, volební aplikace čte data ze zdroje
+ /people/profile.json, jedná se reprezentaci profilu uživatele ve formátu
+ JSON v Registru členů a příznivců.
+ Z těchto dat jsou používány základní údaje o uživateli, které slouží převážně
+ pro autorizaci k akcím ve volební aplikaci (práva pro různé typy voleb
+ jsou popsány v části 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "subsec:Typy-voleb-a"
+
+\end_inset
+
+).
+ Data uživatelů využívaná ve volební aplikaci jsou:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+id – primární klíč v Registru členů a příznivců
+\end_layout
+
+\begin_layout Itemize
+first_name – křestní jméno
+\end_layout
+
+\begin_layout Itemize
+last_name – příjmení
+\end_layout
+
+\begin_layout Itemize
+domestic_region – Domovský kraj, tento údaj je využíván v případě regionálních
+ voleb pro autorizaci možnosti využití aktivního i pasivního volebního práva
+\end_layout
+
+\begin_layout Itemize
+person_type – Použito pro identifikaci, zda je uživatel členem nebo příznivcem,
+ z důvodu autorizace při hlasování.
+\end_layout
+
+\begin_layout Itemize
+status – Tento údaj je využit pro identifikaci řádného členství nebo příznivectv
+í.
+ Neboť v případě zániku řádného členství nebo příznivectví data uživatele
+ nejsou z registru automaticky odstraněna.
+ Je nutné provést kontrolu řádného členství nebo příznivectví a v případě
+ jeho pozbytí, v rámci autorizace uživateli odepřít volební práva.
+\end_layout
+
+\begin_layout Itemize
+roles[] – pole zastávaných vnitrostranických funkcí 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Pokud je přihlášen člen volební komise, je možné číst ze zdroje people všechna
+ osobní data všech uživatelů, protože volební komise je stranickým orgánem
+ s celorepublikovou působností.
+\end_layout
+
+\begin_layout Standard
+Z výše uvedeného popisu charakteru dat je ve volební aplikace naprosto nepřípust
+né, jakákoliv osobní data ukládat v perzistentní vrstvě aplikace.
+ Z tohoto důvodu jsou veškeré prováděné akce implementovány v akcích vrstvy
+ 
+\emph on
+Controller
+\emph default
+ a každá akce je prováděna vždy v kontextu právě přihlášeného uživatele.
+ Zároveň je tímto přístupem splněn požadavek na volební aplikaci, že používaná
+ data musí být vždy aktuální (viz 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:Požadavky-na-volební"
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Section
+Uživatelské rozhraní
+\end_layout
+
+\begin_layout Standard
+Uživatelské rozhraní bylo navrženo co nejjednodušší tak, aby bylo ovládání
+ pro uživatele intuitivní.
+ Mojí snahou bylo udržet konzistentní vzhled s ostatními komponentami IS
+ Svobodných.
+\end_layout
+
+\begin_layout Standard
+Rozložení obsahu aplikace tedy vychází z komponenty IS Svobodných Registr
+ členů a příznivců.
+ V aplikaci nejsou použita žádná víceúrovňová menu či složité členění obsahu.
+ V levém sloupci je umístěno navigační menu, skrze které je uživateli nabídnuta
+ navigace různými fázemi voleb.
+ V horním panelu je umístěna indikace přihlášeného uživatele, vedle které
+ se nalézá hypertextový odkaz pro přihlášení, popř.
+ odhlášení uživatele.
 \end_layout
 
 \begin_layout Chapter
@@ -7508,7 +7709,7 @@ Možnost použití implementace ve volbách v České republice
 V současnosti jsou veškeré volby do veřejných funkcí v České republice konány
  za pomocí papírových voleb, vyžadující voličovu přítomnost v kontrolovaném
  prostoru.
- V České republice dosud nebyla zavedana možnost korespondenčního hlasování
+ V České republice dosud nebyla zavedena možnost korespondenčního hlasování
  ani elektronického hlasování.
 \end_layout
 
@@ -10302,6 +10503,12 @@ registr.svobodni.cz/people/
 \end_layout
 
 \begin_layout Section
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Json-schéma-zdroje-regions"
+
+\end_inset
+
 Json schéma zdroje regions v API Registr členů a příznivců
 \end_layout
 
