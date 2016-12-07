@@ -42,11 +42,13 @@ pdfkeywords={\v{s}ablona,LaTeX,LyX}%
 \usepackage{packages/bc-neueskapitel}
 %\usepackage{packages/bc-fancychap}
 
+% obsah se necisluje
+
 % declaration
 \newcommand{\declaration}[1]{
 \cleardoublepage
 % \normalfont
-\thispagestyle{plain}
+\thispagestyle{empty}
 \vspace*{\fill}
 % \noindent
 {\chaptertitle{
@@ -207,7 +209,7 @@ status open
 
 
 \backslash
-pagenumbering{roman}
+pagenumbering{gobble}
 \end_layout
 
 \end_inset
@@ -458,6 +460,13 @@ status open
 
 
 \backslash
+thispagestyle{empty}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
 indent 
 \end_layout
 
@@ -471,6 +480,20 @@ Na tomto místě bych chtěl poděkovat
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+\noindent
+
+\size small
+\begin_inset VSpace vfill
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter*
+Abstrakt
 \end_layout
 
 \begin_layout Standard
@@ -492,6 +515,240 @@ thispagestyle{empty}
 \end_layout
 
 \begin_layout Standard
+Práce charakterizuje.
+
+\size small
+ 
+\size default
+Práce charakterizuje.
+
+\size small
+ 
+\size default
+Práce charakterizuje.
+
+\size small
+ 
+\size default
+Práce charakterizuje.
+
+\size small
+ 
+\size default
+Práce charakterizuje.
+
+\size small
+ 
+\size default
+Práce charakterizuje.
+
+\size small
+ 
+\size default
+Práce charakterizuje.
+
+\size small
+ 
+\size default
+Práce charakterizuje.
+
+\size small
+ 
+\size default
+Práce charakterizuje.
+
+\size small
+ 
+\size default
+Práce charakterizuje.
+
+\size small
+ 
+\size default
+Práce charakterizuje.
+
+\size small
+ 
+\size default
+Práce charakterizuje.
+
+\size small
+ 
+\size default
+Práce charakterizuje.
+
+\size small
+ 
+\size default
+Práce charakterizuje.
+
+\size small
+ 
+\size default
+Práce charakterizuje.
+
+\size small
+ 
+\size default
+Práce charakterizuje.
+
+\size small
+ 
+\size default
+Práce charakterizuje.
+
+\size small
+ 
+\size default
+Práce charakterizuje.
+
+\size small
+ 
+\size default
+Práce charakterizuje.
+
+\size small
+ 
+\size default
+Práce charakterizuje.
+
+\size small
+ 
+\size default
+Práce charakterizuje.
+
+\size small
+ 
+\size default
+Práce charakterizuje.
+
+\size small
+ 
+\size default
+Práce charakterizuje.
+
+\size small
+ 
+\size default
+Práce charakterizuje.
+
+\size small
+ 
+\size default
+Práce charakterizuje.
+
+\size small
+ 
+\size default
+Práce charakterizuje.
+
+\size small
+ 
+\size default
+Práce charakterizuje.
+
+\size small
+ 
+\size default
+Práce charakterizuje.
+
+\size small
+ 
+\size default
+Práce charakterizuje.
+
+\size small
+ 
+\size default
+Práce charakterizuje.
+
+\size small
+ 
+\size default
+Práce charakterizuje.
+
+\size small
+ 
+\size default
+Práce charakterizuje.
+
+\size small
+ 
+\size default
+Práce charakterizuje.
+
+\size small
+ 
+\size default
+Práce charakterizuje.
+
+\size small
+ 
+\size default
+Práce charakterizuje.
+
+\size small
+ 
+\size default
+Práce charakterizuje.
+
+\size small
+ 
+\size default
+Práce charakterizuje.
+
+\size small
+ 
+\size default
+Práce charakterizuje.
+
+\size small
+ 
+\size default
+Práce charakterizuje.
+
+\size small
+ 
+\size default
+Práce charakterizuje.
+
+\size small
+ 
+\size default
+Práce charakterizuje.
+
+\size small
+ 
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+\noindent
+
+\size small
+Klíčová
+\begin_inset space ~
+\end_inset
+
+slova: elektronické volby
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset VSpace vfill
+\end_inset
+
+
+\begin_inset Newpage cleardoublepage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 \noindent
 
 \size small
@@ -501,7 +758,13 @@ thispagestyle{empty}
 
 \end_layout
 
+\begin_layout Chapter*
+Abstract
+\end_layout
+
 \begin_layout Standard
+
+\size small
 \begin_inset ERT
 status open
 
@@ -509,7 +772,7 @@ status open
 
 
 \backslash
-chaptertitle{Abstrakt}
+thispagestyle{empty}
 \end_layout
 
 \end_inset
@@ -531,65 +794,15 @@ Práce charakterizuje.
 \noindent
 
 \size small
-Klíčová
-\begin_inset space ~
-\end_inset
-
-slova: elektronické volby
+Keywords: elektronické volby
 \begin_inset Newline newline
 \end_inset
 
 
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-chaptertitle{Abstract}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-The thesis characterizes.
-\size small
-
-\begin_inset Newline newline
-\end_inset
-
-
-\end_layout
-
-\begin_layout Description
-\noindent
-
-\size small
-Keywords: electronic elections
-\begin_inset Newline newline
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\noindent
-
-\size small
 \begin_inset VSpace vfill
 \end_inset
 
 
-\end_layout
-
-\begin_layout Standard
 \begin_inset Newpage cleardoublepage
 \end_inset
 
@@ -597,21 +810,8 @@ Keywords: electronic elections
 \end_layout
 
 \begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-thispagestyle{empty}
-\end_layout
-
-\end_inset
-
 
 \size small
-
 \begin_inset CommandInset toc
 LatexCommand tableofcontents
 
@@ -7660,6 +7860,10 @@ status collapsed
 \end_inset
 
 Terminologický slovník
+\end_layout
+
+\begin_layout Description
+termin asdasdasd
 \end_layout
 
 \begin_layout Standard
