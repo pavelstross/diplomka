@@ -515,211 +515,48 @@ thispagestyle{empty}
 \end_layout
 
 \begin_layout Standard
-Práce charakterizuje.
-
-\size small
- 
-\size default
-Práce charakterizuje.
-
-\size small
- 
-\size default
-Práce charakterizuje.
-
-\size small
- 
-\size default
-Práce charakterizuje.
-
-\size small
- 
-\size default
-Práce charakterizuje.
-
-\size small
- 
-\size default
-Práce charakterizuje.
-
-\size small
- 
-\size default
-Práce charakterizuje.
-
-\size small
- 
-\size default
-Práce charakterizuje.
-
-\size small
- 
-\size default
-Práce charakterizuje.
-
-\size small
- 
-\size default
-Práce charakterizuje.
-
-\size small
- 
-\size default
-Práce charakterizuje.
-
-\size small
- 
-\size default
-Práce charakterizuje.
-
-\size small
- 
-\size default
-Práce charakterizuje.
-
-\size small
- 
-\size default
-Práce charakterizuje.
-
-\size small
- 
-\size default
-Práce charakterizuje.
-
-\size small
- 
-\size default
-Práce charakterizuje.
-
-\size small
- 
-\size default
-Práce charakterizuje.
-
-\size small
- 
-\size default
-Práce charakterizuje.
-
-\size small
- 
-\size default
-Práce charakterizuje.
-
-\size small
- 
-\size default
-Práce charakterizuje.
-
-\size small
- 
-\size default
-Práce charakterizuje.
-
-\size small
- 
-\size default
-Práce charakterizuje.
-
-\size small
- 
-\size default
-Práce charakterizuje.
-
-\size small
- 
-\size default
-Práce charakterizuje.
-
-\size small
- 
-\size default
-Práce charakterizuje.
-
-\size small
- 
-\size default
-Práce charakterizuje.
-
-\size small
- 
-\size default
-Práce charakterizuje.
-
-\size small
- 
-\size default
-Práce charakterizuje.
-
-\size small
- 
-\size default
-Práce charakterizuje.
-
-\size small
- 
-\size default
-Práce charakterizuje.
-
-\size small
- 
-\size default
-Práce charakterizuje.
-
-\size small
- 
-\size default
-Práce charakterizuje.
-
-\size small
- 
-\size default
-Práce charakterizuje.
-
-\size small
- 
-\size default
-Práce charakterizuje.
-
-\size small
- 
-\size default
-Práce charakterizuje.
-
-\size small
- 
-\size default
-Práce charakterizuje.
-
-\size small
- 
-\size default
-Práce charakterizuje.
-
-\size small
- 
-\size default
-Práce charakterizuje.
-
-\size small
- 
-\size default
-Práce charakterizuje.
-
-\size small
- 
-\size default
-Práce charakterizuje.
-
-\size small
- 
-\size default
-Práce charakterizuje.
-
-\size small
- 
+Tato diplomová práce se zabývá problematikou a implementací elektronických
+ voleb ve Straně svobodných občanů.
+ Jejím obsahem je rešeršní část a praktická část.
+ Rešeršní část se zabývá volbami a řešeními elektronických voleb, zatímco
+ praktická část analýzou a implementací elektronických voleb ve Straně svobodnýc
+h občanů.
 \begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Prvním cílem je poskytnout znalosti, které je nutné použít pro praktickou
+ část práce.
+ A to průzkumem této problematiky a zároveň již realizovaných řešení elektronick
+ých voleb ve světě.
+\end_layout
+
+\begin_layout Standard
+Druhým cílem je připravit funkční implementaci elektronických voleb ve Straně
+ svobodných občanů.
+ Pro splnění tohoto cíle je provedena analýza a návrh řešení implementace.
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Přínos autora v této diplomové práci spočívá v naplění stanovených cílů.
+ Při zpracování práce je proveden výzkum problematiky voleb a elektronických
+ voleb.
+ Po získání těchto znalostí je autorem provedena analýza, návrh řešení implement
+ace a implementace elektronických voleb ve Straně svobodných občanů.
+\begin_inset Newline newline
+\end_inset
+
+
+\size small
+
+\begin_inset VSpace vfill
 \end_inset
 
 
@@ -733,7 +570,15 @@ Klíčová
 \begin_inset space ~
 \end_inset
 
-slova: elektronické volby
+slova: 
+\end_layout
+
+\begin_layout Standard
+\noindent
+
+\size small
+volby, elektronické volby, volební systém, Strana svobodných občanů, analýza,
+ Ruby, Ruby on Rails, implementace elektronických voleb 
 \begin_inset Newline newline
 \end_inset
 
@@ -781,10 +626,14 @@ thispagestyle{empty}
 \end_layout
 
 \begin_layout Standard
-Práce charakterizuje.
+Jeste neprelozeno.
 \size small
 
 \begin_inset Newline newline
+\end_inset
+
+
+\begin_inset VSpace vfill
 \end_inset
 
 
